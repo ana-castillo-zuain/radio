@@ -1,4 +1,6 @@
-# radio
+# **Radiografía de nuestro sistema de salud**
+
+## *Una mirada a las distancias, recursos y desigualdades que existen detrás del mapa sanitario argentino*
 
 Visualización interactiva realizada para el concurso **Contar con Datos 2026** de la Universidad de San Andrés y la Secretaría de Ciencia, Tecnología e Innovación.
 
