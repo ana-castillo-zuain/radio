@@ -26,5 +26,5 @@ jupyter notebook exploratory_data_analysis.ipynb
 
 El notebook aplica las definiciones de los PDFs en `docs/`, incluyendo la
 interpretación de `total` en REFEPS, los códigos centinela de datos faltantes,
-la validación de coordenadas de REFES y una comparación entre el CRS
-documentado y el CRS leído de los radios censales.
+la validación de coordenadas de REFES y la reproyección de los radios censales
+desde el CRS declarado por el archivo hacia EPSG:4326 para el análisis.
