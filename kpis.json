@@ -1,0 +1,38 @@
+{
+  "refes_total": 36074,
+  "refes_valid_original": 28327,
+  "refes_healthsites_filled": 3731,
+  "refes_missing": 4016,
+  "tipologia_counts": {
+    "ESSIDT": 17169,
+    "ESSID": 4837,
+    "ESCL": 4193,
+    "ESSIT": 3464,
+    "ESCIRES": 2637,
+    "ESCIG": 2280,
+    "ESCIE": 601,
+    "ESCIETE": 427,
+    "ESCIESM": 342,
+    "ESCIEM": 62,
+    "ESCIEP": 45,
+    "ESIAIS": 16,
+    "ESNOASIST": 1
+  },
+  "medicos_total": 231737,
+  "medicos_por_origen": {
+    "Argentina": 205459,
+    "Desconocido": 647,
+    "Extranjero": 25631
+  },
+  "enfermeria_total": 285861,
+  "enfermeria_por_origen": {
+    "Argentina": 268462,
+    "Desconocido": 924,
+    "Extranjero": 16475
+  },
+  "enfermeria_por_titulo": {
+    "Auxiliar en enfermería": 79101,
+    "Enfermero": 151151,
+    "Licenciado en enfermería": 55609
+  }
+}

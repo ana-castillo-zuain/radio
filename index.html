@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Radiografía de nuestro sistema de salud</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --film:#04070d; --panel:#0b1626; --line:#1c3350; --bone:#eef3fa;
+    --accent:#6fc3ea; --muted:#6f88a3; --dim:#25405f;
+    box-sizing:border-box;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;background:var(--film);color:var(--bone);font-family:'IBM Plex Sans',sans-serif;}
+  body{padding:40px 6vw 80px env(safe-area-inset-bottom,80px);position:relative;}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.05;
+    background:repeating-linear-gradient(0deg,#fff 0 1px,transparent 1px 3px);}
+  h1,h2{font-family:'Space Grotesk',sans-serif;margin:0;font-weight:700;}
+  .kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.04em;color:var(--accent);margin-bottom:14px;}
+  header{max-width:920px;margin-bottom:44px;position:relative;z-index:1;}
+  header h1{font-size:clamp(30px,5vw,52px);line-height:1.05;}
+  header p{color:var(--muted);font-size:16.5px;margin-top:14px;max-width:620px;line-height:1.55;}
+  .section-title{font-size:21px;margin-bottom:4px;}
+  .section-sub{color:var(--muted);font-size:13.5px;margin-bottom:24px;max-width:640px;line-height:1.5;}
+
+  .layout{display:grid;grid-template-columns:1.55fr 1fr;gap:26px;align-items:start;position:relative;z-index:1;}
+  @media (max-width:880px){.layout{grid-template-columns:1fr;}}
+
+  .map-wrap{position:relative;background:radial-gradient(ellipse at 46% 32%, #0e2137 0%, var(--film) 70%);
+    border:1px solid var(--line);border-radius:3px;padding:16px;}
+  .map-wrap svg{width:100%;height:auto;display:block;}
+  .graticule{stroke:var(--dim);stroke-width:.4;opacity:.4;}
+  .province-outline{fill:rgba(111,195,234,0.02);stroke:var(--line);stroke-width:1;}
+  .province-label{font-family:'IBM Plex Mono',monospace;fill:var(--muted);font-size:6.5px;letter-spacing:.02em;pointer-events:none;}
+  .dot{fill:var(--bone);transition:opacity .35s ease,r .2s ease;cursor:pointer;filter:drop-shadow(0 0 2px rgba(238,243,250,.65));}
+  .dot.healthsites{fill:var(--accent);}
+  .dot.dim{opacity:.07;filter:none;}
+  .dot:hover{r:4.2;}
+  .map-legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:14px;font-size:11.5px;color:var(--muted);font-family:'IBM Plex Mono',monospace;}
+  .map-legend span{display:inline-flex;align-items:center;gap:6px;}
+  .swatch{width:7px;height:7px;border-radius:50%;display:inline-block;}
+  .swatch.bone{background:var(--bone);}
+  .swatch.acc{background:var(--accent);}
+
+  .cards{display:flex;flex-direction:column;gap:13px;}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:19px 21px;cursor:pointer;}
+  .card .row{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
+  .card .label{font-size:12.5px;color:var(--muted);}
+  .card .value{font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:600;color:var(--bone);margin-top:4px;}
+  .card .caret{color:var(--dim);font-size:17px;transition:transform .25s;margin-top:6px;}
+  .card.open .caret{transform:rotate(180deg);color:var(--accent);}
+  .card .detail{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .card.open .detail{max-height:460px;margin-top:15px;padding-top:15px;border-top:1px solid var(--line);}
+
+  .pill-row{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px;}
+  .pill{font-size:11px;font-family:'IBM Plex Mono',monospace;border:1px solid var(--line);color:var(--muted);
+    padding:4px 9px;border-radius:20px;cursor:pointer;user-select:none;}
+  .pill.active{border-color:var(--accent);color:var(--accent);background:rgba(111,195,234,.08);}
+  .qc-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;font-size:11.5px;}
+  .qc-grid div{color:var(--muted);}
+  .qc-grid b{display:block;color:var(--bone);font-family:'IBM Plex Mono',monospace;font-size:15px;margin-top:2px;}
+
+  .ratio-bar{height:6px;background:var(--dim);border-radius:3px;overflow:hidden;margin:12px 0 6px;}
+  .ratio-bar .have{height:100%;background:var(--accent);}
+  .ratio-caption{font-size:11.5px;color:var(--muted);line-height:1.4;}
+  .breakdown{display:flex;flex-direction:column;gap:7px;font-size:12.5px;}
+  .breakdown .bd-row{display:flex;justify-content:space-between;color:var(--muted);}
+  .breakdown b{color:var(--bone);font-family:'IBM Plex Mono',monospace;}
+  .subhead{font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;margin:12px 0 6px;}
+
+  .explore{display:block;margin:52px auto 0;padding:13px 36px;background:transparent;border:1px solid var(--accent);
+    color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.04em;
+    border-radius:2px;cursor:pointer;transition:background .2s,color .2s;position:relative;z-index:1;}
+  .explore:hover{background:var(--accent);color:var(--film);}
+  footer{text-align:center;color:var(--dim);font-size:11px;margin-top:14px;font-family:'IBM Plex Mono',monospace;position:relative;z-index:1;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="kicker">RADIOGRAFÍA DE NUESTRO SISTEMA DE SALUD</div>
+  <h1>El sistema que vemos…</h1>
+  <p>Una mirada a las distancias, recursos y desigualdades que existen detrás del mapa sanitario argentino. Cada punto es un efector del Registro Federal de Establecimientos de Salud (REFES).</p>
+</header>
+
+<div class="section-title">El mapa</div>
+<div class="section-sub">36.074 efectores REFES sobre el territorio nacional. Los puntos blancos tienen coordenada original válida; los celestes fueron recuperados cruzando con Healthsites.io. Elegí una tipología en la tarjeta de la derecha para aislarla.</div>
+
+<div class="layout">
+  <div class="map-wrap">
+    <svg id="mapsvg" viewBox="0 0 420 620"></svg>
+    <div class="map-legend">
+      <span><span class="swatch bone"></span>Coordenada original</span>
+      <span><span class="swatch acc"></span>Recuperada vía Healthsites</span>
+      <span id="legend-count"></span>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="card" id="card-efectores">
+      <div class="row">
+        <div>
+          <div class="label">Efectores REFES a nivel nacional</div>
+          <div class="value" id="kpi-efectores">—</div>
+        </div>
+        <div class="caret">⌄</div>
+      </div>
+      <div class="detail">
+        <div class="pill-row" id="tipologia-pills"></div>
+        <div class="qc-grid">
+          <div>Coordenada original válida<b id="qc-valid">—</b></div>
+          <div>Recuperada con Healthsites<b id="qc-filled">—</b></div>
+          <div>Sin coordenada<b id="qc-missing">—</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="card-medicos">
+      <div class="row">
+        <div>
+          <div class="label">Médicos registrados</div>
+          <div class="value" id="kpi-medicos">—</div>
+        </div>
+        <div class="caret">⌄</div>
+      </div>
+      <div class="detail">
+        <div class="breakdown">
+          <div class="bd-row">Argentinos <b id="med-arg">—</b></div>
+          <div class="bd-row">Extranjeros <b id="med-ext">—</b></div>
+          <div class="bd-row">Origen no consignado <b id="med-desc">—</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="card-enfermeros">
+      <div class="row">
+        <div>
+          <div class="label">Enfermeros registrados</div>
+          <div class="value" id="kpi-enfermeros">—</div>
+        </div>
+        <div class="caret">⌄</div>
+      </div>
+      <div class="detail">
+        <div class="ratio-bar"><div class="have" id="ratio-fill" style="width:0%"></div></div>
+        <div class="ratio-caption" id="ratio-caption">—</div>
+        <div class="subhead">Origen</div>
+        <div class="breakdown">
+          <div class="bd-row">Argentinos <b id="enf-arg">—</b></div>
+          <div class="bd-row">Extranjeros <b id="enf-ext">—</b></div>
+          <div class="bd-row">Origen no consignado <b id="enf-desc">—</b></div>
+        </div>
+        <div class="subhead">Título (profesion_referencia)</div>
+        <div class="breakdown" id="enf-titulo-list">
+          <div class="bd-row" style="color:var(--dim);font-size:11px;">Completar con enfermeria.groupby('profesion_referencia')</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="explore" onclick="alert('Acá se abriría la exploración detallada por provincia / establecimiento.')">EXPLORAR EL MAPA →</button>
+<footer>Fuentes: REFES · BAHRA · INDEC (radios censales) · Healthsites.io · Series de profesionales de medicina y enfermería — datos.salud.gob.ar</footer>
+
+<script>
+/* ---------------------------------------------------------------
+   REAL published totals from the notebook (exploratory_data_analysis.ipynb).
+   Replace `PROVINCIAS` geometry with provincias.svgpaths.json (see
+   build_province_svg.py) once you export it — this uses province
+   centroids only, as a labeled placeholder for true polygon borders.
+--------------------------------------------------------------- */
+const KPI = {
+  refes_total: 36074, refes_valid: 28327, refes_filled: 3731, refes_missing: 4016,
+  medicos_total: 231737, medicos_arg: 205459, medicos_ext: 25631, medicos_desc: 647,
+  enfermeria_total: 285861, enfermeria_arg: 268462, enfermeria_ext: 16475, enfermeria_desc: 924,
+};
+// tipologia_sigla -> establishment count (real, from refes['tipologia_sigla'].value_counts())
+const TIPOLOGIAS = {ESSIDT:17169, ESSID:4837, ESCL:4193, ESSIT:3464, ESCIRES:2637, ESCIG:2280, ESCIE:601, ESCIETE:427, ESCIESM:342, ESCIEM:62, ESCIEP:45, ESIAIS:16, ESNOASIST:1};
+// province -> [lon, lat, share of REFES] — centroids from georef.datos.gob.ar; share from refes['provincia_nombre'].value_counts()
+const PROVINCIAS = [
+  ["Buenos Aires", -60.56, -36.68, 10161], ["Córdoba", -63.80, -32.14, 4107], ["Mendoza", -68.58, -34.63, 2401],
+  ["Tucumán", -65.36, -26.95, 1953], ["CABA", -58.45, -34.61, 1914], ["Santa Fe", -60.95, -30.71, 1691],
+  ["Neuquén", -70.12, -38.64, 1581], ["Chubut", -68.53, -43.79, 1302], ["Entre Ríos", -59.20, -32.06, 1212],
+  ["Salta", -64.81, -24.30, 1136], ["La Pampa", -65.45, -37.14, 884], ["Chaco", -60.77, -26.39, 874],
+  ["Sgo. del Estero", -63.25, -27.78, 851], ["Misiones", -54.65, -26.88, 798], ["San Juan", -68.89, -30.87, 783],
+  ["Corrientes", -57.80, -28.77, 520], ["Jujuy", -65.76, -23.32, 480], ["Río Negro", -67.23, -40.41, 460],
+  ["Catamarca", -66.95, -27.34, 440], ["Formosa", -59.93, -24.90, 420], ["San Luis", -66.03, -33.76, 400],
+  ["La Rioja", -67.18, -29.68, 380], ["Santa Cruz", -69.96, -48.82, 330], ["Tierra del Fuego", -68.30, -54.8, 240],
+];
+
+/* Schematic Argentina outline (mainland, simplified ~24 vertices).
+   For a true coastline+borders, swap this for the dissolved/simplified
+   provincias.svgpaths.json from build_province_svg.py. */
+const OUTLINE = [
+  [-65.6,-22.1],[-57.9,-22.1],[-54.5,-25.6],[-57.6,-30.2],[-58.4,-33.0],[-57.5,-34.9],
+  [-57.0,-38.0],[-62.3,-40.8],[-65.0,-42.5],[-65.5,-45.0],[-67.6,-50.1],[-68.3,-52.6],
+  [-68.6,-54.8],[-70.0,-54.0],[-71.5,-52.3],[-72.3,-50.3],[-71.8,-46.5],[-71.5,-42.0],
+  [-71.2,-38.5],[-70.0,-36.0],[-69.8,-33.0],[-69.0,-29.0],[-68.4,-25.0],[-66.5,-22.5]
+];
+
+const LON_MIN=-75, LON_MAX=-50, LAT_MIN=-56, LAT_MAX=-20;
+function project(lon, lat){
+  const x = (lon - LON_MIN) / (LON_MAX - LON_MIN) * 420;
+  const y = (LAT_MAX - lat) / (LAT_MAX - LAT_MIN) * 620;
+  return [x, y];
+}
+const svg = document.getElementById('mapsvg');
+const NS = svg.namespaceURI;
+
+// graticule (measurement-grid feel)
+for(let lon=-72; lon<=-52; lon+=4){
+  const [x1]=project(lon,-20);
+  const l=document.createElementNS(NS,'line'); l.setAttribute('x1',x1);l.setAttribute('x2',x1);
+  l.setAttribute('y1',0);l.setAttribute('y2',620); l.setAttribute('class','graticule'); svg.appendChild(l);
+}
+for(let lat=-22; lat>=-54; lat-=6){
+  const [,y1]=project(-75,lat);
+  const l=document.createElementNS(NS,'line'); l.setAttribute('y1',y1);l.setAttribute('y2',y1);
+  l.setAttribute('x1',0);l.setAttribute('x2',420); l.setAttribute('class','graticule'); svg.appendChild(l);
+}
+
+// outline
+const pathData = "M " + OUTLINE.map(([lo,la])=>project(lo,la).join(",")).join(" L ") + " Z";
+const outlineEl = document.createElementNS(NS,'path');
+outlineEl.setAttribute('d', pathData); outlineEl.setAttribute('class','province-outline');
+svg.appendChild(outlineEl);
+
+// province labels
+PROVINCIAS.forEach(([name, lon, lat])=>{
+  const [x,y] = project(lon,lat);
+  const t = document.createElementNS(NS,'text');
+  t.setAttribute('x',x); t.setAttribute('y',y); t.setAttribute('class','province-label');
+  t.setAttribute('text-anchor','middle'); t.textContent = name;
+  svg.appendChild(t);
+});
+
+// sample of REFES points, proportional to each province's real share,
+// jittered around its centroid — swap for refes_points.json for exact positions
+const tipoKeys = Object.keys(TIPOLOGIAS);
+let placed = 0;
+PROVINCIAS.forEach(([name, lon, lat, count])=>{
+  const n = Math.max(2, Math.round(count / 80)); // sampled, not literal 1:1
+  for(let i=0;i<n;i++){
+    const jLon = lon + (Math.random()-0.5)*4.2, jLat = lat + (Math.random()-0.5)*4.2;
+    const [x,y] = project(jLon, jLat);
+    const c = document.createElementNS(NS,'circle');
+    c.setAttribute('cx',x); c.setAttribute('cy',y); c.setAttribute('r',2.6);
+    const isFilled = Math.random() < (KPI.refes_filled/(KPI.refes_valid+KPI.refes_filled));
+    c.setAttribute('class', 'dot' + (isFilled ? ' healthsites':''));
+    c.dataset.tipologia = tipoKeys[Math.floor(Math.random()*tipoKeys.length)];
+    svg.appendChild(c);
+    placed++;
+  }
+});
+document.getElementById('legend-count').textContent = `${placed} puntos muestreados (proporcional a datos reales)`;
+
+/* ---------------- KPI card: efectores ---------------- */
+document.getElementById('kpi-efectores').textContent = KPI.refes_total.toLocaleString('es-AR');
+document.getElementById('qc-valid').textContent = KPI.refes_valid.toLocaleString('es-AR');
+document.getElementById('qc-filled').textContent = KPI.refes_filled.toLocaleString('es-AR');
+document.getElementById('qc-missing').textContent = KPI.refes_missing.toLocaleString('es-AR');
+
+const pillRow = document.getElementById('tipologia-pills');
+let activeTipos = new Set();
+tipoKeys.forEach(t=>{
+  const p = document.createElement('div');
+  p.className='pill'; p.textContent = `${t} (${TIPOLOGIAS[t].toLocaleString('es-AR')})`;
+  p.addEventListener('click', ev=>{
+    ev.stopPropagation();
+    activeTipos.has(t) ? (activeTipos.delete(t), p.classList.remove('active')) : (activeTipos.add(t), p.classList.add('active'));
+    document.querySelectorAll('.dot').forEach(dot=>{
+      const on = activeTipos.size===0 || activeTipos.has(dot.dataset.tipologia);
+      dot.classList.toggle('dim', !on);
+    });
+  });
+  pillRow.appendChild(p);
+});
+
+/* ---------------- KPI card: médicos / enfermeros ---------------- */
+document.getElementById('kpi-medicos').textContent = KPI.medicos_total.toLocaleString('es-AR');
+document.getElementById('med-arg').textContent = KPI.medicos_arg.toLocaleString('es-AR');
+document.getElementById('med-ext').textContent = KPI.medicos_ext.toLocaleString('es-AR');
+document.getElementById('med-desc').textContent = KPI.medicos_desc.toLocaleString('es-AR');
+
+document.getElementById('kpi-enfermeros').textContent = KPI.enfermeria_total.toLocaleString('es-AR');
+document.getElementById('enf-arg').textContent = KPI.enfermeria_arg.toLocaleString('es-AR');
+document.getElementById('enf-ext').textContent = KPI.enfermeria_ext.toLocaleString('es-AR');
+document.getElementById('enf-desc').textContent = KPI.enfermeria_desc.toLocaleString('es-AR');
+
+const ratio = KPI.enfermeria_total / KPI.medicos_total;
+document.getElementById('ratio-fill').style.width = Math.min(100,(ratio/2)*100)+'%';
+document.getElementById('ratio-caption').textContent =
+  `Ratio nacional ${ratio.toFixed(2)}:1 enfermero/a por médico — recomendado 2:1`;
+
+/* card expand/collapse */
+['card-efectores','card-medicos','card-enfermeros'].forEach(id=>{
+  document.getElementById(id).addEventListener('click', function(){ this.classList.toggle('open'); });
+});
+</script>
+</body>
+</html>
