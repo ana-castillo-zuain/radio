@@ -39,7 +39,7 @@ async function route(origin: [number, number], candidates: Candidate[], apiKey?:
   if (!apiKey) return json({ error: 'El cálculo de rutas todavía no está configurado. Falta agregar ORS_API_KEY en Cloudflare Pages.' }, 503);
   const locations = [origin, ...candidates.map((candidate) => candidate.coordinates)];
   const headers = { authorization: apiKey, 'content-type': 'application/json', accept: 'application/json, application/geo+json' };
-  const matrixResponse = await fetch('https://api.openrouteservice.org/v2/matrix/driving-car', {
+  const matrixResponse = await fetch('https://api.heigit.org/openrouteservice/v2/matrix/driving-car', {
     method: 'POST', headers,
     body: JSON.stringify({ locations, sources: [0], destinations: candidates.map((_, index) => index + 1), metrics: ['duration'] }),
   });
@@ -59,7 +59,7 @@ async function route(origin: [number, number], candidates: Candidate[], apiKey?:
   });
   if (bestIndex < 0) return json({ error: 'No hay una ruta en auto disponible entre esa dirección y los efectores cercanos.' }, 404);
   const destination = candidates[bestIndex];
-  const directionsResponse = await fetch('https://api.openrouteservice.org/v2/directions/driving-car/geojson', {
+  const directionsResponse = await fetch('https://api.heigit.org/openrouteservice/v2/directions/driving-car/geojson', {
     method: 'POST', headers,
     body: JSON.stringify({ coordinates: [origin, destination.coordinates], instructions: false, elevation: false }),
   });
