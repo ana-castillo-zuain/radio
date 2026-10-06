@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "prepare-data": "python scripts/prepare_data.py",
+    "generate-isochrones": "python scripts/generate_isochrones.py",
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview",

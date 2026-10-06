@@ -12,6 +12,19 @@ type Props = {
 };
 
 const EMPTY: FeatureCollection = { type: 'FeatureCollection', features: [] };
+const accessCache = new Map<string, Promise<FeatureCollection>>();
+
+async function accessChunk(url: string): Promise<FeatureCollection> {
+  let pending = accessCache.get(url);
+  if (!pending) {
+    pending = fetch(url).then((response) => {
+      if (!response.ok) throw new Error(`No se pudo cargar ${url}`);
+      return response.json() as Promise<FeatureCollection>;
+    });
+    accessCache.set(url, pending);
+  }
+  return pending;
+}
 
 function boundsOf(geometry: unknown): LngLatBoundsLike | null {
   const points: [number, number][] = [];
@@ -68,15 +81,15 @@ export default function MapCanvas({ mode, provinceId, categories, threshold, rou
       map.addSource('provinces', { type: 'geojson', data: '/data/provinces.geojson' });
       map.addSource('facilities', { type: 'geojson', data: mode === 'system' ? '/data/facilities.geojson' : EMPTY as never, promoteId: 'id' });
       map.addSource('settlements', { type: 'geojson', data: mode === 'access' ? '/data/settlements.geojson' : EMPTY as never });
-      map.addSource('isochrones', { type: 'geojson', data: mode === 'access' ? '/data/access-isochrones.geojson' : EMPTY as never });
+      map.addSource('isochrones', { type: 'geojson', data: EMPTY as never });
       map.addSource('route', { type: 'geojson', data: EMPTY as never });
       routeSourceRef.current = map.getSource('route') as GeoJSONSource;
 
       map.addLayer({ id: 'province-fill', type: 'fill', source: 'provinces', paint: { 'fill-color': '#436497', 'fill-opacity': 0.035 } });
-      map.addLayer({ id: 'iso-band-3', type: 'fill', source: 'isochrones', filter: ['==', ['get', 'band'], 3], paint: { 'fill-color': '#0000ff', 'fill-opacity': 0.34 } });
-      map.addLayer({ id: 'iso-band-2', type: 'fill', source: 'isochrones', filter: ['==', ['get', 'band'], 2], paint: { 'fill-color': '#00ff00', 'fill-opacity': 0.34 } });
-      map.addLayer({ id: 'iso-band-1', type: 'fill', source: 'isochrones', filter: ['==', ['get', 'band'], 1], paint: { 'fill-color': '#ffff00', 'fill-opacity': 0.38 } });
-      map.addLayer({ id: 'iso-band-0', type: 'fill', source: 'isochrones', filter: ['==', ['get', 'band'], 0], paint: { 'fill-color': '#ff0000', 'fill-opacity': 0.42 } });
+      map.addLayer({ id: 'iso-band-3', type: 'fill', source: 'isochrones', filter: ['==', ['get', 'range_seconds'], 3600], paint: { 'fill-color': '#0000ff', 'fill-opacity': 0.34 } });
+      map.addLayer({ id: 'iso-band-2', type: 'fill', source: 'isochrones', filter: ['==', ['get', 'range_seconds'], 2700], paint: { 'fill-color': '#00ff00', 'fill-opacity': 0.34 } });
+      map.addLayer({ id: 'iso-band-1', type: 'fill', source: 'isochrones', filter: ['==', ['get', 'range_seconds'], 1800], paint: { 'fill-color': '#ffff00', 'fill-opacity': 0.38 } });
+      map.addLayer({ id: 'iso-band-0', type: 'fill', source: 'isochrones', filter: ['==', ['get', 'range_seconds'], 900], paint: { 'fill-color': '#ff0000', 'fill-opacity': 0.42 } });
       map.addLayer({ id: 'province-line', type: 'line', source: 'provinces', paint: { 'line-color': '#a3f5d1', 'line-opacity': 0.42, 'line-width': 0.75 } });
       map.addLayer({ id: 'province-selected', type: 'line', source: 'provinces', filter: ['==', ['get', 'province_id'], ''], paint: { 'line-color': '#a3f5d1', 'line-width': 2.5, 'line-opacity': 0.95 } });
       map.addLayer({ id: 'settlement-points', type: 'circle', source: 'settlements', paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 3, 1.4, 8, 3], 'circle-color': '#a3f5d1', 'circle-opacity': 0.52, 'circle-stroke-width': 0.2, 'circle-stroke-color': '#1b2026' } });
@@ -121,6 +134,27 @@ export default function MapCanvas({ mode, provinceId, categories, threshold, rou
   }, []);
 
   useEffect(() => {
+    if (!loaded || mode !== 'access') return;
+    let cancelled = false;
+    const load = async () => {
+      try {
+        const response = await fetch('/data/access/manifest.json');
+        if (!response.ok) throw new Error('Manifest not generated');
+        const manifest = await response.json() as { provinces: Record<string, string[]> };
+        const files = provinceId ? (manifest.provinces[provinceId] ?? []) : Object.values(manifest.provinces).flat();
+        const collections = await Promise.all(files.map((file) => accessChunk(`/data/access/${file}`)));
+        if (cancelled) return;
+        const source = mapRef.current?.getSource('isochrones') as GeoJSONSource | undefined;
+        source?.setData({ type: 'FeatureCollection', features: collections.flatMap((item) => item.features) } as never);
+      } catch {
+        if (!cancelled) (mapRef.current?.getSource('isochrones') as GeoJSONSource | undefined)?.setData(EMPTY as never);
+      }
+    };
+    void load();
+    return () => { cancelled = true; };
+  }, [loaded, mode, provinceId]);
+
+  useEffect(() => {
     const map = mapRef.current;
     if (!loaded || !map || !map.isStyleLoaded()) return;
     const provinceFilter = provinceId ? ['==', ['get', 'province_id'], provinceId] : null;
@@ -145,9 +179,10 @@ export default function MapCanvas({ mode, provinceId, categories, threshold, rou
       const isoFilter: unknown[] = [];
       if (provinceId) isoFilter.push(['==', ['get', 'province_id'], provinceId]);
       if (categories.length) isoFilter.push(['in', ['get', 'category'], ['literal', categories]]);
-      isoFilter.push(['==', ['get', 'threshold'], threshold]);
+      const thresholds = [0, 1, 2, 3].map((band) => threshold * 60 * (band + 1) / 4);
       for (const id of ['iso-band-0', 'iso-band-1', 'iso-band-2', 'iso-band-3']) {
-        map.setFilter(id, isoFilter.length ? ['all', ...isoFilter, ['==', ['get', 'band'], Number(id.at(-1))]] as never : ['==', ['get', 'band'], Number(id.at(-1))]);
+        const band = Number(id.at(-1));
+        map.setFilter(id, ['all', ...isoFilter, ['==', ['get', 'range_seconds'], thresholds[band]]] as never);
       }
     }
   }, [loaded, mode, provinceId, categories, threshold]);

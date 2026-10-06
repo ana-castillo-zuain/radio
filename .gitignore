@@ -5,3 +5,4 @@ radios_censales2/
 node_modules/
 dist/
 healthsites_cache/
+.isochrone-cache/

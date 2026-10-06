@@ -1,0 +1,3 @@
+/data/access/*.geojson.gz
+  Content-Type: application/geo+json
+  Content-Encoding: gzip

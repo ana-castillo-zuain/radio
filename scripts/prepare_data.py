@@ -250,7 +250,7 @@ def main() -> None:
                 "locality": text(row.localidad_nombre),
                 "province": text(row.provincia_nombre),
                 "province_id": province_id,
-                "category": text(row.tipologia_nombre),
+                "category": text(row.tipologia_nombre) or "Sin tipología informada",
                 "category_code": text(row.tipologia_sigla),
                 "coordinate_status": status,
             },
@@ -269,6 +269,7 @@ def main() -> None:
             "type": "Feature",
             "geometry": mapping(row.geometry),
             "properties": {
+                "settlement_id": text(getattr(row, "id", "")),
                 "province_id": row.province_id,
                 "province": row.province,
                 "name": row.settlement_name,
@@ -294,10 +295,8 @@ def main() -> None:
         })
     write_json("provinces.geojson", {"type": "FeatureCollection", "features": province_features})
 
-    # Surface polygons are intentionally not fabricated. This empty contract is
-    # populated only after an Argentina driving graph and a routing workflow are
-    # selected and validated on a provincial pilot.
-    write_json("access-isochrones.geojson", {"type": "FeatureCollection", "features": []})
+    # Isochrones are a separately generated, quota-consuming product. Never
+    # overwrite them when rebuilding the source datasets.
     global_doctors = sum(row["doctors"]["activos"] for row in province_metrics.values())
     global_nurses = sum(row["nurses"]["activos"] for row in province_metrics.values())
     write_json("metrics.json", {
