@@ -1,7 +1,7 @@
 export type SettlementCoverage = {
   settlement_id: string | number;
   province_id: string;
-  reachable: Record<'10' | '20' | '30' | '60', string[]>;
+  reachable: Record<'5' | '15' | '30' | '60', string[]>;
 };
 
 export function coveredSettlementCount(
@@ -11,7 +11,7 @@ export function coveredSettlementCount(
   thresholdMinutes: number,
 ): { covered: number; total: number } | null {
   if (!rows?.length) return null;
-  const key = String(thresholdMinutes) as '10' | '20' | '30' | '60';
+  const key = String(thresholdMinutes) as '5' | '15' | '30' | '60';
   const subset = provinceId ? rows.filter((row) => row.province_id === provinceId) : rows;
   if (!subset.length) return null;
   const covered = subset.reduce((count, row) => {

@@ -5,6 +5,8 @@ import type { Category, FacilityCollection, Metrics, ProvinceMetrics, RouteResul
 
 type Section = 'system' | 'access' | 'route';
 type DrawerKind = 'facilities' | 'doctors' | 'nurses' | null;
+type GenerationReport = { omitted_facility_count: number };
+type AccessManifest = { complete: boolean; completed_jobs: number; total_jobs: number };
 
 const SECTIONS: { id: Section; number: string; name: string }[] = [
   { id: 'system', number: '01', name: 'El sistema que vemos' },
@@ -20,6 +22,17 @@ const TOUR_STEPS = [
 
 const fmt = (n: number | null | undefined) => n == null || !Number.isFinite(n) ? '—' : new Intl.NumberFormat('es-AR').format(n);
 const fmtRate = (n: number | null | undefined) => n == null || !Number.isFinite(n) ? '—' : n.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+async function fetchOptionalJson<T>(url: string): Promise<T | null> {
+  try {
+    const response = await fetch(url);
+    const contentType = response.headers.get('content-type') ?? '';
+    if (!response.ok || !contentType.toLowerCase().includes('json')) return null;
+    return await response.json() as T;
+  } catch {
+    return null;
+  }
+}
 
 function sumOrigins(records: Record<string, { origen_activos: Record<string, number> }>): Record<string, number> {
   return Object.values(records).reduce((acc, item) => {
@@ -97,7 +110,8 @@ function App() {
   const [metrics, setMetrics] = useState<Metrics | null>(null);
   const [facilities, setFacilities] = useState<FacilityCollection | null>(null);
   const [settlementCoverage, setSettlementCoverage] = useState<SettlementCoverage[] | null>(null);
-  const [isochronesReady, setIsochronesReady] = useState(false);
+  const [generationReport, setGenerationReport] = useState<GenerationReport | null>(null);
+  const [accessManifest, setAccessManifest] = useState<AccessManifest | null>(null);
   const [dataError, setDataError] = useState('');
   const [section, setSection] = useState<Section>('system');
   const [provinceId, setProvinceId] = useState<string | null>(null);
@@ -115,15 +129,17 @@ function App() {
     Promise.all([
       fetch('/data/metrics.json').then((r) => { if (!r.ok) throw new Error('No están los datos preparados. Ejecutá primero npm run prepare-data.'); return r.json() as Promise<Metrics>; }),
       fetch('/data/facilities.geojson').then((r) => { if (!r.ok) throw new Error('No se encontró el mapa de efectores.'); return r.json() as Promise<FacilityCollection>; }),
-      fetch('/data/access/settlement-coverage.json').then((r) => r.ok ? r.json() as Promise<SettlementCoverage[]> : null),
-      fetch('/data/access/manifest.json').then((r) => r.ok),
-    ]).then(([m, f, coverage, ready]) => { setMetrics(m); setFacilities(f); setSettlementCoverage(coverage); setIsochronesReady(ready); })
+      fetchOptionalJson<SettlementCoverage[]>('/data/access/settlement-coverage.json'),
+      fetchOptionalJson<AccessManifest>('/data/access/manifest.json'),
+      fetchOptionalJson<GenerationReport>('/data/access/generation-report.json'),
+    ]).then(([m, f, coverage, manifest, report]) => { setMetrics(m); setFacilities(f); setSettlementCoverage(coverage); setAccessManifest(manifest); setGenerationReport(report); })
       .catch((error: Error) => setDataError(error.message));
   }, []);
 
   const categories = metrics?.facility_categories ?? [];
   const selectedProvince = provinceId && metrics ? metrics.provinces[provinceId] ?? null : null;
   const access = useMemo(() => coveredSettlementCount(settlementCoverage, provinceId, selectedCategories, threshold), [settlementCoverage, provinceId, selectedCategories, threshold]);
+  const partialAccess = accessManifest !== null && !accessManifest.complete;
   const nationalPopulation = metrics ? Object.values(metrics.provinces).reduce((sum, item) => sum + item.population_2022, 0) : 0;
   const doctorsRate = selectedProvince?.doctors_per_1000 ?? metrics?.professionals.doctors_per_1000;
   const nursesRate = selectedProvince?.nurses_per_1000 ?? metrics?.professionals.nurses_per_1000;
@@ -246,13 +262,15 @@ function App() {
           <div className="map-frame access-map-frame">
             <div className="map-topline"><span><i className="map-live-dot map-live-green" /> SUPERFICIE DE ACCESO EN AUTO</span><span>{provinceName.toUpperCase()}</span></div>
             <MapCanvas mode="access" provinceId={provinceId} categories={selectedCategories} threshold={threshold} route={route} onProvince={chooseProvince} />
-            <div className="isochrone-legend">{[0, 1, 2, 3].map((band) => <span key={band}><i className={`iso-chip iso-${['red', 'yellow', 'green', 'blue'][band]}`} />{fmtRate(threshold * band / 4)}–{fmtRate(threshold * (band + 1) / 4)} min</span>)}</div>
-            {!isochronesReady && <div className="map-empty-state"><span className="empty-icon">⌁</span><strong>Isócronas en preparación</strong><span>Generá los archivos de acceso con el flujo ORS documentado en scripts/generate_isochrones.py para activar esta capa.</span></div>}
+            {!!generationReport?.omitted_facility_count && <div className="isochrone-warning" role="status">No se pudieron calcular isÃ³cronas para {fmt(generationReport.omitted_facility_count)} establecimientos. <a href="/data/access/generation-report.json" target="_blank" rel="noreferrer">Ver reporte</a></div>}
+            <div className="isochrone-legend">{[5, 15, 30, 60].filter((minutes) => minutes <= threshold).map((minutes) => <span key={minutes}><i className={`iso-chip iso-${({ 5: 'red', 15: 'yellow', 30: 'green', 60: 'blue' } as const)[minutes as 5 | 15 | 30 | 60]}`} />{minutes} min</span>)}</div>
+            {partialAccess && <div className="isochrone-warning isochrone-partial" role="status">Vista parcial: {fmt(accessManifest?.completed_jobs)} de {fmt(accessManifest?.total_jobs)} lotes procesados. Las áreas y coberturas pueden aumentar cuando termine el cálculo.</div>}
+            {!accessManifest && <div className="map-empty-state"><span className="empty-icon">⌁</span><strong>Isócronas en preparación</strong><span>Generá los archivos de acceso con el flujo ORS documentado en scripts/generate_isochrones.py para activar esta capa.</span></div>}
             <div className="map-scale">Click en una provincia para enfocar el territorio</div>
           </div>
           <aside className="metrics-column access-metrics">
-            <div className="access-filter-row"><label htmlFor="threshold-select">UMBRAL DE VIAJE</label><select id="threshold-select" value={threshold} onChange={(e) => setThreshold(Number(e.target.value))}><option value="60">60 minutos</option><option value="30">30 minutos</option><option value="20">20 minutos</option><option value="10">10 minutos</option></select></div>
-            <div className="metric-card access-primary"><span className="eyebrow">ASENTAMIENTOS A MÁS DE {threshold} MIN</span><strong className="metric-number">{access ? `${fmt(Math.round((1 - access.covered / Math.max(access.total, 1)) * 100))}%` : '—'}</strong><span className="metric-sub">{access ? `${fmt(access.total - access.covered)} de ${fmt(access.total)} asentamientos BAHRA` : 'Se habilita al generar las áreas de isócrona'}</span><div className="access-denominator">{fmt(selectedProvince?.settlement_count ?? metrics?.settlement_count)} asentamientos considerados en {provinceName}</div></div>
+            <div className="access-filter-row"><label htmlFor="threshold-select">UMBRAL DE VIAJE</label><select id="threshold-select" value={threshold} onChange={(e) => setThreshold(Number(e.target.value))}><option value="60">60 minutos</option><option value="30">30 minutos</option><option value="15">15 minutos</option><option value="5">5 minutos</option></select></div>
+            <div className="metric-card access-primary"><span className="eyebrow">{partialAccess ? `ALCANZADOS EN HASTA ${threshold} MIN · MÍNIMO` : `ASENTAMIENTOS A MÁS DE ${threshold} MIN`}</span><strong className="metric-number">{access ? `${fmt(Math.round((partialAccess ? access.covered : access.total - access.covered) / Math.max(access.total, 1) * 100))}%` : '—'}</strong><span className="metric-sub">{access ? partialAccess ? `${fmt(access.covered)} de ${fmt(access.total)} alcanzados hasta ahora; el valor puede subir.` : `${fmt(access.total - access.covered)} de ${fmt(access.total)} asentamientos BAHRA` : 'Se habilita al generar las áreas de isócrona'}</span><div className="access-denominator">{fmt(selectedProvince?.settlement_count ?? metrics?.settlement_count)} asentamientos considerados en {provinceName}</div></div>
             <button className="metric-card rate-card" onClick={() => setDrawer('doctors')}><div className="rate-title"><span>MÉDICOS / 1.000 HAB.</span><span className="metric-open">↗</span></div><strong>{fmtRate(doctorsRate)}</strong><span>población Censo 2022 · clic para desglose</span></button>
             <button className="metric-card rate-card" onClick={() => setDrawer('nurses')}><div className="rate-title"><span>ENFERMERÍA / 1.000 HAB.</span><span className="metric-open">↗</span></div><strong>{fmtRate(nursesRate)}</strong><span>población Censo 2022 · clic para desglose</span></button>
             <div className="ratio-inline"><div><span>ENFERMERÍA : MEDICINA</span><b>{fmtRate(selectedProvince?.nurses_per_doctor ?? metrics?.professionals.nurses_per_doctor)} : 1</b></div><span className="data-period">REFePS 2023 / Censo {metrics?.source_years.population ?? 2022} · población: {fmt(selectedProvince?.population_2022 ?? nationalPopulation)}</span></div>
