@@ -465,6 +465,7 @@ def main():
     grouped = defaultdict(dict)
     for (province_id, category, seconds), pieces in unions.items():
         union = unary_union(pieces)
+        unions[(province_id, category, seconds)] = union
         grouped[(province_id, category)][seconds] = union
     for (province_id, category), ranges in grouped.items():
         inner = None
@@ -510,6 +511,9 @@ def main():
                 chunks_for_province.append(filename)
         manifest["provinces"][province_id] = chunks_for_province
     (access_dir / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    from access_map_assets import prepare_access_map
+    prepare_access_map(access_dir)
 
     prepared_by_province = defaultdict(list)
     for (province_id, category, seconds), geometry in unions.items():

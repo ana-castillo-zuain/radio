@@ -143,6 +143,8 @@ button.metric-card:hover, .metric-facilities:hover { border-color: rgba(163,245,
 .empty-icon { color: var(--mint); font: 35px var(--display); line-height: .8; }
 .map-empty-state strong { font: 600 14px var(--display); }
 .map-empty-state > span:last-child { color: #a3afb7; font-size: 11px; line-height: 1.55; }
+.map-data-status { position: absolute; z-index: 6; top: 53px; left: 12px; max-width: min(430px, calc(100% - 24px)); padding: 8px 11px; border: 1px solid rgba(163,245,209,.28); border-radius: 3px; color: #d9f8eb; background: rgba(27,32,38,.94); font-size: 10px; line-height: 1.45; box-shadow: 0 5px 24px rgba(0,0,0,.22); }
+.map-data-status.error { border-color: rgba(255,178,138,.52); color: #ffd2bd; }
 .access-metrics { gap: 10px; }
 .access-filter-row { display: flex; justify-content: space-between; align-items: center; }
 .access-filter-row select { padding-top: 8px; padding-bottom: 8px; }

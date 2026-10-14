@@ -1,0 +1,2535 @@
+{
+  "version": 3,
+  "range_seconds": [
+    300,
+    900,
+    1800,
+    3600
+  ],
+  "coverage_minutes": [
+    5,
+    15,
+    30,
+    60
+  ],
+  "complete": true,
+  "completed_jobs": 6425,
+  "total_jobs": 6425,
+  "provinces": {
+    "06": [
+      "province-06-9b92ef11c0f020ec.geojson.gz",
+      "province-06-029f20b777d25b23.geojson.gz",
+      "province-06-27384477dffa9bc3.geojson.gz",
+      "province-06-d4bb2197f9254b4e.geojson.gz",
+      "province-06-6dd8553615fbda0b.geojson.gz",
+      "province-06-8744e6dc91b3a695.geojson.gz",
+      "province-06-63d25f33e656a755.geojson.gz",
+      "province-06-905e2a991b9f3d0e.geojson.gz",
+      "province-06-0a4b72d51baccde3.geojson.gz",
+      "province-06-61b1ba6e7196b3c2.geojson.gz",
+      "province-06-3775a7ef60a152cf.geojson.gz",
+      "province-06-012d90225313d5bf.geojson.gz",
+      "province-06-217a10153d547ac0.geojson.gz",
+      "province-06-0b0fe2c1061d6cff.geojson.gz",
+      "province-06-4a4742ec63c81363.geojson.gz",
+      "province-06-5d5c530399029064.geojson.gz",
+      "province-06-e2391f475d8d8731.geojson.gz",
+      "province-06-47abc044c99f4b8d.geojson.gz",
+      "province-06-7b03b4403ef66539.geojson.gz",
+      "province-06-f4f984ff37b5eec6.geojson.gz",
+      "province-06-5b79b52ce9ba05b9.geojson.gz",
+      "province-06-4292a7404a6754e0.geojson.gz",
+      "province-06-f0d4be3cfe87263b.geojson.gz",
+      "province-06-e6a6ef89ac336a72.geojson.gz",
+      "province-06-015e33486df43a8e.geojson.gz",
+      "province-06-0f290aecdb2556e6.geojson.gz",
+      "province-06-e06b287cf93df771.geojson.gz",
+      "province-06-9e47e1aacd041a1a.geojson.gz",
+      "province-06-f621cf0c00b6b0a3.geojson.gz",
+      "province-06-441b8694d868c75e.geojson.gz",
+      "province-06-0e615038a42021aa.geojson.gz",
+      "province-06-d1c114e8e31caae3.geojson.gz",
+      "province-06-3b582c0334bb50a6.geojson.gz",
+      "province-06-8177b32fcdfe6b3a.geojson.gz",
+      "province-06-963df99115ad3856.geojson.gz",
+      "province-06-a145a24189906255.geojson.gz",
+      "province-06-60b18d1d14a04592.geojson.gz",
+      "province-06-a056e69151382c05.geojson.gz"
+    ],
+    "10": [
+      "province-10.geojson.gz"
+    ],
+    "22": [
+      "province-22-9b92ef11c0f020ec.geojson.gz",
+      "province-22-029f20b777d25b23.geojson.gz",
+      "province-22-27384477dffa9bc3.geojson.gz",
+      "province-22-d4bb2197f9254b4e.geojson.gz",
+      "province-22-8744e6dc91b3a695.geojson.gz",
+      "province-22-63d25f33e656a755.geojson.gz",
+      "province-22-905e2a991b9f3d0e.geojson.gz",
+      "province-22-0a4b72d51baccde3.geojson.gz",
+      "province-22-61b1ba6e7196b3c2.geojson.gz",
+      "province-22-3775a7ef60a152cf.geojson.gz",
+      "province-22-012d90225313d5bf.geojson.gz",
+      "province-22-217a10153d547ac0.geojson.gz",
+      "province-22-0b0fe2c1061d6cff.geojson.gz",
+      "province-22-4a4742ec63c81363.geojson.gz",
+      "province-22-5d5c530399029064.geojson.gz",
+      "province-22-e2391f475d8d8731.geojson.gz",
+      "province-22-47abc044c99f4b8d.geojson.gz",
+      "province-22-5b79b52ce9ba05b9.geojson.gz",
+      "province-22-f0d4be3cfe87263b.geojson.gz",
+      "province-22-e6a6ef89ac336a72.geojson.gz",
+      "province-22-015e33486df43a8e.geojson.gz",
+      "province-22-e06b287cf93df771.geojson.gz",
+      "province-22-441b8694d868c75e.geojson.gz",
+      "province-22-9ef9205613876f71.geojson.gz",
+      "province-22-0e615038a42021aa.geojson.gz",
+      "province-22-d1c114e8e31caae3.geojson.gz",
+      "province-22-3b582c0334bb50a6.geojson.gz",
+      "province-22-8177b32fcdfe6b3a.geojson.gz",
+      "province-22-60b18d1d14a04592.geojson.gz",
+      "province-22-a056e69151382c05.geojson.gz"
+    ],
+    "26": [
+      "province-26.geojson.gz"
+    ],
+    "02": [
+      "province-02.geojson.gz"
+    ],
+    "18": [
+      "province-18.geojson.gz"
+    ],
+    "14": [
+      "province-14-9b92ef11c0f020ec.geojson.gz",
+      "province-14-029f20b777d25b23.geojson.gz",
+      "province-14-27384477dffa9bc3.geojson.gz",
+      "province-14-8744e6dc91b3a695.geojson.gz",
+      "province-14-63d25f33e656a755.geojson.gz",
+      "province-14-905e2a991b9f3d0e.geojson.gz",
+      "province-14-0a4b72d51baccde3.geojson.gz",
+      "province-14-61b1ba6e7196b3c2.geojson.gz",
+      "province-14-3775a7ef60a152cf.geojson.gz",
+      "province-14-012d90225313d5bf.geojson.gz",
+      "province-14-217a10153d547ac0.geojson.gz",
+      "province-14-0b0fe2c1061d6cff.geojson.gz",
+      "province-14-4a4742ec63c81363.geojson.gz",
+      "province-14-5d5c530399029064.geojson.gz",
+      "province-14-e2391f475d8d8731.geojson.gz",
+      "province-14-47abc044c99f4b8d.geojson.gz",
+      "province-14-7b03b4403ef66539.geojson.gz",
+      "province-14-f4f984ff37b5eec6.geojson.gz",
+      "province-14-5b79b52ce9ba05b9.geojson.gz",
+      "province-14-a77ab6032df57c8a.geojson.gz",
+      "province-14-f0d4be3cfe87263b.geojson.gz",
+      "province-14-e6a6ef89ac336a72.geojson.gz",
+      "province-14-015e33486df43a8e.geojson.gz",
+      "province-14-0f290aecdb2556e6.geojson.gz",
+      "province-14-e06b287cf93df771.geojson.gz",
+      "province-14-9e47e1aacd041a1a.geojson.gz",
+      "province-14-441b8694d868c75e.geojson.gz",
+      "province-14-0e615038a42021aa.geojson.gz",
+      "province-14-d1c114e8e31caae3.geojson.gz",
+      "province-14-3b582c0334bb50a6.geojson.gz",
+      "province-14-8177b32fcdfe6b3a.geojson.gz",
+      "province-14-60b18d1d14a04592.geojson.gz",
+      "province-14-a056e69151382c05.geojson.gz"
+    ],
+    "30": [
+      "province-30-9b92ef11c0f020ec.geojson.gz",
+      "province-30-029f20b777d25b23.geojson.gz",
+      "province-30-27384477dffa9bc3.geojson.gz",
+      "province-30-d4bb2197f9254b4e.geojson.gz",
+      "province-30-8744e6dc91b3a695.geojson.gz",
+      "province-30-63d25f33e656a755.geojson.gz",
+      "province-30-905e2a991b9f3d0e.geojson.gz",
+      "province-30-0a4b72d51baccde3.geojson.gz",
+      "province-30-61b1ba6e7196b3c2.geojson.gz",
+      "province-30-3775a7ef60a152cf.geojson.gz",
+      "province-30-012d90225313d5bf.geojson.gz",
+      "province-30-217a10153d547ac0.geojson.gz",
+      "province-30-0b0fe2c1061d6cff.geojson.gz",
+      "province-30-4a4742ec63c81363.geojson.gz",
+      "province-30-5d5c530399029064.geojson.gz",
+      "province-30-e2391f475d8d8731.geojson.gz",
+      "province-30-47abc044c99f4b8d.geojson.gz",
+      "province-30-5b79b52ce9ba05b9.geojson.gz",
+      "province-30-f0d4be3cfe87263b.geojson.gz",
+      "province-30-e6a6ef89ac336a72.geojson.gz",
+      "province-30-015e33486df43a8e.geojson.gz",
+      "province-30-e06b287cf93df771.geojson.gz",
+      "province-30-9e47e1aacd041a1a.geojson.gz",
+      "province-30-441b8694d868c75e.geojson.gz",
+      "province-30-0e615038a42021aa.geojson.gz",
+      "province-30-d1c114e8e31caae3.geojson.gz",
+      "province-30-3b582c0334bb50a6.geojson.gz",
+      "province-30-8177b32fcdfe6b3a.geojson.gz",
+      "province-30-a145a24189906255.geojson.gz",
+      "province-30-60b18d1d14a04592.geojson.gz",
+      "province-30-a056e69151382c05.geojson.gz"
+    ],
+    "34": [
+      "province-34.geojson.gz"
+    ],
+    "38": [
+      "province-38.geojson.gz"
+    ],
+    "42": [
+      "province-42-029f20b777d25b23.geojson.gz",
+      "province-42-27384477dffa9bc3.geojson.gz",
+      "province-42-8744e6dc91b3a695.geojson.gz",
+      "province-42-905e2a991b9f3d0e.geojson.gz",
+      "province-42-0a4b72d51baccde3.geojson.gz",
+      "province-42-61b1ba6e7196b3c2.geojson.gz",
+      "province-42-3775a7ef60a152cf.geojson.gz",
+      "province-42-012d90225313d5bf.geojson.gz",
+      "province-42-217a10153d547ac0.geojson.gz",
+      "province-42-0b0fe2c1061d6cff.geojson.gz",
+      "province-42-4a4742ec63c81363.geojson.gz",
+      "province-42-5d5c530399029064.geojson.gz",
+      "province-42-e2391f475d8d8731.geojson.gz",
+      "province-42-7b03b4403ef66539.geojson.gz",
+      "province-42-5b79b52ce9ba05b9.geojson.gz",
+      "province-42-f0d4be3cfe87263b.geojson.gz",
+      "province-42-e6a6ef89ac336a72.geojson.gz",
+      "province-42-015e33486df43a8e.geojson.gz",
+      "province-42-0f290aecdb2556e6.geojson.gz",
+      "province-42-e06b287cf93df771.geojson.gz",
+      "province-42-f621cf0c00b6b0a3.geojson.gz",
+      "province-42-441b8694d868c75e.geojson.gz",
+      "province-42-0e615038a42021aa.geojson.gz",
+      "province-42-d1c114e8e31caae3.geojson.gz",
+      "province-42-3b582c0334bb50a6.geojson.gz",
+      "province-42-60b18d1d14a04592.geojson.gz",
+      "province-42-a056e69151382c05.geojson.gz"
+    ],
+    "46": [
+      "province-46.geojson.gz"
+    ],
+    "50": [
+      "province-50-9b92ef11c0f020ec.geojson.gz",
+      "province-50-029f20b777d25b23.geojson.gz",
+      "province-50-27384477dffa9bc3.geojson.gz",
+      "province-50-8744e6dc91b3a695.geojson.gz",
+      "province-50-63d25f33e656a755.geojson.gz",
+      "province-50-905e2a991b9f3d0e.geojson.gz",
+      "province-50-0a4b72d51baccde3.geojson.gz",
+      "province-50-61b1ba6e7196b3c2.geojson.gz",
+      "province-50-3775a7ef60a152cf.geojson.gz",
+      "province-50-012d90225313d5bf.geojson.gz",
+      "province-50-217a10153d547ac0.geojson.gz",
+      "province-50-0b0fe2c1061d6cff.geojson.gz",
+      "province-50-4a4742ec63c81363.geojson.gz",
+      "province-50-5d5c530399029064.geojson.gz",
+      "province-50-e2391f475d8d8731.geojson.gz",
+      "province-50-47abc044c99f4b8d.geojson.gz",
+      "province-50-7b03b4403ef66539.geojson.gz",
+      "province-50-4292a7404a6754e0.geojson.gz",
+      "province-50-f0d4be3cfe87263b.geojson.gz",
+      "province-50-e6a6ef89ac336a72.geojson.gz",
+      "province-50-015e33486df43a8e.geojson.gz",
+      "province-50-0f290aecdb2556e6.geojson.gz",
+      "province-50-e06b287cf93df771.geojson.gz",
+      "province-50-9e47e1aacd041a1a.geojson.gz",
+      "province-50-441b8694d868c75e.geojson.gz",
+      "province-50-0e615038a42021aa.geojson.gz",
+      "province-50-d1c114e8e31caae3.geojson.gz",
+      "province-50-3b582c0334bb50a6.geojson.gz",
+      "province-50-8177b32fcdfe6b3a.geojson.gz",
+      "province-50-963df99115ad3856.geojson.gz",
+      "province-50-a145a24189906255.geojson.gz",
+      "province-50-60b18d1d14a04592.geojson.gz",
+      "province-50-a056e69151382c05.geojson.gz"
+    ],
+    "54": [
+      "province-54.geojson.gz"
+    ],
+    "58": [
+      "province-58.geojson.gz"
+    ],
+    "62": [
+      "province-62.geojson.gz"
+    ],
+    "66": [
+      "province-66.geojson.gz"
+    ],
+    "70": [
+      "province-70.geojson.gz"
+    ],
+    "74": [
+      "province-74.geojson.gz"
+    ],
+    "78": [
+      "province-78.geojson.gz"
+    ],
+    "82": [
+      "province-82-9b92ef11c0f020ec.geojson.gz",
+      "province-82-029f20b777d25b23.geojson.gz",
+      "province-82-27384477dffa9bc3.geojson.gz",
+      "province-82-d4bb2197f9254b4e.geojson.gz",
+      "province-82-8744e6dc91b3a695.geojson.gz",
+      "province-82-63d25f33e656a755.geojson.gz",
+      "province-82-905e2a991b9f3d0e.geojson.gz",
+      "province-82-0a4b72d51baccde3.geojson.gz",
+      "province-82-61b1ba6e7196b3c2.geojson.gz",
+      "province-82-3775a7ef60a152cf.geojson.gz",
+      "province-82-012d90225313d5bf.geojson.gz",
+      "province-82-217a10153d547ac0.geojson.gz",
+      "province-82-0b0fe2c1061d6cff.geojson.gz",
+      "province-82-4a4742ec63c81363.geojson.gz",
+      "province-82-5d5c530399029064.geojson.gz",
+      "province-82-e2391f475d8d8731.geojson.gz",
+      "province-82-47abc044c99f4b8d.geojson.gz",
+      "province-82-5b79b52ce9ba05b9.geojson.gz",
+      "province-82-f0d4be3cfe87263b.geojson.gz",
+      "province-82-e6a6ef89ac336a72.geojson.gz",
+      "province-82-015e33486df43a8e.geojson.gz",
+      "province-82-e06b287cf93df771.geojson.gz",
+      "province-82-9e47e1aacd041a1a.geojson.gz",
+      "province-82-f621cf0c00b6b0a3.geojson.gz",
+      "province-82-441b8694d868c75e.geojson.gz",
+      "province-82-9ef9205613876f71.geojson.gz",
+      "province-82-0e615038a42021aa.geojson.gz",
+      "province-82-d1c114e8e31caae3.geojson.gz",
+      "province-82-3b582c0334bb50a6.geojson.gz",
+      "province-82-8177b32fcdfe6b3a.geojson.gz",
+      "province-82-60b18d1d14a04592.geojson.gz",
+      "province-82-a056e69151382c05.geojson.gz"
+    ],
+    "86": [
+      "province-86-9b92ef11c0f020ec.geojson.gz",
+      "province-86-029f20b777d25b23.geojson.gz",
+      "province-86-27384477dffa9bc3.geojson.gz",
+      "province-86-d4bb2197f9254b4e.geojson.gz",
+      "province-86-8744e6dc91b3a695.geojson.gz",
+      "province-86-63d25f33e656a755.geojson.gz",
+      "province-86-905e2a991b9f3d0e.geojson.gz",
+      "province-86-0a4b72d51baccde3.geojson.gz",
+      "province-86-61b1ba6e7196b3c2.geojson.gz",
+      "province-86-3775a7ef60a152cf.geojson.gz",
+      "province-86-012d90225313d5bf.geojson.gz",
+      "province-86-0b0fe2c1061d6cff.geojson.gz",
+      "province-86-4a4742ec63c81363.geojson.gz",
+      "province-86-5d5c530399029064.geojson.gz",
+      "province-86-e2391f475d8d8731.geojson.gz",
+      "province-86-47abc044c99f4b8d.geojson.gz",
+      "province-86-5b79b52ce9ba05b9.geojson.gz",
+      "province-86-4292a7404a6754e0.geojson.gz",
+      "province-86-f0d4be3cfe87263b.geojson.gz",
+      "province-86-e6a6ef89ac336a72.geojson.gz",
+      "province-86-015e33486df43a8e.geojson.gz",
+      "province-86-0f290aecdb2556e6.geojson.gz",
+      "province-86-e06b287cf93df771.geojson.gz",
+      "province-86-441b8694d868c75e.geojson.gz",
+      "province-86-0e615038a42021aa.geojson.gz",
+      "province-86-d1c114e8e31caae3.geojson.gz",
+      "province-86-3b582c0334bb50a6.geojson.gz",
+      "province-86-8177b32fcdfe6b3a.geojson.gz",
+      "province-86-60b18d1d14a04592.geojson.gz",
+      "province-86-a056e69151382c05.geojson.gz"
+    ],
+    "": [
+      "province-.geojson.gz"
+    ],
+    "90": [
+      "province-90.geojson.gz"
+    ]
+  },
+  "overview": "overview.geojson.gz",
+  "province_categories": {
+    "06": {
+      "Agencias-servicios gubernamentales": [
+        "province-06-9b92ef11c0f020ec.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-06-029f20b777d25b23.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-06-27384477dffa9bc3.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-06-d4bb2197f9254b4e.geojson.gz"
+      ],
+      "Atención Domiciliaria para Salud Mental": [
+        "province-06-6dd8553615fbda0b.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-06-8744e6dc91b3a695.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-06-63d25f33e656a755.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-06-905e2a991b9f3d0e.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-06-0a4b72d51baccde3.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-06-61b1ba6e7196b3c2.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-06-3775a7ef60a152cf.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-06-012d90225313d5bf.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-06-217a10153d547ac0.geojson.gz"
+      ],
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-06-0b0fe2c1061d6cff.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-06-4a4742ec63c81363.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-06-5d5c530399029064.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-06-e2391f475d8d8731.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-06-47abc044c99f4b8d.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Diagnostico por Imágenes odontológicas": [
+        "province-06-7b03b4403ef66539.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio": [
+        "province-06-f4f984ff37b5eec6.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-06-5b79b52ce9ba05b9.geojson.gz"
+      ],
+      "Gabinete de Podología": [
+        "province-06-4292a7404a6754e0.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-06-f0d4be3cfe87263b.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-06-e6a6ef89ac336a72.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-06-015e33486df43a8e.geojson.gz"
+      ],
+      "Laboratorios mecánica dental": [
+        "province-06-0f290aecdb2556e6.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-06-e06b287cf93df771.geojson.gz"
+      ],
+      "Medicina Laboral": [
+        "province-06-9e47e1aacd041a1a.geojson.gz"
+      ],
+      "Ortopedia": [
+        "province-06-f621cf0c00b6b0a3.geojson.gz"
+      ],
+      "Otros": [
+        "province-06-441b8694d868c75e.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-06-0e615038a42021aa.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-06-d1c114e8e31caae3.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-06-3b582c0334bb50a6.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-06-8177b32fcdfe6b3a.geojson.gz"
+      ],
+      "Vivienda de estancia transitoria con apoyos para la vida autónoma": [
+        "province-06-963df99115ad3856.geojson.gz"
+      ],
+      "Vivienda de estancia variable a prolongada con apoyos para la vida autónoma": [
+        "province-06-a145a24189906255.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-06-60b18d1d14a04592.geojson.gz"
+      ],
+      "Óptica": [
+        "province-06-a056e69151382c05.geojson.gz"
+      ]
+    },
+    "10": {
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-10.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-10.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-10.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-10.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-10.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-10.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-10.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-10.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-10.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-10.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-10.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-10.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-10.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-10.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-10.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-10.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-10.geojson.gz"
+      ],
+      "Dispositivo/emprendimiento de inclusión sociolaboral": [
+        "province-10.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-10.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-10.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-10.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-10.geojson.gz"
+      ],
+      "Medicina Laboral": [
+        "province-10.geojson.gz"
+      ],
+      "Ortopedia": [
+        "province-10.geojson.gz"
+      ],
+      "Otros": [
+        "province-10.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-10.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-10.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-10.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-10.geojson.gz"
+      ],
+      "Óptica": [
+        "province-10.geojson.gz"
+      ]
+    },
+    "22": {
+      "Agencias-servicios gubernamentales": [
+        "province-22-9b92ef11c0f020ec.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-22-029f20b777d25b23.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-22-27384477dffa9bc3.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-22-d4bb2197f9254b4e.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-22-8744e6dc91b3a695.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-22-63d25f33e656a755.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-22-905e2a991b9f3d0e.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-22-0a4b72d51baccde3.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-22-61b1ba6e7196b3c2.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-22-3775a7ef60a152cf.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-22-012d90225313d5bf.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-22-217a10153d547ac0.geojson.gz"
+      ],
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-22-0b0fe2c1061d6cff.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-22-4a4742ec63c81363.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-22-5d5c530399029064.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-22-e2391f475d8d8731.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-22-47abc044c99f4b8d.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-22-5b79b52ce9ba05b9.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-22-f0d4be3cfe87263b.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-22-e6a6ef89ac336a72.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-22-015e33486df43a8e.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-22-e06b287cf93df771.geojson.gz"
+      ],
+      "Otros": [
+        "province-22-441b8694d868c75e.geojson.gz"
+      ],
+      "Residuos Patológicos": [
+        "province-22-9ef9205613876f71.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-22-0e615038a42021aa.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-22-d1c114e8e31caae3.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-22-3b582c0334bb50a6.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-22-8177b32fcdfe6b3a.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-22-60b18d1d14a04592.geojson.gz"
+      ],
+      "Óptica": [
+        "province-22-a056e69151382c05.geojson.gz"
+      ]
+    },
+    "26": {
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-26.geojson.gz"
+      ],
+      "Otros": [
+        "province-26.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-26.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-26.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-26.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-26.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-26.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-26.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-26.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-26.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-26.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-26.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-26.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-26.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-26.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-26.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-26.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-26.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-26.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-26.geojson.gz"
+      ],
+      "Laboratorios mecánica dental": [
+        "province-26.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-26.geojson.gz"
+      ],
+      "Medicina Laboral": [
+        "province-26.geojson.gz"
+      ],
+      "Ortopedia": [
+        "province-26.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-26.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-26.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-26.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-26.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-26.geojson.gz"
+      ],
+      "Óptica": [
+        "province-26.geojson.gz"
+      ]
+    },
+    "02": {
+      "Alto riesgo con terapia intensiva": [
+        "province-02.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-02.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-02.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-02.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-02.geojson.gz"
+      ],
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-02.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-02.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-02.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-02.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-02.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-02.geojson.gz"
+      ],
+      "Otros": [
+        "province-02.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-02.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-02.geojson.gz"
+      ],
+      "Óptica": [
+        "province-02.geojson.gz"
+      ],
+      "Agencias-servicios gubernamentales": [
+        "province-02.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-02.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-02.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-02.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-02.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-02.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-02.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-02.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-02.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Diagnostico por Imágenes odontológicas": [
+        "province-02.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio": [
+        "province-02.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-02.geojson.gz"
+      ],
+      "Gabinete de Podología": [
+        "province-02.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-02.geojson.gz"
+      ],
+      "Medicina Laboral": [
+        "province-02.geojson.gz"
+      ],
+      "Ortopedia": [
+        "province-02.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-02.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-02.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-02.geojson.gz"
+      ],
+      "Vivienda de estancia transitoria con apoyos para la vida autónoma": [
+        "province-02.geojson.gz"
+      ],
+      "Vivienda de estancia variable a prolongada con apoyos para la vida autónoma": [
+        "province-02.geojson.gz"
+      ]
+    },
+    "18": {
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-18.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-18.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-18.geojson.gz"
+      ],
+      "Agencias-servicios gubernamentales": [
+        "province-18.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-18.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-18.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-18.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-18.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-18.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-18.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-18.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-18.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-18.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-18.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-18.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-18.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-18.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Diagnostico por Imágenes odontológicas": [
+        "province-18.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-18.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-18.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-18.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-18.geojson.gz"
+      ],
+      "Otros": [
+        "province-18.geojson.gz"
+      ],
+      "Residuos Patológicos": [
+        "province-18.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-18.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-18.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-18.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-18.geojson.gz"
+      ],
+      "Vivienda de estancia variable a prolongada con apoyos para la vida autónoma": [
+        "province-18.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-18.geojson.gz"
+      ],
+      "Óptica": [
+        "province-18.geojson.gz"
+      ]
+    },
+    "14": {
+      "Agencias-servicios gubernamentales": [
+        "province-14-9b92ef11c0f020ec.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-14-029f20b777d25b23.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-14-27384477dffa9bc3.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-14-8744e6dc91b3a695.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-14-63d25f33e656a755.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-14-905e2a991b9f3d0e.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-14-0a4b72d51baccde3.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-14-61b1ba6e7196b3c2.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-14-3775a7ef60a152cf.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-14-012d90225313d5bf.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-14-217a10153d547ac0.geojson.gz"
+      ],
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-14-0b0fe2c1061d6cff.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-14-4a4742ec63c81363.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-14-5d5c530399029064.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-14-e2391f475d8d8731.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-14-47abc044c99f4b8d.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Diagnostico por Imágenes odontológicas": [
+        "province-14-7b03b4403ef66539.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio": [
+        "province-14-f4f984ff37b5eec6.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-14-5b79b52ce9ba05b9.geojson.gz"
+      ],
+      "Dispositivo/emprendimiento de inclusión sociolaboral": [
+        "province-14-a77ab6032df57c8a.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-14-f0d4be3cfe87263b.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-14-e6a6ef89ac336a72.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-14-015e33486df43a8e.geojson.gz"
+      ],
+      "Laboratorios mecánica dental": [
+        "province-14-0f290aecdb2556e6.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-14-e06b287cf93df771.geojson.gz"
+      ],
+      "Medicina Laboral": [
+        "province-14-9e47e1aacd041a1a.geojson.gz"
+      ],
+      "Otros": [
+        "province-14-441b8694d868c75e.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-14-0e615038a42021aa.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-14-d1c114e8e31caae3.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-14-3b582c0334bb50a6.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-14-8177b32fcdfe6b3a.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-14-60b18d1d14a04592.geojson.gz"
+      ],
+      "Óptica": [
+        "province-14-a056e69151382c05.geojson.gz"
+      ]
+    },
+    "30": {
+      "Agencias-servicios gubernamentales": [
+        "province-30-9b92ef11c0f020ec.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-30-029f20b777d25b23.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-30-27384477dffa9bc3.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-30-d4bb2197f9254b4e.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-30-8744e6dc91b3a695.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-30-63d25f33e656a755.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-30-905e2a991b9f3d0e.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-30-0a4b72d51baccde3.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-30-61b1ba6e7196b3c2.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-30-3775a7ef60a152cf.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-30-012d90225313d5bf.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-30-217a10153d547ac0.geojson.gz"
+      ],
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-30-0b0fe2c1061d6cff.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-30-4a4742ec63c81363.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-30-5d5c530399029064.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-30-e2391f475d8d8731.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-30-47abc044c99f4b8d.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-30-5b79b52ce9ba05b9.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-30-f0d4be3cfe87263b.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-30-e6a6ef89ac336a72.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-30-015e33486df43a8e.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-30-e06b287cf93df771.geojson.gz"
+      ],
+      "Medicina Laboral": [
+        "province-30-9e47e1aacd041a1a.geojson.gz"
+      ],
+      "Otros": [
+        "province-30-441b8694d868c75e.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-30-0e615038a42021aa.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-30-d1c114e8e31caae3.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-30-3b582c0334bb50a6.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-30-8177b32fcdfe6b3a.geojson.gz"
+      ],
+      "Vivienda de estancia variable a prolongada con apoyos para la vida autónoma": [
+        "province-30-a145a24189906255.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-30-60b18d1d14a04592.geojson.gz"
+      ],
+      "Óptica": [
+        "province-30-a056e69151382c05.geojson.gz"
+      ]
+    },
+    "34": {
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-34.geojson.gz"
+      ],
+      "Agencias-servicios gubernamentales": [
+        "province-34.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-34.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-34.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-34.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-34.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-34.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-34.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-34.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-34.geojson.gz"
+      ],
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-34.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-34.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-34.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-34.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-34.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-34.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-34.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-34.geojson.gz"
+      ],
+      "Otros": [
+        "province-34.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-34.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-34.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-34.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-34.geojson.gz"
+      ],
+      "Óptica": [
+        "province-34.geojson.gz"
+      ]
+    },
+    "38": {
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-38.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-38.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-38.geojson.gz"
+      ],
+      "Otros": [
+        "province-38.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-38.geojson.gz"
+      ],
+      "Agencias-servicios gubernamentales": [
+        "province-38.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-38.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-38.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-38.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-38.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-38.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-38.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-38.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-38.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-38.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-38.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-38.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-38.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-38.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-38.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-38.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-38.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-38.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-38.geojson.gz"
+      ],
+      "Medicina Laboral": [
+        "province-38.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-38.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-38.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-38.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-38.geojson.gz"
+      ],
+      "Óptica": [
+        "province-38.geojson.gz"
+      ]
+    },
+    "42": {
+      "Alto riesgo con terapia intensiva": [
+        "province-42-029f20b777d25b23.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-42-27384477dffa9bc3.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-42-8744e6dc91b3a695.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-42-905e2a991b9f3d0e.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-42-0a4b72d51baccde3.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-42-61b1ba6e7196b3c2.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-42-3775a7ef60a152cf.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-42-012d90225313d5bf.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-42-217a10153d547ac0.geojson.gz"
+      ],
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-42-0b0fe2c1061d6cff.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-42-4a4742ec63c81363.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-42-5d5c530399029064.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-42-e2391f475d8d8731.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Diagnostico por Imágenes odontológicas": [
+        "province-42-7b03b4403ef66539.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-42-5b79b52ce9ba05b9.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-42-f0d4be3cfe87263b.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-42-e6a6ef89ac336a72.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-42-015e33486df43a8e.geojson.gz"
+      ],
+      "Laboratorios mecánica dental": [
+        "province-42-0f290aecdb2556e6.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-42-e06b287cf93df771.geojson.gz"
+      ],
+      "Ortopedia": [
+        "province-42-f621cf0c00b6b0a3.geojson.gz"
+      ],
+      "Otros": [
+        "province-42-441b8694d868c75e.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-42-0e615038a42021aa.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-42-d1c114e8e31caae3.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-42-3b582c0334bb50a6.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-42-60b18d1d14a04592.geojson.gz"
+      ],
+      "Óptica": [
+        "province-42-a056e69151382c05.geojson.gz"
+      ]
+    },
+    "46": {
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-46.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-46.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-46.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-46.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-46.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-46.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-46.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-46.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-46.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-46.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-46.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-46.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-46.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-46.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-46.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-46.geojson.gz"
+      ],
+      "Dispositivo/emprendimiento de inclusión sociolaboral": [
+        "province-46.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-46.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-46.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-46.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-46.geojson.gz"
+      ],
+      "Medicina Laboral": [
+        "province-46.geojson.gz"
+      ],
+      "Ortopedia": [
+        "province-46.geojson.gz"
+      ],
+      "Otros": [
+        "province-46.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-46.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-46.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-46.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-46.geojson.gz"
+      ],
+      "Óptica": [
+        "province-46.geojson.gz"
+      ]
+    },
+    "50": {
+      "Agencias-servicios gubernamentales": [
+        "province-50-9b92ef11c0f020ec.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-50-029f20b777d25b23.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-50-27384477dffa9bc3.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-50-8744e6dc91b3a695.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-50-63d25f33e656a755.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-50-905e2a991b9f3d0e.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-50-0a4b72d51baccde3.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-50-61b1ba6e7196b3c2.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-50-3775a7ef60a152cf.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-50-012d90225313d5bf.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-50-217a10153d547ac0.geojson.gz"
+      ],
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-50-0b0fe2c1061d6cff.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-50-4a4742ec63c81363.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-50-5d5c530399029064.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-50-e2391f475d8d8731.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-50-47abc044c99f4b8d.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Diagnostico por Imágenes odontológicas": [
+        "province-50-7b03b4403ef66539.geojson.gz"
+      ],
+      "Gabinete de Podología": [
+        "province-50-4292a7404a6754e0.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-50-f0d4be3cfe87263b.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-50-e6a6ef89ac336a72.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-50-015e33486df43a8e.geojson.gz"
+      ],
+      "Laboratorios mecánica dental": [
+        "province-50-0f290aecdb2556e6.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-50-e06b287cf93df771.geojson.gz"
+      ],
+      "Medicina Laboral": [
+        "province-50-9e47e1aacd041a1a.geojson.gz"
+      ],
+      "Otros": [
+        "province-50-441b8694d868c75e.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-50-0e615038a42021aa.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-50-d1c114e8e31caae3.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-50-3b582c0334bb50a6.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-50-8177b32fcdfe6b3a.geojson.gz"
+      ],
+      "Vivienda de estancia transitoria con apoyos para la vida autónoma": [
+        "province-50-963df99115ad3856.geojson.gz"
+      ],
+      "Vivienda de estancia variable a prolongada con apoyos para la vida autónoma": [
+        "province-50-a145a24189906255.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-50-60b18d1d14a04592.geojson.gz"
+      ],
+      "Óptica": [
+        "province-50-a056e69151382c05.geojson.gz"
+      ]
+    },
+    "54": {
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-54.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-54.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-54.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-54.geojson.gz"
+      ],
+      "Agencias-servicios gubernamentales": [
+        "province-54.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-54.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-54.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-54.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-54.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-54.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-54.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-54.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-54.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-54.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-54.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-54.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Diagnostico por Imágenes odontológicas": [
+        "province-54.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-54.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-54.geojson.gz"
+      ],
+      "Otros": [
+        "province-54.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-54.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-54.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-54.geojson.gz"
+      ],
+      "Vivienda de estancia variable a prolongada con apoyos para la vida autónoma": [
+        "province-54.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-54.geojson.gz"
+      ],
+      "Óptica": [
+        "province-54.geojson.gz"
+      ]
+    },
+    "58": {
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-58.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-58.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-58.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-58.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-58.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-58.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-58.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-58.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-58.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-58.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-58.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-58.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-58.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-58.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-58.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-58.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-58.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-58.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-58.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-58.geojson.gz"
+      ],
+      "Laboratorios mecánica dental": [
+        "province-58.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-58.geojson.gz"
+      ],
+      "Ortopedia": [
+        "province-58.geojson.gz"
+      ],
+      "Otros": [
+        "province-58.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-58.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-58.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-58.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-58.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-58.geojson.gz"
+      ],
+      "Óptica": [
+        "province-58.geojson.gz"
+      ]
+    },
+    "62": {
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-62.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-62.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-62.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-62.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-62.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-62.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-62.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-62.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-62.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-62.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-62.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-62.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-62.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-62.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-62.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-62.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Diagnostico por Imágenes odontológicas": [
+        "province-62.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-62.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-62.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-62.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-62.geojson.gz"
+      ],
+      "Laboratorios mecánica dental": [
+        "province-62.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-62.geojson.gz"
+      ],
+      "Ortopedia": [
+        "province-62.geojson.gz"
+      ],
+      "Otros": [
+        "province-62.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-62.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-62.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-62.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-62.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-62.geojson.gz"
+      ],
+      "Óptica": [
+        "province-62.geojson.gz"
+      ]
+    },
+    "66": {
+      "Bajo riesgo con internación simple": [
+        "province-66.geojson.gz"
+      ],
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-66.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-66.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-66.geojson.gz"
+      ],
+      "Otros": [
+        "province-66.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-66.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-66.geojson.gz"
+      ],
+      "Óptica": [
+        "province-66.geojson.gz"
+      ],
+      "Agencias-servicios gubernamentales": [
+        "province-66.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-66.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-66.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-66.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-66.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-66.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-66.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-66.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-66.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-66.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-66.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-66.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-66.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-66.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-66.geojson.gz"
+      ],
+      "Gabinete de Podología": [
+        "province-66.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-66.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-66.geojson.gz"
+      ],
+      "Laboratorios mecánica dental": [
+        "province-66.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-66.geojson.gz"
+      ],
+      "Medicina Laboral": [
+        "province-66.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-66.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-66.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-66.geojson.gz"
+      ]
+    },
+    "70": {
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-70.geojson.gz"
+      ],
+      "Agencias-servicios gubernamentales": [
+        "province-70.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-70.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-70.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-70.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-70.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-70.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-70.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-70.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-70.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-70.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-70.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-70.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-70.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-70.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-70.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-70.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-70.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-70.geojson.gz"
+      ],
+      "Laboratorios mecánica dental": [
+        "province-70.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-70.geojson.gz"
+      ],
+      "Otros": [
+        "province-70.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-70.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-70.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-70.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-70.geojson.gz"
+      ],
+      "Vivienda de estancia variable a prolongada con apoyos para la vida autónoma": [
+        "province-70.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-70.geojson.gz"
+      ],
+      "Óptica": [
+        "province-70.geojson.gz"
+      ]
+    },
+    "74": {
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-74.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-74.geojson.gz"
+      ],
+      "Agencias-servicios gubernamentales": [
+        "province-74.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-74.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-74.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-74.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-74.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-74.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-74.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-74.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-74.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-74.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-74.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-74.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-74.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-74.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-74.geojson.gz"
+      ],
+      "Laboratorios mecánica dental": [
+        "province-74.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-74.geojson.gz"
+      ],
+      "Medicina Laboral": [
+        "province-74.geojson.gz"
+      ],
+      "Otros": [
+        "province-74.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-74.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-74.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-74.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-74.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-74.geojson.gz"
+      ],
+      "Óptica": [
+        "province-74.geojson.gz"
+      ]
+    },
+    "78": {
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-78.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-78.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-78.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-78.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-78.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-78.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-78.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-78.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-78.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-78.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-78.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-78.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-78.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-78.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-78.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-78.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-78.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-78.geojson.gz"
+      ],
+      "Medicina Laboral": [
+        "province-78.geojson.gz"
+      ],
+      "Otros": [
+        "province-78.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-78.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-78.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-78.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-78.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-78.geojson.gz"
+      ],
+      "Óptica": [
+        "province-78.geojson.gz"
+      ]
+    },
+    "82": {
+      "Agencias-servicios gubernamentales": [
+        "province-82-9b92ef11c0f020ec.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-82-029f20b777d25b23.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-82-27384477dffa9bc3.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-82-d4bb2197f9254b4e.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-82-8744e6dc91b3a695.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-82-63d25f33e656a755.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-82-905e2a991b9f3d0e.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-82-0a4b72d51baccde3.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-82-61b1ba6e7196b3c2.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-82-3775a7ef60a152cf.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-82-012d90225313d5bf.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-82-217a10153d547ac0.geojson.gz"
+      ],
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-82-0b0fe2c1061d6cff.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-82-4a4742ec63c81363.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-82-5d5c530399029064.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-82-e2391f475d8d8731.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-82-47abc044c99f4b8d.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-82-5b79b52ce9ba05b9.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-82-f0d4be3cfe87263b.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-82-e6a6ef89ac336a72.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-82-015e33486df43a8e.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-82-e06b287cf93df771.geojson.gz"
+      ],
+      "Medicina Laboral": [
+        "province-82-9e47e1aacd041a1a.geojson.gz"
+      ],
+      "Ortopedia": [
+        "province-82-f621cf0c00b6b0a3.geojson.gz"
+      ],
+      "Otros": [
+        "province-82-441b8694d868c75e.geojson.gz"
+      ],
+      "Residuos Patológicos": [
+        "province-82-9ef9205613876f71.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-82-0e615038a42021aa.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-82-d1c114e8e31caae3.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-82-3b582c0334bb50a6.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-82-8177b32fcdfe6b3a.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-82-60b18d1d14a04592.geojson.gz"
+      ],
+      "Óptica": [
+        "province-82-a056e69151382c05.geojson.gz"
+      ]
+    },
+    "86": {
+      "Agencias-servicios gubernamentales": [
+        "province-86-9b92ef11c0f020ec.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-86-029f20b777d25b23.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-86-27384477dffa9bc3.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-86-d4bb2197f9254b4e.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-86-8744e6dc91b3a695.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-86-63d25f33e656a755.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-86-905e2a991b9f3d0e.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-86-0a4b72d51baccde3.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-86-61b1ba6e7196b3c2.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-86-3775a7ef60a152cf.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-86-012d90225313d5bf.geojson.gz"
+      ],
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-86-0b0fe2c1061d6cff.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-86-4a4742ec63c81363.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-86-5d5c530399029064.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-86-e2391f475d8d8731.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-86-47abc044c99f4b8d.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-86-5b79b52ce9ba05b9.geojson.gz"
+      ],
+      "Gabinete de Podología": [
+        "province-86-4292a7404a6754e0.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-86-f0d4be3cfe87263b.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-86-e6a6ef89ac336a72.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-86-015e33486df43a8e.geojson.gz"
+      ],
+      "Laboratorios mecánica dental": [
+        "province-86-0f290aecdb2556e6.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-86-e06b287cf93df771.geojson.gz"
+      ],
+      "Otros": [
+        "province-86-441b8694d868c75e.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-86-0e615038a42021aa.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-86-d1c114e8e31caae3.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-86-3b582c0334bb50a6.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-86-8177b32fcdfe6b3a.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-86-60b18d1d14a04592.geojson.gz"
+      ],
+      "Óptica": [
+        "province-86-a056e69151382c05.geojson.gz"
+      ]
+    },
+    "": {
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-.geojson.gz"
+      ],
+      "Ortopedia": [
+        "province-.geojson.gz"
+      ],
+      "Otros": [
+        "province-.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-.geojson.gz"
+      ],
+      "Óptica": [
+        "province-.geojson.gz"
+      ]
+    },
+    "90": {
+      "Con atención médica diaria y con especialidades y/o otras profesiones": [
+        "province-90.geojson.gz"
+      ],
+      "Con atención médica general por lo menos 3 días de la semana": [
+        "province-90.geojson.gz"
+      ],
+      "Laboratorio de Análisis Clínicos": [
+        "province-90.geojson.gz"
+      ],
+      "Sistema de Atención extra hospitalaria": [
+        "province-90.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva": [
+        "province-90.geojson.gz"
+      ],
+      "Alto riesgo con terapia intensiva especializada": [
+        "province-90.geojson.gz"
+      ],
+      "Análisis clínicos y Laboratorio de Anatomía Patológica": [
+        "province-90.geojson.gz"
+      ],
+      "Bajo riesgo con internación simple": [
+        "province-90.geojson.gz"
+      ],
+      "Bancos de Sangre": [
+        "province-90.geojson.gz"
+      ],
+      "Centro de Diálisis": [
+        "province-90.geojson.gz"
+      ],
+      "Centro de día": [
+        "province-90.geojson.gz"
+      ],
+      "Centro de salud mental": [
+        "province-90.geojson.gz"
+      ],
+      "Centro educativo terapéutico": [
+        "province-90.geojson.gz"
+      ],
+      "Centro Rehabilitación motora": [
+        "province-90.geojson.gz"
+      ],
+      "Centro tratamientos oncológicos": [
+        "province-90.geojson.gz"
+      ],
+      "Con guardia permanente": [
+        "province-90.geojson.gz"
+      ],
+      "Diagnostico por Imágenes": [
+        "province-90.geojson.gz"
+      ],
+      "Diagnostico por Imágenes odontológicas": [
+        "province-90.geojson.gz"
+      ],
+      "Diagnostico por Imágenes y Laboratorio Análisis clínicos": [
+        "province-90.geojson.gz"
+      ],
+      "Dispositivo/emprendimiento de inclusión sociolaboral": [
+        "province-90.geojson.gz"
+      ],
+      "Gabinete de Podología": [
+        "province-90.geojson.gz"
+      ],
+      "Internación Domiciliaria": [
+        "province-90.geojson.gz"
+      ],
+      "Laboratorio de Anatomía patológica": [
+        "province-90.geojson.gz"
+      ],
+      "Laboratorios mecánica dental": [
+        "province-90.geojson.gz"
+      ],
+      "Mediano riesgo con internación con cuidados especiales": [
+        "province-90.geojson.gz"
+      ],
+      "Otros": [
+        "province-90.geojson.gz"
+      ],
+      "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
+        "province-90.geojson.gz"
+      ],
+      "Unidades de Atención Móviles": [
+        "province-90.geojson.gz"
+      ],
+      "Vacunatorios": [
+        "province-90.geojson.gz"
+      ],
+      "Vivienda para personas mayores": [
+        "province-90.geojson.gz"
+      ],
+      "Óptica": [
+        "province-90.geojson.gz"
+      ]
+    }
+  },
+  "map_simplification": {
+    "overview_degrees": 0.03,
+    "province_degrees": 0.001
+  }
+}

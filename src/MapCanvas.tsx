@@ -12,26 +12,18 @@ type Props = {
 };
 
 const EMPTY: FeatureCollection = { type: 'FeatureCollection', features: [] };
-const accessCache = new Map<string, Promise<FeatureCollection>>();
-
 async function accessChunk(url: string): Promise<FeatureCollection> {
-  let pending = accessCache.get(url);
-  if (!pending) {
-    pending = fetch(url).then(async (response) => {
-      if (!response.ok) throw new Error(`No se pudo cargar ${url}`);
-      const bytes = await response.arrayBuffer();
-      const isGzip = new Uint8Array(bytes, 0, Math.min(bytes.byteLength, 2))[0] === 0x1f
-        && new Uint8Array(bytes, 0, Math.min(bytes.byteLength, 2))[1] === 0x8b;
-      if (isGzip) {
-        if (typeof DecompressionStream === 'undefined') throw new Error('Este navegador no puede descomprimir los datos de isócronas');
-        const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
-        return await new Response(stream).json() as FeatureCollection;
-      }
-      return JSON.parse(new TextDecoder().decode(bytes)) as FeatureCollection;
-    });
-    accessCache.set(url, pending);
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`No se pudo cargar ${url} (HTTP ${response.status})`);
+  const bytes = await response.arrayBuffer();
+  const header = new Uint8Array(bytes, 0, Math.min(bytes.byteLength, 2));
+  const isGzip = header[0] === 0x1f && header[1] === 0x8b;
+  if (isGzip) {
+    if (typeof DecompressionStream === 'undefined') throw new Error('Este navegador no puede descomprimir los datos del mapa');
+    const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+    return await new Response(stream).json() as FeatureCollection;
   }
-  return pending;
+  return JSON.parse(new TextDecoder().decode(bytes)) as FeatureCollection;
 }
 
 function boundsOf(geometry: unknown): LngLatBoundsLike | null {
@@ -57,6 +49,7 @@ export default function MapCanvas({ mode, provinceId, categories, threshold, rou
   const routeSourceRef = useRef<GeoJSONSource | null>(null);
   const onProvinceRef = useRef(onProvince);
   const [loaded, setLoaded] = useState(false);
+  const [accessStatus, setAccessStatus] = useState<{ kind: 'loading' | 'error'; message: string } | null>(null);
   onProvinceRef.current = onProvince;
 
   useEffect(() => {
@@ -144,23 +137,47 @@ export default function MapCanvas({ mode, provinceId, categories, threshold, rou
   useEffect(() => {
     if (!loaded || mode !== 'access') return;
     let cancelled = false;
+    const source = mapRef.current?.getSource('isochrones') as GeoJSONSource | undefined;
+    source?.setData(EMPTY as never);
+    setAccessStatus({ kind: 'loading', message: provinceId ? 'Cargando isocronas de la provincia...' : 'Cargando vista nacional...' });
     const load = async () => {
       try {
         const response = await fetch('/data/access/manifest.json');
-        if (!response.ok || !(response.headers.get('content-type') ?? '').toLowerCase().includes('json')) throw new Error('Manifest not generated');
-        const manifest = await response.json() as { provinces: Record<string, string[]> };
-        const files = provinceId ? (manifest.provinces[provinceId] ?? []) : Object.values(manifest.provinces).flat();
-        const collections = await Promise.all(files.map((file) => accessChunk(`/data/access/${file}`)));
+        if (!response.ok || !(response.headers.get('content-type') ?? '').toLowerCase().includes('json')) throw new Error('No se encontrÃ³ el manifiesto /data/access/manifest.json');
+        const manifest = await response.json() as {
+          overview?: string;
+          provinces: Record<string, string[]>;
+          province_categories?: Record<string, Record<string, string[]>>;
+        };
+        let files: string[];
+        if (provinceId) {
+          const categoryFiles = manifest.province_categories?.[provinceId];
+          files = categories.length && categoryFiles
+            ? [...new Set(categories.flatMap((category) => categoryFiles[category] ?? []))]
+            : manifest.provinces[provinceId] ?? [];
+        } else {
+          if (!manifest.overview) throw new Error('El manifiesto no incluye la vista nacional simplificada. VolvÃ© a generar los archivos de acceso.');
+          files = [manifest.overview];
+        }
+        if (files.length === 0) {
+          if (!cancelled) setAccessStatus({ kind: 'error', message: 'No hay isÃ³cronas para esta selecciÃ³n. ProbÃ¡ otra tipologÃ­a o provincia.' });
+          return;
+        }
+        const features: FeatureCollection['features'] = [];
+        for (const file of files) {
+          const collection = await accessChunk(`/data/access/${file}`);
+          features.push(...collection.features);
+        }
         if (cancelled) return;
-        const source = mapRef.current?.getSource('isochrones') as GeoJSONSource | undefined;
-        source?.setData({ type: 'FeatureCollection', features: collections.flatMap((item) => item.features) } as never);
-      } catch {
-        if (!cancelled) (mapRef.current?.getSource('isochrones') as GeoJSONSource | undefined)?.setData(EMPTY as never);
+        (mapRef.current?.getSource('isochrones') as GeoJSONSource | undefined)?.setData({ type: 'FeatureCollection', features } as never);
+        setAccessStatus(null);
+      } catch (error) {
+        if (!cancelled) setAccessStatus({ kind: 'error', message: error instanceof Error ? error.message : 'Error desconocido al cargar las isÃ³cronas' });
       }
     };
     void load();
     return () => { cancelled = true; };
-  }, [loaded, mode, provinceId]);
+  }, [loaded, mode, provinceId, categories]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -228,5 +245,8 @@ export default function MapCanvas({ mode, provinceId, categories, threshold, rou
     if (map && bounds) map.fitBounds(bounds, { padding: 80, maxZoom: 13, duration: 800 });
   }, [loaded, route]);
 
-  return <div ref={container} className="map-canvas" aria-label="Mapa interactivo de establecimientos y accesibilidad sanitaria en Argentina" />;
+  return <>
+    <div ref={container} className="map-canvas" aria-label="Mapa interactivo de establecimientos y accesibilidad sanitaria en Argentina" />
+    {mode === 'access' && accessStatus && <div className={`map-data-status ${accessStatus.kind}`} role="status">{accessStatus.message}</div>}
+  </>;
 }

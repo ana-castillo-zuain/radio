@@ -1,0 +1,1466 @@
+{
+  "generated_at": "2026-10-14T08:44:27.696038+00:00",
+  "omitted_facility_count": 146,
+  "omitted_facilities": [
+    {
+      "facility_id": "10100352124013",
+      "category": "Bajo riesgo con internación simple",
+      "coordinates": [
+        -67.412109375,
+        -27.1373683597955
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791590322204}}"
+    },
+    {
+      "facility_id": "14940142195007",
+      "category": "Bajo riesgo con internación simple",
+      "coordinates": [
+        -68.3139633336807,
+        -54.6854047832482
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791590478041}}"
+    },
+    {
+      "facility_id": "50060282317789",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -60.3467143513262,
+        -36.4258541323304
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791737477367}}"
+    },
+    {
+      "facility_id": "50061262201479",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -58.8271420649999,
+        -34.2035622719999
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594472277}}"
+    },
+    {
+      "facility_id": "50064902317491",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -60.2148080210645,
+        -36.3003955824558
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791737491827}}"
+    },
+    {
+      "facility_id": "50067492202335",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -58.474645614624,
+        -34.4070778401031
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594474248}}"
+    },
+    {
+      "facility_id": "50068052202754",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -58.5648691919999,
+        -34.3501215589999
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594803512}}"
+    },
+    {
+      "facility_id": "50180982140238",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -58.4741,
+        -28.2852
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791737363588}}"
+    },
+    {
+      "facility_id": "50260212329062",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -65.302734375,
+        -42.2285173562085
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594025128}}"
+    },
+    {
+      "facility_id": "50260352129203",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -71.19140625,
+        -43.4529188935546
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593454634}}"
+    },
+    {
+      "facility_id": "50260772129086",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -65.302734375,
+        -42.9403392336318
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593183643}}"
+    },
+    {
+      "facility_id": "50260772129108",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -65.390625,
+        -43.0046471277944
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594059260}}"
+    },
+    {
+      "facility_id": "50260772129124",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -65.830078125,
+        -43.0046471277944
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594729585}}"
+    },
+    {
+      "facility_id": "50260772330720",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -65.3156637065448,
+        -43.2554496492787
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791592608221}}"
+    },
+    {
+      "facility_id": "50380702150927",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -65.06668,
+        -23.6
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791736982841}}"
+    },
+    {
+      "facility_id": "50460422155699",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -64.510795,
+        -29.1582
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738120815}}"
+    },
+    {
+      "facility_id": "50500562157146",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -67.806748,
+        -32.564607
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594913855}}"
+    },
+    {
+      "facility_id": "50500562157226",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -67.570853,
+        -32.607424
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593749307}}"
+    },
+    {
+      "facility_id": "50620142170103",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -66.005859375,
+        -39.9097362345371
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593655072}}"
+    },
+    {
+      "facility_id": "50620142170179",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -65.40159,
+        -39.19275
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593556826}}"
+    },
+    {
+      "facility_id": "50620772170111",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -65.830078125,
+        -41.771311679764
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593568903}}"
+    },
+    {
+      "facility_id": "50620912170084",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -69.08203125,
+        -41.1786539723316
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594745374}}"
+    },
+    {
+      "facility_id": "50740562380644",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -65.91796875,
+        -33.806538025096
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791737168652}}"
+    },
+    {
+      "facility_id": "50860072192663",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -62.8532999999999,
+        -29.2933
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593238031}}"
+    },
+    {
+      "facility_id": "50860142192274",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -61.8942260742187,
+        -25.948783711873
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593526798}}"
+    },
+    {
+      "facility_id": "50861192192354",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -61.9667,
+        -27.2167
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593275964}}"
+    },
+    {
+      "facility_id": "50861332192259",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -64.0523529052734,
+        -26.2041181921002
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593677159}}"
+    },
+    {
+      "facility_id": "50861612192329",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -64.3270999999999,
+        -27.5625
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594975996}}"
+    },
+    {
+      "facility_id": "50900492196405",
+      "category": "Con atención médica diaria y con especialidades y/o otras profesiones",
+      "coordinates": [
+        -65.5279541015625,
+        -27.8287536287241
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593918937}}"
+    },
+    {
+      "facility_id": "50060702222531",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -59.4478350859999,
+        -33.7556717419999
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738489673}}"
+    },
+    {
+      "facility_id": "50060702222532",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -59.3809833239999,
+        -33.7498774119999
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738538613}}"
+    },
+    {
+      "facility_id": "50100212124096",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -66.4027404785156,
+        -27.919193572615
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738994670}}"
+    },
+    {
+      "facility_id": "50100282124420",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -68.1193542480468,
+        -26.2927993992901
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739564667}}"
+    },
+    {
+      "facility_id": "50100352124124",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -66.8264007568359,
+        -27.359571227053
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738828175}}"
+    },
+    {
+      "facility_id": "50100352124168",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -67.0619201660156,
+        -27.0799143000795
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739137773}}"
+    },
+    {
+      "facility_id": "50100352124414",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -66.884765625,
+        -27.6592036443079
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739599024}}"
+    },
+    {
+      "facility_id": "50100422124063",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -65.6385040283203,
+        -29.421656523254
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738753754}}"
+    },
+    {
+      "facility_id": "50100702124242",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -65.5643463134765,
+        -29.217504235592
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738784537}}"
+    },
+    {
+      "facility_id": "50100842124619",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -66.11572265625,
+        -28.0028893257084
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739676733}}"
+    },
+    {
+      "facility_id": "50100912124166",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -66.1342620849609,
+        -26.8013963954595
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739043447}}"
+    },
+    {
+      "facility_id": "50101052124120",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -67.203369140625,
+        -28.2475377251796
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739150419}}"
+    },
+    {
+      "facility_id": "50101052124188",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -67.5975036621093,
+        -27.0841938100438
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739193933}}"
+    },
+    {
+      "facility_id": "50101052124427",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -67.8213500976562,
+        -27.2448625214972
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739655033}}"
+    },
+    {
+      "facility_id": "50140282232387",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -64.7067260742187,
+        -30.351546261929
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739492460}}"
+    },
+    {
+      "facility_id": "50140282232443",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -64.7402000427246,
+        -31.2182333882894
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739476199}}"
+    },
+    {
+      "facility_id": "50141402231516",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -62.4228519201278,
+        -31.0253216186662
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738679637}}"
+    },
+    {
+      "facility_id": "50300632142171",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -58.556366,
+        -34.000176
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738683313}}"
+    },
+    {
+      "facility_id": "50380842150427",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -66.1451999999999,
+        -23.0848
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739602657}}"
+    },
+    {
+      "facility_id": "50380842150429",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -66.5675354003906,
+        -23.912204170785
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739501492}}"
+    },
+    {
+      "facility_id": "50380942150158",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -65.1595669999999,
+        -23.565762
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739092480}}"
+    },
+    {
+      "facility_id": "50380982150437",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -65.4945,
+        -23.5033
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739595389}}"
+    },
+    {
+      "facility_id": "50460352155070",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -66.25725,
+        -30.313756
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738806243}}"
+    },
+    {
+      "facility_id": "50460352155150",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -66.796875,
+        -29.993002284551
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738735671}}"
+    },
+    {
+      "facility_id": "50460422155104",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -67.38326,
+        -29.28584
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739154044}}"
+    },
+    {
+      "facility_id": "50460422155118",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -66.97265625,
+        -29.5352295629484
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739039837}}"
+    },
+    {
+      "facility_id": "50460702155125",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -66.51926,
+        -30.93283
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738875355}}"
+    },
+    {
+      "facility_id": "50500562157378",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -67.570853,
+        -32.607424
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738897085}}"
+    },
+    {
+      "facility_id": "50500562158914",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -67.371099,
+        -32.583286
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739660486}}"
+    },
+    {
+      "facility_id": "50620212170194",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -71.19140625,
+        -41.5085772974393
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739105126}}"
+    },
+    {
+      "facility_id": "50660562173344",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -63.5298854112625,
+        -22.9033240530374
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738732102}}"
+    },
+    {
+      "facility_id": "50660702173256",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -65.051972,
+        -22.84323
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739025469}}"
+    },
+    {
+      "facility_id": "50661612173293",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -65.213647,
+        -22.566253
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739355034}}"
+    },
+    {
+      "facility_id": "50661612173316",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -65.223869,
+        -22.546459
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738659848}}"
+    },
+    {
+      "facility_id": "50740352180549",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -65.91796875,
+        -33.806538025096
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739705578}}"
+    },
+    {
+      "facility_id": "50860632192535",
+      "category": "Con atención médica general por lo menos 3 días de la semana",
+      "coordinates": [
+        -64.45396,
+        -28.24506
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739402138}}"
+    },
+    {
+      "facility_id": "50067492102334",
+      "category": "Con guardia permanente",
+      "coordinates": [
+        -58.2528251649999,
+        -34.1833071779999
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740064350}}"
+    },
+    {
+      "facility_id": "50260142129217",
+      "category": "Con guardia permanente",
+      "coordinates": [
+        -71.103515625,
+        -43.0688877741696
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740109533}}"
+    },
+    {
+      "facility_id": "50260352129199",
+      "category": "Con guardia permanente",
+      "coordinates": [
+        -71.103515625,
+        -43.0688877741696
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739981200}}"
+    },
+    {
+      "facility_id": "50260352129227",
+      "category": "Con guardia permanente",
+      "coordinates": [
+        -70.83984375,
+        -42.8759641023825
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739972201}}"
+    },
+    {
+      "facility_id": "50260702129205",
+      "category": "Con guardia permanente",
+      "coordinates": [
+        -67.67578125,
+        -43.2612061247997
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739995710}}"
+    },
+    {
+      "facility_id": "50260702129215",
+      "category": "Con guardia permanente",
+      "coordinates": [
+        -68.115234375,
+        -43.3890819391174
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739961359}}"
+    },
+    {
+      "facility_id": "50661402173231",
+      "category": "Con guardia permanente",
+      "coordinates": [
+        -64.8244535923004,
+        -26.204604314057
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740100465}}"
+    },
+    {
+      "facility_id": "51064342317767",
+      "category": "Diagnostico por Imágenes",
+      "coordinates": [
+        -62.4341166950762,
+        -36.9416607679856
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740243358}}"
+    },
+    {
+      "facility_id": "53060562318004",
+      "category": "Internación Domiciliaria",
+      "coordinates": [
+        -59.0882803872227,
+        -35.8932476637931
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740471405}}"
+    },
+    {
+      "facility_id": "51380632350885",
+      "category": "Laboratorio de Análisis Clínicos",
+      "coordinates": [
+        -65.5224609375,
+        -23.3624285934088
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791847918727}}"
+    },
+    {
+      "facility_id": "53740562380645",
+      "category": "Laboratorios mecánica dental",
+      "coordinates": [
+        -65.91796875,
+        -33.806538025096
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791848530366}}"
+    },
+    {
+      "facility_id": "50100142124093",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.7119750976562,
+        -29.1473638312266
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954258208}}"
+    },
+    {
+      "facility_id": "50100212124090",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -66.2200927734375,
+        -27.4735520142697
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849696393}}"
+    },
+    {
+      "facility_id": "50100282124421",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -67.6812744140625,
+        -25.5151787443985
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954844169}}"
+    },
+    {
+      "facility_id": "50100422124250",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -66.0185623168945,
+        -28.4834788241378
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849718314}}"
+    },
+    {
+      "facility_id": "50100702124097",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.5217742919921,
+        -29.1569585113606
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954371336}}"
+    },
+    {
+      "facility_id": "50100702124228",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.4469299316406,
+        -29.0765754030453
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849617032}}"
+    },
+    {
+      "facility_id": "50100702124234",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.6227111816406,
+        -29.1209738408525
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954398594}}"
+    },
+    {
+      "facility_id": "50100702124246",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.6515502929687,
+        -29.0966770679111
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849515705}}"
+    },
+    {
+      "facility_id": "50100982124232",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.3315734863281,
+        -28.0380464193699
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849754683}}"
+    },
+    {
+      "facility_id": "50101052124148",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -67.3767471313476,
+        -28.20185999102
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849770518}}"
+    },
+    {
+      "facility_id": "50101052124150",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -67.2486877441406,
+        -28.2511669052314
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954292644}}"
+    },
+    {
+      "facility_id": "50220632126322",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -61.7348299999999,
+        -24.8131
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954407773}}"
+    },
+    {
+      "facility_id": "50220632126414",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -62.1499999999999,
+        -24.3833
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954467928}}"
+    },
+    {
+      "facility_id": "50220632126421",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -60.597235,
+        -25.190482
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954449684}}"
+    },
+    {
+      "facility_id": "50220632126455",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -62.2536011999999,
+        -25.021564
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954229228}}"
+    },
+    {
+      "facility_id": "50260352129231",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -71.8322296114638,
+        -42.8340338690599
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849569860}}"
+    },
+    {
+      "facility_id": "50260352129239",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -71.817626953125,
+        -43.0608613713432
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954435040}}"
+    },
+    {
+      "facility_id": "50260842129241",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -70.927734375,
+        -45.1510532655633
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954538231}}"
+    },
+    {
+      "facility_id": "50380492150547",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.9921264648437,
+        -22.3227654165804
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955041699}}"
+    },
+    {
+      "facility_id": "50380942150064",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.2982539999999,
+        -23.775
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849828565}}"
+    },
+    {
+      "facility_id": "50380942150068",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.2982539999999,
+        -23.775
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954260015}}"
+    },
+    {
+      "facility_id": "50380942150128",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.213951,
+        -23.61313
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954263643}}"
+    },
+    {
+      "facility_id": "50380942150230",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.297882,
+        -23.840566
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954503910}}"
+    },
+    {
+      "facility_id": "50380942150271",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.185048,
+        -23.43662
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849479725}}"
+    },
+    {
+      "facility_id": "50380942150273",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.251701,
+        -23.73657
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954223804}}"
+    },
+    {
+      "facility_id": "50381052150327",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.06668,
+        -23.6
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954614253}}"
+    },
+    {
+      "facility_id": "50420492153059",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -67.412109375,
+        -36.5272948145462
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849886206}}"
+    },
+    {
+      "facility_id": "50460142155063",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -66.35246,
+        -29.4642
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954536420}}"
+    },
+    {
+      "facility_id": "50461052155547",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -67.3599243164062,
+        -30.0750361660437
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955141069}}"
+    },
+    {
+      "facility_id": "50461122155116",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -66.1904302239418,
+        -31.2259552295127
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954559920}}"
+    },
+    {
+      "facility_id": "50580772167453",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -70.6256103515625,
+        -36.9586711315303
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954967167}}"
+    },
+    {
+      "facility_id": "50581122167687",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -69.8208618164062,
+        -38.8653748516116
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955027160}}"
+    },
+    {
+      "facility_id": "50581122167694",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -70.323486328125,
+        -38.8290101975196
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955066954}}"
+    },
+    {
+      "facility_id": "50581122167698",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -70.411376953125,
+        -38.7519413494708
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954998188}}"
+    },
+    {
+      "facility_id": "50581122167699",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -70.2932739257812,
+        -39.123668254026
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954983609}}"
+    },
+    {
+      "facility_id": "50581122167701",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -69.9636840820312,
+        -38.9594087924542
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955057868}}"
+    },
+    {
+      "facility_id": "50660072173365",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -63.444217,
+        -24.260038
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954590691}}"
+    },
+    {
+      "facility_id": "50660702173373",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.01649,
+        -22.705696
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849506776}}"
+    },
+    {
+      "facility_id": "50660702173453",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.1835691928863,
+        -22.7008362256854
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849640718}}"
+    },
+    {
+      "facility_id": "50660702173466",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.231806,
+        -22.725679
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849651214}}"
+    },
+    {
+      "facility_id": "50660912174309",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -66.0401326417923,
+        -24.6744569587141
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955202622}}"
+    },
+    {
+      "facility_id": "50661332173287",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -63.169774711132,
+        -22.9659764630616
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849774184}}"
+    },
+    {
+      "facility_id": "50661332174312",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -63.0113554000854,
+        -23.9395899809503
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955166406}}"
+    },
+    {
+      "facility_id": "50661402174658",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -64.728865,
+        -26.214843
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955209827}}"
+    },
+    {
+      "facility_id": "50661612174357",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -64.8714405298233,
+        -22.2535550162921
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955208008}}"
+    },
+    {
+      "facility_id": "50700352177463",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -67.4176025390625,
+        -31.2315916720505
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954918382}}"
+    },
+    {
+      "facility_id": "50701192177189",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -67.399629,
+        -30.914957
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954225614}}"
+    },
+    {
+      "facility_id": "50740422180120",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -66.4494323730468,
+        -35.78662688467
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849512112}}"
+    },
+    {
+      "facility_id": "50740422180124",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -66.2750244140625,
+        -35.6148836824543
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849411058}}"
+    },
+    {
+      "facility_id": "50820982184616",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -59.8590087999999,
+        -29.5352296
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849681560}}"
+    },
+    {
+      "facility_id": "50860142192760",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -62.44968,
+        -26.30889
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954807918}}"
+    },
+    {
+      "facility_id": "50860352192178",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -64.3270999999999,
+        -27.5625
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849436405}}"
+    },
+    {
+      "facility_id": "50860492192845",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -64.29232,
+        -28.08605
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954896625}}"
+    },
+    {
+      "facility_id": "50860632192625",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -64.54997384546,
+        -28.6499616488318
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954664803}}"
+    },
+    {
+      "facility_id": "50860772192301",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -62.41093,
+        -28.33782
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954657589}}"
+    },
+    {
+      "facility_id": "50860772192793",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -62.44001,
+        -28.26074
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954945522}}"
+    },
+    {
+      "facility_id": "50860982192753",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -63.3938,
+        -27.2771
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954902085}}"
+    },
+    {
+      "facility_id": "50861192192725",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -63.983327955002,
+        -29.1999812401301
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954826060}}"
+    },
+    {
+      "facility_id": "50861192192802",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -62.4099999999999,
+        -27.02
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954885813}}"
+    },
+    {
+      "facility_id": "50861192192831",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -62.4524688720703,
+        -26.9740973803042
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954804358}}"
+    },
+    {
+      "facility_id": "50861262192135",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -63.8270999999999,
+        -29.1229
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849608072}}"
+    },
+    {
+      "facility_id": "50861262192140",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -64.07209,
+        -29.2534
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849445443}}"
+    },
+    {
+      "facility_id": "50861332192206",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -63.966635227116,
+        -25.8662048690606
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954686526}}"
+    },
+    {
+      "facility_id": "50901052196484",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.5528739999999,
+        -26.563109
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849767057}}"
+    },
+    {
+      "facility_id": "50901052196494",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.603361066192,
+        -26.6179126763232
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849844796}}"
+    },
+    {
+      "facility_id": "50901052196540",
+      "category": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+      "coordinates": [
+        -65.604153,
+        -26.691361
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849893523}}"
+    },
+    {
+      "facility_id": "53064412317998",
+      "category": "Sistema de Atención extra hospitalaria",
+      "coordinates": [
+        -59.7474600747227,
+        -35.8933994940796
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955498767}}"
+    },
+    {
+      "facility_id": "53700282177940",
+      "category": "Óptica",
+      "coordinates": [
+        -68.75244140625,
+        -30.9022247051714
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791957007503}}"
+    },
+    {
+      "facility_id": "53700282377953",
+      "category": "Óptica",
+      "coordinates": [
+        -68.75244140625,
+        -30.9022247051714
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791957009284}}"
+    },
+    {
+      "facility_id": "53700562377947",
+      "category": "Óptica",
+      "coordinates": [
+        -68.75244140625,
+        -30.9022247051714
+      ],
+      "ors_code": 3099,
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791957040985}}"
+    }
+  ]
+}
