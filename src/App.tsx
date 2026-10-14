@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+﻿import { useEffect, useMemo, useState } from 'react';
 import MapCanvas from './MapCanvas';
 import { coveredSettlementCount, type SettlementCoverage } from './access';
 import type { Category, FacilityCollection, Metrics, ProvinceMetrics, RouteResult } from './types';
@@ -9,9 +9,9 @@ type GenerationReport = { omitted_facility_count: number };
 type AccessManifest = { complete: boolean; completed_jobs: number; total_jobs: number };
 
 const SECTIONS: { id: Section; number: string; name: string }[] = [
-  { id: 'system', number: '01', name: 'El sistema que vemos' },
-  { id: 'access', number: '02', name: 'No siempre está igual de cerca' },
-  { id: 'route', number: '03', name: '¿Dónde quedás vos?' },
+  { id: 'system', number: '01', name: 'Radiografía' },
+  { id: 'access', number: '02', name: 'Ecocardiograma' },
+  { id: 'route', number: '03', name: 'Análisis' },
 ];
 const TOUR_STEPS = [
   { label: '01 · DISTRIBUCIÓN', title: 'Leé el mapa del sistema', body: 'Cada punto es un efector del REFES con coordenadas válidas o recuperadas desde Healthsites. El resplandor ayuda a ver concentraciones; acercate para distinguir establecimientos individuales.' },
@@ -49,6 +49,10 @@ function Icon({ name }: { name: 'pin' | 'people' | 'arrow' | 'close' | 'search' 
   if (name === 'close') return <svg {...common}><path d="m18 6-12 12M6 6l12 12"/></svg>;
   if (name === 'search') return <svg {...common}><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>;
   return <svg {...common}><path d="M4 7h16M7 12h10m-7 5h4"/><circle cx="6" cy="7" r="1"/><circle cx="17" cy="12" r="1"/></svg>;
+}
+
+function ViewerHud() {
+  return <div className="viewer-hud"><span>ZOOM: MAPA</span><span>ROT: 0</span><span>L: 128 W: 256</span></div>;
 }
 
 function FacilityDrawer({
@@ -124,6 +128,7 @@ function App() {
   const [routeMessage, setRouteMessage] = useState('');
   const [route, setRoute] = useState<RouteResult | null>(null);
   const [tourStep, setTourStep] = useState<number | null>(null);
+  const [viewerTools, setViewerTools] = useState<string[]>([]);
 
   useEffect(() => {
     Promise.all([
@@ -156,8 +161,26 @@ function App() {
 
   function navigate(next: Section) {
     setSection(next);
-    document.getElementById(next)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
+
+  function moveView(direction: -1 | 1) {
+    const current = SECTIONS.findIndex((item) => item.id === section);
+    navigate(SECTIONS[(current + direction + SECTIONS.length) % SECTIONS.length].id);
+  }
+
+  function runViewerCommand(command: 'zoom-in' | 'zoom-out' | 'reset' | 'pan' | 'scale') {
+    window.dispatchEvent(new CustomEvent('radio-map-command', { detail: command }));
+  }
+
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if (event.target instanceof HTMLElement && ['INPUT', 'SELECT', 'TEXTAREA', 'BUTTON'].includes(event.target.tagName)) return;
+      if (event.key === 'ArrowRight') moveView(1);
+      if (event.key === 'ArrowLeft') moveView(-1);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [section]);
 
   async function searchNearest(event: React.FormEvent) {
     event.preventDefault();
@@ -196,19 +219,27 @@ function App() {
 
   return <div className="app-shell">
     <header className="site-header">
-      <a className="brand" href="#system" onClick={(event) => { event.preventDefault(); navigate('system'); }}>
-        <span className="brand-mark"><span /><span /><span /></span><span>RADIOGRAFÍA <i>·</i> SALUD ARGENTINA</span>
-      </a>
-      <nav className="main-nav" aria-label="Secciones">
-        {SECTIONS.map((item) => <button key={item.id} className={section === item.id ? 'active' : ''} onClick={() => navigate(item.id)}><span>{item.number}</span>{item.name}</button>)}
-      </nav>
-      <div className="header-actions"><button className="guide-button" onClick={() => setTourStep(0)}>Guía rápida <span>↗</span></button><a className="source-link" href="#fuentes">Fuentes <span>↗</span></a></div>
+      <div className="app-name">RADIO SALUD</div>
+      <div className="study-meta"><span>PACIENTE: SISTEMA DE SALUD</span><span>ID: 48-2607013747-1</span><span>EXAMEN: DIAGNÓSTICO DE COBERTURA</span><span>FECHA: 07/07/2026</span><span>HOSPITAL: ARGENTINA</span></div>
+      <div className="header-actions"><button className="guide-button" onClick={() => setTourStep(0)}>GUÍA <span>↗</span></button><a className="source-link" href="#fuentes">FUENTES <span>↗</span></a></div>
     </header>
 
     {dataError && <div className="data-error" role="alert"><strong>Falta preparar los datos.</strong> {dataError}</div>}
 
-    <main>
-      <section id="system" className="story-section story-system">
+    <div className="viewer-shell">
+      <aside className="clinical-sidebar">
+        <section className="sidebar-block"><div className="sidebar-title">STUDY DETAILS <span>−</span></div><dl><dt>ID</dt><dd>48-2607013747-1</dd><dt>EXAMEN</dt><dd>Diagnóstico de cobertura</dd><dt>FUENTES</dt><dd>REFES · REFEPS · INDEC</dd></dl></section>
+        <section className="sidebar-block"><div className="sidebar-title">VISTAS <span>−</span></div><nav className="sidebar-views" aria-label="Vistas del visor">{SECTIONS.map((item, index) => <button key={item.id} className={section === item.id ? 'selected' : ''} onClick={() => navigate(item.id)}><span>{index + 1}.</span>{item.name}{item.id === 'system' ? ' (X-Ray)' : ''}</button>)}</nav></section>
+        <section className="sidebar-block sidebar-diagnostics"><div className="sidebar-title">DIAGNÓSTICOS <span>−</span></div><strong>{provinceId ? provinceName.toUpperCase() : 'VISTA NACIONAL'}</strong><span>{section === 'access' ? `${threshold} MIN · ${selectedCategories.length ? `${selectedCategories.length} TIPOLOGÍAS` : 'TODAS LAS TIPOLOGÍAS'}` : section === 'route' ? (route ? 'RUTA CALCULADA' : 'ESPERANDO UBICACIÓN') : 'DISTRIBUCIÓN REFES'}</span>{partialAccess && section === 'access' && <b className="warning-diagnostic">CÁLCULO PARCIAL</b>}</section>
+        <section className="sidebar-block sidebar-thumbs"><div className="sidebar-title">THUMBNAIL <span>−</span></div>{SECTIONS.map((item, index) => <button key={item.id} className={section === item.id ? 'selected' : ''} onClick={() => navigate(item.id)}><i className={`thumbnail-preview thumb-${item.id}`} /><span>0{index + 1} · {item.name}</span></button>)}</section>
+        <div className="sidebar-foot"><span>VISORES DE DATOS</span><span>ARGENTINA · 2026</span></div>
+      </aside>
+      <div className="viewer-workspace">
+    <div className="viewer-nav"><button onClick={() => moveView(-1)}>[◀ PREV]</button><strong>VISTA: {SECTIONS.findIndex((item) => item.id === section) + 1} / 3 <span>[{SECTIONS.find((item) => item.id === section)?.name.toUpperCase()}]</span></strong><button onClick={() => moveView(1)}>[SIG ▶]</button></div>
+    <div className="viewer-toolbar" role="toolbar" aria-label="Herramientas del visor"><button onClick={() => runViewerCommand('zoom-in')}>＋ ZOOM</button><button onClick={() => runViewerCommand('zoom-out')}>－ ZOOM</button><button onClick={() => runViewerCommand('pan')}>✥ PAN</button><button aria-pressed={viewerTools.includes('contrast')} onClick={() => setViewerTools((tools) => tools.includes('contrast') ? tools.filter((tool) => tool !== 'contrast') : [...tools, 'contrast'])}>◐ CONTRASTE</button><button aria-pressed={viewerTools.includes('crosshair')} onClick={() => setViewerTools((tools) => tools.includes('crosshair') ? tools.filter((tool) => tool !== 'crosshair') : [...tools, 'crosshair'])}>＋ CRUZ</button><button aria-pressed={viewerTools.includes('ruler')} onClick={() => { setViewerTools((tools) => tools.includes('ruler') ? tools.filter((tool) => tool !== 'ruler') : [...tools, 'ruler']); runViewerCommand('scale'); }}>⌖ ESCALA</button><button onClick={() => runViewerCommand('reset')}>↺ REINICIAR</button></div>
+
+    <main className={`viewer-main ${viewerTools.map((tool) => `tool-${tool}`).join(' ')}`}>
+      {section === 'system' && <section id="system" className="story-section story-system active-view">
         <div className="section-heading">
           <div><span className="eyebrow"><span className="status-dot" /> INFORME INTERACTIVO · ARGENTINA</span>
             <h1>Radiografía de nuestro<br /><em>sistema de salud</em></h1>
@@ -219,9 +250,10 @@ function App() {
         <div className="story-grid system-grid">
           <div className="map-frame">
             <div className="map-topline"><span><i className="map-live-dot" /> DISTRIBUCIÓN DE EFECTORES</span><span>REFES · {metrics?.source_years.refes ?? '—'}</span></div>
-            <MapCanvas mode="system" provinceId={provinceId} categories={selectedCategories} threshold={threshold} route={route} onProvince={chooseProvince} />
+            <MapCanvas active mode="system" provinceId={provinceId} categories={selectedCategories} threshold={threshold} route={route} onProvince={chooseProvince} />
+            <ViewerHud />
             <div className="map-legend"><span className="legend-glow" /> <span>Efectores REFES geolocalizados</span><span className="legend-separator" /><span className="boundary-swatch" /> Provincias</div>
-            <div className="map-scale">{selectedCategories.length ? `${selectedCategories.length} tipología${selectedCategories.length === 1 ? '' : 's'} · ` : ''}{provinceName}</div>
+            <div className="map-scale">{selectedCategories.length ? `${selectedCategories.length} tipología${selectedCategories.length === 1 ? '' : 's'} · ` : ''}{provinceName}<span className="dicom-meta">ZOOM: AUTO · ROT: 0 · L: 128 W: 256</span></div>
           </div>
           <aside className="metrics-column">
             <div className="metric-card metric-facilities" role="button" tabIndex={0} onClick={() => setDrawer('facilities')} onKeyDown={(e) => e.key === 'Enter' && setDrawer('facilities')}>
@@ -250,7 +282,9 @@ function App() {
         <div className="section-footnote"><span>01 / 03</span><span>Datos de establecimientos REFES · profesionales REFEPS · clic en las tarjetas para ver el detalle</span><button onClick={() => navigate('access')}>Seguir la radiografía ↓</button></div>
       </section>
 
-      <section id="access" className="story-section story-access">
+      }
+
+      {section === 'access' && <section id="access" className="story-section story-access active-view">
         <div className="section-heading section-heading-compact">
           <div><span className="eyebrow"><span className="status-dot status-green" /> ACCESO TERRITORIAL · EN AUTO</span>
             <h2>No siempre está <em>igual de cerca.</em></h2>
@@ -260,10 +294,12 @@ function App() {
         </div>
         <div className="story-grid access-grid">
           <div className="map-frame access-map-frame">
-            <div className="map-topline"><span><i className="map-live-dot map-live-green" /> SUPERFICIE DE ACCESO EN AUTO</span><span>{provinceName.toUpperCase()}</span></div>
-            <MapCanvas mode="access" provinceId={provinceId} categories={selectedCategories} threshold={threshold} route={route} onProvince={chooseProvince} />
+            <div className="map-topline"><span><i className="map-live-dot map-live-green" /> SIMULACION ECO · ACCESO TERRITORIAL</span><span>{provinceName.toUpperCase()}</span></div>
+            <MapCanvas active mode="access" provinceId={provinceId} categories={selectedCategories} threshold={threshold} route={route} onProvince={chooseProvince} />
+            <ViewerHud />
             {!!generationReport?.omitted_facility_count && <div className="isochrone-warning" role="status">No se pudieron calcular isÃ³cronas para {fmt(generationReport.omitted_facility_count)} establecimientos. <a href="/data/access/generation-report.json" target="_blank" rel="noreferrer">Ver reporte</a></div>}
             <div className="isochrone-legend">{[5, 15, 30, 60].filter((minutes) => minutes <= threshold).map((minutes) => <span key={minutes}><i className={`iso-chip iso-${({ 5: 'red', 15: 'yellow', 30: 'green', 60: 'blue' } as const)[minutes as 5 | 15 | 30 | 60]}`} />{minutes} min</span>)}</div>
+            <div className="doppler-scale" aria-label="Escala visual inspirada en Doppler, no es una medicion"><span>-0.66</span><i /><span>0</span><i /><span>+0.66</span></div>
             {partialAccess && <div className="isochrone-warning isochrone-partial" role="status">Vista parcial: {fmt(accessManifest?.completed_jobs)} de {fmt(accessManifest?.total_jobs)} lotes procesados. Las áreas y coberturas pueden aumentar cuando termine el cálculo.</div>}
             {!accessManifest && <div className="map-empty-state"><span className="empty-icon">⌁</span><strong>Isócronas en preparación</strong><span>Generá los archivos de acceso con el flujo ORS documentado en scripts/generate_isochrones.py para activar esta capa.</span></div>}
             <div className="map-scale">Click en una provincia para enfocar el territorio</div>
@@ -274,21 +310,24 @@ function App() {
             <button className="metric-card rate-card" onClick={() => setDrawer('doctors')}><div className="rate-title"><span>MÉDICOS / 1.000 HAB.</span><span className="metric-open">↗</span></div><strong>{fmtRate(doctorsRate)}</strong><span>población Censo 2022 · clic para desglose</span></button>
             <button className="metric-card rate-card" onClick={() => setDrawer('nurses')}><div className="rate-title"><span>ENFERMERÍA / 1.000 HAB.</span><span className="metric-open">↗</span></div><strong>{fmtRate(nursesRate)}</strong><span>población Censo 2022 · clic para desglose</span></button>
             <div className="ratio-inline"><div><span>ENFERMERÍA : MEDICINA</span><b>{fmtRate(selectedProvince?.nurses_per_doctor ?? metrics?.professionals.nurses_per_doctor)} : 1</b></div><span className="data-period">REFePS 2023 / Censo {metrics?.source_years.population ?? 2022} · población: {fmt(selectedProvince?.population_2022 ?? nationalPopulation)}</span></div>
+            <div className="clinical-panel"><span className="eyebrow">¿POR QUÉ IMPORTA EL TIEMPO?</span><article><b>60 MIN · TRAUMA GRAVE</b><p>Para hemorragias importantes y lesiones graves, la rapidez de la evaluación, el control del sangrado y el acceso a un centro con capacidad de trauma pueden ser decisivos. La llamada “hora dorada” sirve como referencia del sistema; no es un límite clínico universal.</p></article><article><b>30 MIN · ACV SOSPECHADO</b><p>Ante signos de ACV, llegar pronto facilita la evaluación neurológica y las imágenes que permiten decidir si corresponde un tratamiento de reperfusión. Cada caso y su ventana terapéutica se valoran clínicamente.</p></article><article><b>15 MIN · PARO CARDÍACO</b><p>En un paro, iniciar RCP y usar un desfibrilador cuanto antes es fundamental. La banda de 15 minutos ayuda a identificar zonas con mayor o menor proximidad territorial a efectores de salud, como referencia para analizar acceso a evaluación y atención de emergencia. El cálculo no incluye despacho, llegada de ambulancia ni atención de testigos.</p></article><article><b>5 MIN · PARO RESPIRATORIO / ASFIXIA</b><p>La obstrucción grave de la respiración requiere respuesta inmediata y acceso rápido a soporte de vía aérea y reanimación. Esta banda muestra cercanía estimada a efectores, no un plazo individual de daño ni reemplaza la respuesta prehospitalaria.</p></article><small>Los umbrales son referencias para analizar acceso en auto hasta efectores REFES. No predicen resultados individuales ni describen tiempos completos de emergencia. La “escala Doppler” es un recurso visual, no una medición clínica.</small><div className="clinical-sources"><a href="https://www.facs.org/quality-programs/trauma/systems/trauma-series/part-iv/" target="_blank" rel="noreferrer">ACS · TRAUMA</a><a href="https://professional.heart.org/en/science-news/~/link.aspx?_id=BAB8B4E3D2C7472F942AA69EEE8D7B79&_z=z" target="_blank" rel="noreferrer">AHA · ACV</a><a href="https://www.heart.org/en/health-topics/cardiac-arrest/emergency-treatment-of-cardiac-arrest" target="_blank" rel="noreferrer">AHA · RCP/AED</a></div></div>
             <div className="access-method"><span className="method-pulse" />{selectedCategories.length ? `${selectedCategories.length} tipologías seleccionadas` : 'Todas las tipologías REFES'}<button onClick={() => setDrawer('facilities')}>Cambiar <Icon name="arrow" /></button></div>
           </aside>
         </div>
         <div className="section-footnote"><span>02 / 03</span><span>Porcentaje de asentamientos BAHRA, sin ponderar por población · tiempos de viaje estimados</span><button onClick={() => navigate('route')}>Encontrá tu centro ↓</button></div>
       </section>
 
-      <section id="route" className="story-section story-route">
+      }
+
+      {section === 'route' && <section id="route" className="story-section story-route active-view">
         <div className="section-heading section-heading-compact">
           <div><span className="eyebrow"><span className="status-dot status-green" /> UNA PREGUNTA PERSONAL</span>
-            <h2>¿A cuánto estás de tu centro<br /><em>de salud más cercano?</em></h2>
+            <h2>Análisis territorial<br /><em>y tu recorrido</em></h2>
             <p className="section-deck">Buscá una dirección y trazamos el recorrido en auto hasta el efector de la tipología elegida con menor tiempo estimado de viaje.</p>
           </div>
         </div>
         <div className="story-grid route-grid">
-          <div className="map-frame route-map-frame"><div className="map-topline"><span><i className="map-live-dot map-live-green" /> RECORRIDO EN RED VIAL</span><span>OPENSTREETMAP · ROUTING</span></div><MapCanvas mode="route" provinceId={provinceId} categories={selectedCategories} threshold={threshold} route={route} onProvince={chooseProvince} />
+          <div className="map-frame route-map-frame"><div className="map-topline"><span><i className="map-live-dot map-live-green" /> RECORRIDO EN RED VIAL</span><span>OPENSTREETMAP · ROUTING</span></div><MapCanvas active mode="route" provinceId={provinceId} categories={selectedCategories} threshold={threshold} route={route} onProvince={chooseProvince} /><ViewerHud />
             {route && <div className="route-result-card"><div className="route-result-icon"><Icon name="pin" /></div><div className="route-result-copy"><span>CENTRO MÁS CERCANO · {route.facility.category}</span><strong>{route.facility.name}</strong><small>{route.facility.locality}, {route.facility.province}</small></div><div className="route-result-time"><strong>{Math.max(1, Math.round(route.duration_seconds / 60))}<small> min</small></strong><span>{(route.distance_meters / 1000).toLocaleString('es-AR', { maximumFractionDigits: 1 })} km</span></div></div>}
             {!route && <div className="route-map-note"><span>⌖</span>Tu recorrido aparece acá</div>}
           </div>
@@ -308,7 +347,11 @@ function App() {
         </div>
         <div className="section-footnote"><span>03 / 03</span><span>Ruta y tiempo estimados; pueden diferir del tránsito y las condiciones reales</span><button onClick={() => navigate('system')}>Volver al inicio ↑</button></div>
       </section>
+      }
     </main>
+    <div className="viewer-bottom"><button onClick={() => moveView(-1)}>◀ ANTERIOR</button><span>VISTA {SECTIONS.findIndex((item) => item.id === section) + 1} DE 3</span><button onClick={() => moveView(1)}>SIGUIENTE ▶</button></div>
+      </div>
+    </div>
 
     <FacilityDrawer kind={drawer} onClose={() => setDrawer(null)} categories={categories} selected={selectedCategories} onToggle={toggleCategory} onClear={() => setSelectedCategories([])} province={selectedProvince} metrics={metrics ?? {
       source_years: { refes: 2026, professionals: 2023, population: 2022 }, definitions: {}, facility_counts: { valid_argentina_bounds: 0, recovered_from_healthsites: 0, missing_or_non_numeric: 0, total: 0, mapped: 0 }, facility_categories: [], professionals: { doctors_active: 0, nurses_active: 0, doctors: {}, nurses: {}, nurse_specialties_active: {}, doctors_per_1000: 0, nurses_per_1000: 0, nurses_per_doctor: 0 }, provinces: {}, settlement_count: 0, population_audit: { sum_of_provinces: 0, reported_country_total: null, difference: null },
@@ -322,8 +365,10 @@ function App() {
       <div className="tour-controls"><button className="tour-back" disabled={tourStep === 0} onClick={() => setTourStep((step) => step === null ? null : Math.max(0, step - 1))}>← Anterior</button><button className="tour-next" onClick={() => tourStep === TOUR_STEPS.length - 1 ? setTourStep(null) : setTourStep(tourStep + 1)}>{tourStep === TOUR_STEPS.length - 1 ? 'Terminar' : 'Siguiente →'}</button></div>
     </section></div>}
 
-    <footer id="fuentes" className="site-footer"><div className="footer-title"><span className="brand-mark"><span /><span /><span /></span><strong>Una radiografía abierta<br />del sistema de salud.</strong></div><div className="footer-sources"><span className="eyebrow">FUENTES Y MÉTODO</span><p>REFES · establecimientos asistenciales {metrics?.source_years.refes ?? 2026}. REFEPS · stock de profesionales al 31/12/2023. INDEC · población del Censo 2022 y marco geoestadístico. BAHRA · asentamientos humanos. OpenStreetMap · cartografía vial.</p><p>Profesionales activos: hasta 64 años inclusive. Los porcentajes de acceso cuentan asentamientos, no personas. La capa de isócronas se publicará cuando se complete el procesamiento de red vial y se valide una provincia piloto.</p>{metrics?.population_audit.difference ? <p>Control del denominador: la suma de las 24 poblaciones provinciales difiere en {fmt(Math.abs(metrics.population_audit.difference))} personas del total nacional que figura en el archivo.</p> : null}</div><div className="footer-mark">CONTAR CON DATOS<br /><span>2026</span></div></footer>
+    <footer id="fuentes" className="site-footer"><div className="footer-title"><span className="brand-mark"><span /><span /><span /></span><strong>Una radiografía abierta<br />del sistema de salud.</strong></div><div className="footer-sources"><span className="eyebrow">FUENTES Y MÉTODO</span><p>REFES · establecimientos asistenciales {metrics?.source_years.refes ?? 2026}. REFEPS · stock de profesionales al 31/12/2023. INDEC · población del Censo 2022 y marco geoestadístico. BAHRA · asentamientos humanos. OpenStreetMap · cartografía vial.</p><p>Profesionales activos: hasta 64 años inclusive. Los porcentajes de acceso cuentan asentamientos, no personas. Las isócronas son tiempos estimados de viaje en auto sobre la red vial y sirven para explorar accesibilidad; no representan tiempos de respuesta de emergencia.</p>{metrics?.population_audit.difference ? <p>Control del denominador: la suma de las 24 poblaciones provinciales difiere en {fmt(Math.abs(metrics.population_audit.difference))} personas del total nacional que figura en el archivo.</p> : null}</div><div className="footer-mark">CONTAR CON DATOS<br /><span>2026</span></div></footer>
   </div>;
 }
 
 export default App;
+
+

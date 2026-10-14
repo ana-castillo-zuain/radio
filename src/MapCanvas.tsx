@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
-import { AttributionControl, Map as MapLibreMap, NavigationControl, type GeoJSONSource, type LngLatBoundsLike } from 'maplibre-gl';
+import { AttributionControl, Map as MapLibreMap, NavigationControl, ScaleControl, type GeoJSONSource, type LngLatBoundsLike } from 'maplibre-gl';
 import type { FeatureCollection, RouteResult } from './types';
 
 type Props = {
+  active?: boolean;
   mode: 'system' | 'access' | 'route';
   provinceId: string | null;
   categories: string[];
@@ -43,7 +44,7 @@ function boundsOf(geometry: unknown): LngLatBoundsLike | null {
   return [[Math.min(...xs), Math.min(...ys)], [Math.max(...xs), Math.max(...ys)]];
 }
 
-export default function MapCanvas({ mode, provinceId, categories, threshold, route, onProvince }: Props) {
+export default function MapCanvas({ active = true, mode, provinceId, categories, threshold, route, onProvince }: Props) {
   const container = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const routeSourceRef = useRef<GeoJSONSource | null>(null);
@@ -53,7 +54,7 @@ export default function MapCanvas({ mode, provinceId, categories, threshold, rou
   onProvinceRef.current = onProvince;
 
   useEffect(() => {
-    if (!container.current || mapRef.current) return;
+    if (!active || !container.current || mapRef.current) return;
     const map = new MapLibreMap({
       container: container.current,
       center: [-64.5, -38.2],
@@ -75,8 +76,22 @@ export default function MapCanvas({ mode, provinceId, categories, threshold, rou
       },
     });
     map.addControl(new NavigationControl({ showCompass: false }), 'top-right');
+    map.addControl(new ScaleControl({ maxWidth: 110, unit: 'metric' }), 'bottom-left');
     map.addControl(new AttributionControl({ compact: true }), 'bottom-right');
     mapRef.current = map;
+
+    const command = (event: Event) => {
+      const action = (event as CustomEvent<string>).detail;
+      if (action === 'zoom-in') map.zoomIn({ duration: 180 });
+      if (action === 'zoom-out') map.zoomOut({ duration: 180 });
+      if (action === 'reset') map.fitBounds([[-74, -56], [-52, -20]], { padding: 38, maxZoom: 3.4, duration: 500 });
+      if (action === 'pan') map.dragPan.isEnabled() ? map.dragPan.disable() : map.dragPan.enable();
+      if (action === 'scale') {
+        const scale = map.getContainer().querySelector<HTMLElement>('.maplibregl-ctrl-scale');
+        if (scale) scale.style.visibility = scale.style.visibility === 'visible' ? 'hidden' : 'visible';
+      }
+    };
+    window.addEventListener('radio-map-command', command);
 
     map.on('load', async () => {
       map.addSource('provinces', { type: 'geojson', data: '/data/provinces.geojson' });
@@ -130,9 +145,10 @@ export default function MapCanvas({ mode, provinceId, categories, threshold, rou
     return () => {
       routeSourceRef.current = null;
       map.remove();
+      window.removeEventListener('radio-map-command', command);
       mapRef.current = null;
     };
-  }, []);
+  }, [active]);
 
   useEffect(() => {
     if (!loaded || mode !== 'access') return;
