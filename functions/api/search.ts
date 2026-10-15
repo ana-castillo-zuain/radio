@@ -36,7 +36,7 @@ async function geocode(query: string, request: Request): Promise<Response> {
 }
 
 async function route(origin: [number, number], candidates: Candidate[], apiKey?: string): Promise<Response> {
-  if (!apiKey) return json({ error: 'El cálculo de rutas todavía no está configurado. Falta agregar ORS_API_KEY en Cloudflare Pages.' }, 503);
+  if (!apiKey) return json({ error: 'El cálculo de rutas no está disponible por ahora. Probá más tarde.' }, 503);
   const locations = [origin, ...candidates.map((candidate) => candidate.coordinates)];
   const headers = { authorization: apiKey, 'content-type': 'application/json', accept: 'application/json, application/geo+json' };
   const matrixResponse = await fetch('https://api.heigit.org/openrouteservice/v2/matrix/driving-car', {
@@ -57,7 +57,7 @@ async function route(origin: [number, number], candidates: Candidate[], apiKey?:
       bestDuration = duration;
     }
   });
-  if (bestIndex < 0) return json({ error: 'No hay una ruta en auto disponible entre esa dirección y los efectores cercanos.' }, 404);
+  if (bestIndex < 0) return json({ error: 'No hay una ruta en auto disponible entre esa dirección y los establecimientos cercanos.' }, 404);
   const destination = candidates[bestIndex];
   const directionsResponse = await fetch('https://api.heigit.org/openrouteservice/v2/directions/driving-car/geojson', {
     method: 'POST', headers,
@@ -91,7 +91,7 @@ export async function onRequestPost(context: { request: Request; env: Env }): Pr
       if (!validPoint(body.origin)) return json({ error: 'La ubicación no tiene coordenadas válidas.' }, 400);
       if (!Array.isArray(body.candidates) || body.candidates.length < 1 || body.candidates.length > 8) return json({ error: 'No se recibieron candidatos válidos para calcular la ruta.' }, 400);
       const candidates = body.candidates.filter((item) => item && typeof item.id === 'string' && typeof item.name === 'string' && validPoint(item.coordinates));
-      if (!candidates.length) return json({ error: 'No hay efectores con coordenadas válidas para esa búsqueda.' }, 404);
+      if (!candidates.length) return json({ error: 'No hay establecimientos con coordenadas válidas para esa búsqueda.' }, 404);
       return await route(body.origin, candidates, context.env.ORS_API_KEY);
     }
     return json({ error: 'Acción no reconocida.' }, 400);

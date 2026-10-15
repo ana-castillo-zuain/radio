@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { AttributionControl, Map as MapLibreMap, NavigationControl, ScaleControl, type GeoJSONSource, type LngLatBoundsLike } from 'maplibre-gl';
+import { AttributionControl, Map as MapLibreMap, NavigationControl, Popup, ScaleControl, type GeoJSONSource, type LngLatBoundsLike } from 'maplibre-gl';
 import type { FeatureCollection, RouteResult } from './types';
 
 type Props = {
@@ -13,6 +13,7 @@ type Props = {
 };
 
 const EMPTY: FeatureCollection = { type: 'FeatureCollection', features: [] };
+const motionDuration = (duration: number) => typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : duration;
 async function accessChunk(url: string): Promise<FeatureCollection> {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`No se pudo cargar ${url} (HTTP ${response.status})`);
@@ -79,12 +80,15 @@ export default function MapCanvas({ active = true, mode, provinceId, categories,
     map.addControl(new ScaleControl({ maxWidth: 110, unit: 'metric' }), 'bottom-left');
     map.addControl(new AttributionControl({ compact: true }), 'bottom-right');
     mapRef.current = map;
+    const reportZoom = () => window.dispatchEvent(new CustomEvent('radio-map-zoom', { detail: map.getZoom() }));
+    map.on('zoom', reportZoom);
+    map.on('load', reportZoom);
 
     const command = (event: Event) => {
       const action = (event as CustomEvent<string>).detail;
       if (action === 'zoom-in') map.zoomIn({ duration: 180 });
       if (action === 'zoom-out') map.zoomOut({ duration: 180 });
-      if (action === 'reset') map.fitBounds([[-74, -56], [-52, -20]], { padding: 38, maxZoom: 3.4, duration: 500 });
+      if (action === 'reset') map.fitBounds([[-74, -56], [-52, -20]], { padding: 38, maxZoom: 3.4, duration: motionDuration(500) });
       if (action === 'pan') map.dragPan.isEnabled() ? map.dragPan.disable() : map.dragPan.enable();
       if (action === 'scale') {
         const scale = map.getContainer().querySelector<HTMLElement>('.maplibregl-ctrl-scale');
@@ -134,11 +138,29 @@ export default function MapCanvas({ active = true, mode, provinceId, categories,
         if (id && name) {
           onProvinceRef.current(id, name);
           const bounds = boundsOf(feature.geometry);
-          if (bounds) map.fitBounds(bounds, { padding: 70, maxZoom: 7.2, duration: 850 });
+          if (bounds) map.fitBounds(bounds, { padding: 70, maxZoom: 7.2, duration: motionDuration(850) });
         }
       });
       map.on('mouseenter', 'province-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
       map.on('mouseleave', 'province-fill', () => { map.getCanvas().style.cursor = ''; });
+      map.on('click', 'facility-points', (event) => {
+        const feature = map.queryRenderedFeatures(event.point, { layers: ['facility-points'] })[0];
+        const properties = feature?.properties;
+        if (!properties) return;
+        const popup = document.createElement('div');
+        popup.className = 'facility-popup';
+        const title = document.createElement('strong');
+        title.textContent = String(properties.name ?? 'Establecimiento');
+        popup.append(title);
+        for (const [label, value] of [['Tipo', properties.category], ['Localidad', properties.locality], ['Coordenadas', properties.coordinate_status === 'recovered_from_healthsites' ? 'posición recuperada de Healthsites' : 'coordenadas informadas']]) {
+          const row = document.createElement('span');
+          row.textContent = `${label}: ${String(value ?? '—')}`;
+          popup.append(row);
+        }
+        new Popup({ closeButton: true, closeOnClick: true, maxWidth: '300px' }).setLngLat(event.lngLat).setDOMContent(popup).addTo(map);
+      });
+      map.on('mouseenter', 'facility-points', () => { map.getCanvas().style.cursor = 'pointer'; });
+      map.on('mouseleave', 'facility-points', () => { map.getCanvas().style.cursor = ''; });
       map.fitBounds([[-74, -56], [-52, -20]], { padding: { top: 30, bottom: 30, left: 30, right: 30 }, duration: 0 });
       setLoaded(true);
     });
@@ -155,11 +177,11 @@ export default function MapCanvas({ active = true, mode, provinceId, categories,
     let cancelled = false;
     const source = mapRef.current?.getSource('isochrones') as GeoJSONSource | undefined;
     source?.setData(EMPTY as never);
-    setAccessStatus({ kind: 'loading', message: provinceId ? 'Cargando isocronas de la provincia...' : 'Cargando vista nacional...' });
+    setAccessStatus({ kind: 'loading', message: provinceId ? 'Cargando isócronas de la provincia...' : 'Cargando vista nacional...' });
     const load = async () => {
       try {
         const response = await fetch('/data/access/manifest.json');
-        if (!response.ok || !(response.headers.get('content-type') ?? '').toLowerCase().includes('json')) throw new Error('No se encontrÃ³ el manifiesto /data/access/manifest.json');
+        if (!response.ok || !(response.headers.get('content-type') ?? '').toLowerCase().includes('json')) throw new Error('No se pudieron cargar los datos de acceso. Recargá la página; si sigue fallando, probá más tarde.');
         const manifest = await response.json() as {
           overview?: string;
           provinces: Record<string, string[]>;
@@ -172,11 +194,11 @@ export default function MapCanvas({ active = true, mode, provinceId, categories,
             ? [...new Set(categories.flatMap((category) => categoryFiles[category] ?? []))]
             : manifest.provinces[provinceId] ?? [];
         } else {
-          if (!manifest.overview) throw new Error('El manifiesto no incluye la vista nacional simplificada. VolvÃ© a generar los archivos de acceso.');
+          if (!manifest.overview) throw new Error('La vista nacional de acceso no está disponible. Probá más tarde.');
           files = [manifest.overview];
         }
         if (files.length === 0) {
-          if (!cancelled) setAccessStatus({ kind: 'error', message: 'No hay isÃ³cronas para esta selecciÃ³n. ProbÃ¡ otra tipologÃ­a o provincia.' });
+          if (!cancelled) setAccessStatus({ kind: 'error', message: 'No hay áreas de acceso para esta selección. Elegí otro tipo de establecimiento o provincia.' });
           return;
         }
         const features: FeatureCollection['features'] = [];
@@ -188,7 +210,7 @@ export default function MapCanvas({ active = true, mode, provinceId, categories,
         (mapRef.current?.getSource('isochrones') as GeoJSONSource | undefined)?.setData({ type: 'FeatureCollection', features } as never);
         setAccessStatus(null);
       } catch (error) {
-        if (!cancelled) setAccessStatus({ kind: 'error', message: error instanceof Error ? error.message : 'Error desconocido al cargar las isÃ³cronas' });
+        if (!cancelled) setAccessStatus({ kind: 'error', message: 'No se pudieron cargar las áreas de acceso. Recargá la página; si sigue fallando, probá más tarde.' });
       }
     };
     void load();
@@ -232,13 +254,13 @@ export default function MapCanvas({ active = true, mode, provinceId, categories,
     const map = mapRef.current;
     if (!loaded || !map) return;
     if (!provinceId) {
-      map.fitBounds([[-74, -56], [-52, -20]], { padding: 38, maxZoom: 3.4, duration: 650 });
+      map.fitBounds([[-74, -56], [-52, -20]], { padding: 38, maxZoom: 3.4, duration: motionDuration(650) });
       return;
     }
     fetch('/data/provinces.geojson').then((response) => response.ok ? response.json() : null).then((data) => {
       const feature = data?.features?.find((item: { properties?: { province_id?: string } }) => String(item.properties?.province_id) === provinceId);
       const bounds = feature && boundsOf(feature.geometry);
-      if (bounds) map.fitBounds(bounds, { padding: 70, maxZoom: 7.2, duration: 650 });
+      if (bounds) map.fitBounds(bounds, { padding: 70, maxZoom: 7.2, duration: motionDuration(650) });
     }).catch(() => undefined);
   }, [loaded, provinceId]);
 
@@ -258,7 +280,7 @@ export default function MapCanvas({ active = true, mode, provinceId, categories,
     } as never);
     const map = mapRef.current;
     const bounds = boundsOf(route.geometry);
-    if (map && bounds) map.fitBounds(bounds, { padding: 80, maxZoom: 13, duration: 800 });
+    if (map && bounds) map.fitBounds(bounds, { padding: 80, maxZoom: 13, duration: motionDuration(800) });
   }, [loaded, route]);
 
   return <>

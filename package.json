@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "prepare-data": "python scripts/prepare_data.py",
+    "check-data": "python scripts/check_data.py",
     "generate-isochrones": "python scripts/generate_isochrones.py",
     "prepare-access-map": "python scripts/access_map_assets.py",
     "build": "tsc --noEmit && vite build",

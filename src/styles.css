@@ -163,6 +163,33 @@ button.metric-card:hover, .metric-facilities:hover { border-color: rgba(163,245,
 .method-pulse { width: 5px; height: 5px; flex: 0 0 auto; }
 .access-method button { margin-left: auto; padding: 6px 0; display: inline-flex; gap: 5px; align-items: center; border: 0; color: var(--mint); background: transparent; font-size: 9px; cursor: pointer; }
 .access-method button svg { width: 12px; height: 12px; }
+.facility-popup { display: flex; flex-direction: column; gap: 6px; color: #1b2026; font: 11px var(--mono); }
+.facility-popup strong { font-size: 13px; line-height: 1.25; }
+.facility-popup span { line-height: 1.35; }
+.comparison-panel { margin-top: 14px; padding: 16px; border: 1px solid var(--line); background: #101315; }
+.comparison-heading { display: flex; justify-content: space-between; gap: 20px; align-items: start; }
+.comparison-heading h2 { margin: 6px 0 0; color: #e5efed; font: 500 16px/1.3 var(--mono); }
+.comparison-heading p { max-width: 430px; margin: 0; color: #a3b0b6; font-size: 10px; line-height: 1.5; }
+.comparison-controls { margin-top: 12px; display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+.comparison-controls > span { margin-right: 4px; color: #84939c; font-size: 9px; }
+.comparison-controls button { min-height: 32px; padding: 6px 9px; border: 1px solid #364249; color: #bbd0d9; background: #1b2226; font-size: 10px; cursor: pointer; }
+.comparison-controls button:hover, .comparison-controls button.selected { border-color: var(--blue-bright); color: #d8f7ff; background: rgba(33,199,255,.1); }
+.comparison-list { margin-top: 7px; display: flex; flex-direction: column; gap: 2px; }
+.comparison-row { width: 100%; min-width: 0; padding: 7px 4px; display: grid; grid-template-columns: minmax(130px, .8fr) minmax(150px, 1fr) minmax(150px, 1fr) minmax(92px, .55fr); gap: 10px; align-items: center; border: 1px solid transparent; color: #c7d2d5; background: transparent; text-align: left; cursor: pointer; }
+.comparison-row:hover, .comparison-row.selected { border-color: rgba(163,245,209,.32); background: rgba(163,245,209,.06); }
+.comparison-name { overflow: hidden; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.comparison-track { position: relative; height: 7px; display: flex; align-items: center; gap: 7px; background: #273139; }
+.comparison-track i { height: 100%; display: block; background: var(--mint); }
+.comparison-track::before { position: absolute; top: -15px; left: 0; color: #71838c; font-size: 8px; }
+.doctors-track::before { content: 'MÉDICOS / 1.000'; }
+.reachability-track::before { content: 'ALCANZADOS'; }
+.reachability-track i { background: var(--blue-bright); }
+.comparison-track b, .comparison-uncovered { color: #e0ece8; font: 10px var(--mono); }
+.comparison-uncovered { text-align: right; }
+.comparison-note { margin: 10px 0 0; color: #84939c; font-size: 9px; line-height: 1.45; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
 
 .story-route { min-height: 100vh; }
 .route-grid { min-height: 520px; }
@@ -315,12 +342,15 @@ button.metric-card:hover, .metric-facilities:hover { border-color: rgba(163,245,
 .viewer-workspace { min-width: 0; }
 .viewer-main .story-section { padding: 9px 10px; }
 .viewer-main .section-heading h1, .viewer-main .section-heading h2 { font-size: clamp(16px, 1.55vw, 22px); }
-.viewer-main .map-frame { min-height: calc(100vh - 295px); }
+.viewer-main .map-frame { min-height: clamp(560px, calc(100vh - 250px), 780px); }
 .viewer-main .maplibregl-ctrl-attrib { font: 7px var(--mono); }
 @media (max-width: 760px) {
   .site-header { position: sticky; top: 0; }
   .clinical-sidebar { position: static; height: auto; }
-  .viewer-main .map-frame { min-height: 330px; }
+  .viewer-main .map-frame { min-height: 390px; }
+  .comparison-heading { flex-direction: column; }
+  .comparison-row { grid-template-columns: minmax(110px, 1fr) minmax(105px, 1fr) minmax(105px, 1fr); }
+  .comparison-uncovered { grid-column: 2 / -1; text-align: left; }
 }
 
 /* Full diagnostic workstation frame */
@@ -367,12 +397,12 @@ body, .app-shell { background: #000; font-family: 'DM Mono', 'Cascadia Code', mo
 .viewer-main .section-heading h1, .viewer-main .section-heading h2 { margin: 3px 0; font: 500 clamp(15px,1.45vw,21px)/1.25 var(--mono); letter-spacing: -.04em; }
 .viewer-main .section-heading p { font: 9px/1.4 var(--mono); }
 .viewer-main .eyebrow, .viewer-main .metric-card-label, .viewer-main .map-topline { font-family: var(--mono); }
-.viewer-main .map-frame { min-height: calc(100vh - 243px); border: 1px solid #59666c; border-radius: 0; background: #000; }
+.viewer-main .map-frame { min-height: clamp(560px, calc(100vh - 250px), 780px); border: 1px solid #59666c; border-radius: 0; background: #000; }
 .viewer-main .map-topline { height: 25px; padding: 0 8px; background: rgba(0,0,0,.88); font-size: 8px; }
 .viewer-hud { position: absolute; z-index: 4; right: 7px; bottom: 7px; display: flex; flex-direction: column; gap: 2px; color: #a8cfdf; font: 8px/1.25 var(--mono); text-align: right; text-shadow: 0 1px 3px #000; pointer-events: none; }
 .viewer-main .map-canvas { top: 25px; }
 .viewer-main .map-canvas .maplibregl-ctrl-top-right { top: 31px; right: 6px; }
-.viewer-main .metrics-column, .viewer-main .route-search-panel { max-height: calc(100vh - 243px); padding: 6px; gap: 5px; overflow: auto; border: 1px solid #30383d; border-radius: 0; background: #101315; }
+.viewer-main .metrics-column, .viewer-main .route-search-panel { height: clamp(560px, calc(100vh - 250px), 780px); max-height: none; padding: 6px; gap: 5px; overflow: auto; border: 1px solid #30383d; border-radius: 0; background: #101315; }
 .viewer-main .metric-card, .viewer-main .ratio-card, .viewer-main .clinical-panel { padding: 8px; border: 1px solid #30383d; border-radius: 0; background: #1b1f22; }
 .viewer-main .metric-number { font-family: var(--mono); }
 .viewer-main .section-footnote { display: none; }
@@ -456,7 +486,7 @@ body, .app-shell { background: #000; }
 .viewer-main .metric-number, .viewer-main .ratio-card strong { color: #dcfdf4; }
 .viewer-main .section-footnote { display: none; }
 .viewer-main .access-grid { grid-template-columns: minmax(0, 1fr) 330px; }
-.viewer-main .access-metrics { max-height: calc(100vh - 330px); overflow: auto; }
+.viewer-main .access-metrics { height: clamp(560px, calc(100vh - 250px), 780px); max-height: none; overflow: auto; }
 .viewer-main .route-grid { grid-template-columns: minmax(0, 1fr) 360px; }
 .viewer-main .map-topline { background: rgba(0,0,0,.85); }
 .viewer-main .map-scale { color: #b5c1c7; }
@@ -496,7 +526,7 @@ body, .app-shell { background: #000; }
   .viewer-toolbar button { white-space: nowrap; }
   .viewer-main .story-section { min-height: auto; padding: 12px; }
   .viewer-main .story-grid, .viewer-main .access-grid, .viewer-main .route-grid { display: flex; flex-direction: column; }
-  .viewer-main .map-frame { height: 55vh; min-height: 360px; }
+  .viewer-main .map-frame { height: clamp(390px, 62vh, 650px); min-height: 390px; }
   .viewer-main .access-metrics { max-height: none; overflow: visible; }
   .viewer-nav { padding: 0 9px; }
   .viewer-thumbnails { overflow-x: auto; justify-content: flex-start; padding: 5px 8px; }
@@ -507,9 +537,45 @@ body, .app-shell { background: #000; }
 .clinical-sidebar { top: 76px; height: calc(100vh - 76px); }
 .viewer-main .story-section { padding: 9px 10px; }
 .viewer-main .section-heading h1, .viewer-main .section-heading h2 { font-size: clamp(16px, 1.55vw, 22px); }
-.viewer-main .map-frame { min-height: calc(100vh - 295px); }
+.viewer-main .map-frame { min-height: clamp(560px, calc(100vh - 250px), 780px); }
 .viewer-main .maplibregl-ctrl-attrib { font: 7px var(--mono); }
 @media (max-width: 760px) {
   .clinical-sidebar { position: static; height: auto; }
-  .viewer-main .map-frame { min-height: 330px; }
+  .viewer-main .map-frame { min-height: 390px; }
+}
+
+/* Simplified controls and always visible travel-time scale */
+.sidebar-thumbs { display: block; }
+.viewer-main .maplibregl-ctrl-scale { visibility: visible; }
+.doppler-scale { grid-template-columns: repeat(4, 1fr); grid-template-rows: auto 6px; width: 180px; }
+.doppler-scale span:nth-of-type(1) { grid-column: 1; grid-row: 1; text-align: left; }
+.doppler-scale span:nth-of-type(2) { grid-column: 2; grid-row: 1; text-align: center; }
+.doppler-scale span:nth-of-type(3) { grid-column: 3; grid-row: 1; text-align: center; }
+.doppler-scale span:nth-of-type(4) { grid-column: 4; grid-row: 1; text-align: right; }
+.doppler-scale i:first-of-type { grid-column: 1 / 5; grid-row: 2; }
+.doppler-scale i:last-of-type { display: none; }
+.access-presets { display: flex; flex-wrap: wrap; gap: 5px; padding: 6px; border: 1px solid #30383d; }
+.access-presets > span { width: 100%; color: #91a6b0; font: 8px var(--mono); }
+.access-presets button { padding: 5px 7px; border: 1px solid #364249; color: #bbd0d9; background: #1b2226; font: 8px var(--mono); cursor: pointer; }
+
+/* Keep the diagnostic frame compact while preserving readable, operable controls. */
+.viewer-main .section-heading p,
+.viewer-main .metric-sub,
+.viewer-main .comparison-heading p,
+.viewer-main .comparison-note,
+.viewer-main .clinical-panel article p,
+.viewer-main .clinical-panel small,
+.viewer-main .route-steps p,
+.viewer-main .privacy-note { font-size: 11px; }
+.sidebar-thumbs > button, .viewer-toolbar button, .viewer-nav button { min-height: 44px; }
+.viewer-main .map-topline, .viewer-main .viewer-hud, .viewer-main .map-scale { font-size: 9px; }
+.viewer-main .story-grid, .viewer-main .access-grid, .viewer-main .route-grid { align-items: stretch; }
+.viewer-main .map-frame { height: clamp(560px, calc(100vh - 250px), 780px); }
+.viewer-main .metrics-column, .viewer-main .route-search-panel, .viewer-main .access-metrics { height: clamp(560px, calc(100vh - 250px), 780px); }
+.clinical-sidebar { top: 78px; height: calc(100vh - 78px); }
+@media (max-width: 760px) {
+  .viewer-main .map-frame { height: clamp(390px, 62vh, 650px); }
+  .viewer-main .metrics-column, .viewer-main .route-search-panel, .viewer-main .access-metrics { height: auto; }
+  .comparison-controls { align-items: stretch; }
+  .comparison-controls button { flex: 1 1 150px; }
 }

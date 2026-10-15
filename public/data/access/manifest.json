@@ -328,8 +328,8 @@
       "province-86-60b18d1d14a04592.geojson.gz",
       "province-86-a056e69151382c05.geojson.gz"
     ],
-    "": [
-      "province-.geojson.gz"
+    "94": [
+      "province-94.geojson.gz"
     ],
     "90": [
       "province-90.geojson.gz"
@@ -2376,60 +2376,60 @@
         "province-86-a056e69151382c05.geojson.gz"
       ]
     },
-    "": {
+    "94": {
       "Con atención médica diaria y con especialidades y/o otras profesiones": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Alto riesgo con terapia intensiva": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Bajo riesgo con internación simple": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Centro de Diálisis": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Centro de salud mental": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Centro educativo terapéutico": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Centro Rehabilitación motora": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Con atención médica general por lo menos 3 días de la semana": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Internación Domiciliaria": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Laboratorio de Análisis Clínicos": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Mediano riesgo con internación con cuidados especiales": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Ortopedia": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Otros": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Sin atención médica en forma periódica (menor a 3 veces por semana)": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Sistema de Atención extra hospitalaria": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Unidades de Atención Móviles": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Vivienda para personas mayores": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ],
       "Óptica": [
-        "province-.geojson.gz"
+        "province-94.geojson.gz"
       ]
     },
     "90": {
@@ -2529,7 +2529,7 @@
     }
   },
   "map_simplification": {
-    "overview_degrees": 0.03,
+    "overview_degrees": 0.08,
     "province_degrees": 0.001
   }
 }

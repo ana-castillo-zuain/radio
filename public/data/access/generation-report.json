@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T08:44:27.696038+00:00",
+  "generated_at": "2026-10-15T02:13:19.762433+00:00",
   "omitted_facility_count": 146,
   "omitted_facilities": [
     {
@@ -10,7 +10,8 @@
         -27.1373683597955
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791590322204}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791590322204}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "14940142195007",
@@ -20,7 +21,8 @@
         -54.6854047832482
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791590478041}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791590478041}}",
+      "province": "TIERRA DEL FUEGO"
     },
     {
       "facility_id": "50060282317789",
@@ -30,7 +32,8 @@
         -36.4258541323304
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791737477367}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791737477367}}",
+      "province": "BUENOS AIRES"
     },
     {
       "facility_id": "50061262201479",
@@ -40,7 +43,8 @@
         -34.2035622719999
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594472277}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594472277}}",
+      "province": "BUENOS AIRES"
     },
     {
       "facility_id": "50064902317491",
@@ -50,7 +54,8 @@
         -36.3003955824558
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791737491827}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791737491827}}",
+      "province": "BUENOS AIRES"
     },
     {
       "facility_id": "50067492202335",
@@ -60,7 +65,8 @@
         -34.4070778401031
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594474248}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594474248}}",
+      "province": "BUENOS AIRES"
     },
     {
       "facility_id": "50068052202754",
@@ -70,7 +76,8 @@
         -34.3501215589999
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594803512}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594803512}}",
+      "province": "BUENOS AIRES"
     },
     {
       "facility_id": "50180982140238",
@@ -80,7 +87,8 @@
         -28.2852
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791737363588}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791737363588}}",
+      "province": "CORRIENTES"
     },
     {
       "facility_id": "50260212329062",
@@ -90,7 +98,8 @@
         -42.2285173562085
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594025128}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594025128}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50260352129203",
@@ -100,7 +109,8 @@
         -43.4529188935546
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593454634}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593454634}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50260772129086",
@@ -110,7 +120,8 @@
         -42.9403392336318
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593183643}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593183643}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50260772129108",
@@ -120,7 +131,8 @@
         -43.0046471277944
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594059260}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594059260}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50260772129124",
@@ -130,7 +142,8 @@
         -43.0046471277944
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594729585}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594729585}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50260772330720",
@@ -140,7 +153,8 @@
         -43.2554496492787
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791592608221}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791592608221}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50380702150927",
@@ -150,7 +164,8 @@
         -23.6
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791736982841}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791736982841}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "50460422155699",
@@ -160,7 +175,8 @@
         -29.1582
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738120815}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738120815}}",
+      "province": "LA RIOJA"
     },
     {
       "facility_id": "50500562157146",
@@ -170,7 +186,8 @@
         -32.564607
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594913855}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594913855}}",
+      "province": "MENDOZA"
     },
     {
       "facility_id": "50500562157226",
@@ -180,7 +197,8 @@
         -32.607424
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593749307}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593749307}}",
+      "province": "MENDOZA"
     },
     {
       "facility_id": "50620142170103",
@@ -190,7 +208,8 @@
         -39.9097362345371
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593655072}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593655072}}",
+      "province": "RÍO NEGRO"
     },
     {
       "facility_id": "50620142170179",
@@ -200,7 +219,8 @@
         -39.19275
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593556826}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593556826}}",
+      "province": "RÍO NEGRO"
     },
     {
       "facility_id": "50620772170111",
@@ -210,7 +230,8 @@
         -41.771311679764
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593568903}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593568903}}",
+      "province": "RÍO NEGRO"
     },
     {
       "facility_id": "50620912170084",
@@ -220,7 +241,8 @@
         -41.1786539723316
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594745374}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594745374}}",
+      "province": "RÍO NEGRO"
     },
     {
       "facility_id": "50740562380644",
@@ -230,7 +252,8 @@
         -33.806538025096
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791737168652}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791737168652}}",
+      "province": "SAN LUIS"
     },
     {
       "facility_id": "50860072192663",
@@ -240,7 +263,8 @@
         -29.2933
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593238031}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593238031}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50860142192274",
@@ -250,7 +274,8 @@
         -25.948783711873
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593526798}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593526798}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50861192192354",
@@ -260,7 +285,8 @@
         -27.2167
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593275964}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593275964}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50861332192259",
@@ -270,7 +296,8 @@
         -26.2041181921002
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593677159}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593677159}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50861612192329",
@@ -280,7 +307,8 @@
         -27.5625
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594975996}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791594975996}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50900492196405",
@@ -290,7 +318,8 @@
         -27.8287536287241
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593918937}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791593918937}}",
+      "province": "TUCUMÁN"
     },
     {
       "facility_id": "50060702222531",
@@ -300,7 +329,8 @@
         -33.7556717419999
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738489673}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738489673}}",
+      "province": "BUENOS AIRES"
     },
     {
       "facility_id": "50060702222532",
@@ -310,7 +340,8 @@
         -33.7498774119999
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738538613}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738538613}}",
+      "province": "BUENOS AIRES"
     },
     {
       "facility_id": "50100212124096",
@@ -320,7 +351,8 @@
         -27.919193572615
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738994670}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738994670}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100282124420",
@@ -330,7 +362,8 @@
         -26.2927993992901
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739564667}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739564667}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100352124124",
@@ -340,7 +373,8 @@
         -27.359571227053
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738828175}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738828175}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100352124168",
@@ -350,7 +384,8 @@
         -27.0799143000795
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739137773}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739137773}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100352124414",
@@ -360,7 +395,8 @@
         -27.6592036443079
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739599024}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739599024}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100422124063",
@@ -370,7 +406,8 @@
         -29.421656523254
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738753754}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738753754}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100702124242",
@@ -380,7 +417,8 @@
         -29.217504235592
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738784537}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738784537}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100842124619",
@@ -390,7 +428,8 @@
         -28.0028893257084
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739676733}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739676733}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100912124166",
@@ -400,7 +439,8 @@
         -26.8013963954595
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739043447}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739043447}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50101052124120",
@@ -410,7 +450,8 @@
         -28.2475377251796
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739150419}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739150419}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50101052124188",
@@ -420,7 +461,8 @@
         -27.0841938100438
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739193933}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739193933}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50101052124427",
@@ -430,7 +472,8 @@
         -27.2448625214972
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739655033}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739655033}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50140282232387",
@@ -440,7 +483,8 @@
         -30.351546261929
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739492460}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739492460}}",
+      "province": "CÓRDOBA"
     },
     {
       "facility_id": "50140282232443",
@@ -450,7 +494,8 @@
         -31.2182333882894
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739476199}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739476199}}",
+      "province": "CÓRDOBA"
     },
     {
       "facility_id": "50141402231516",
@@ -460,7 +505,8 @@
         -31.0253216186662
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738679637}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738679637}}",
+      "province": "CÓRDOBA"
     },
     {
       "facility_id": "50300632142171",
@@ -470,7 +516,8 @@
         -34.000176
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738683313}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738683313}}",
+      "province": "ENTRE RÍOS"
     },
     {
       "facility_id": "50380842150427",
@@ -480,7 +527,8 @@
         -23.0848
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739602657}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739602657}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "50380842150429",
@@ -490,7 +538,8 @@
         -23.912204170785
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739501492}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739501492}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "50380942150158",
@@ -500,7 +549,8 @@
         -23.565762
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739092480}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739092480}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "50380982150437",
@@ -510,7 +560,8 @@
         -23.5033
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739595389}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739595389}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "50460352155070",
@@ -520,7 +571,8 @@
         -30.313756
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738806243}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738806243}}",
+      "province": "LA RIOJA"
     },
     {
       "facility_id": "50460352155150",
@@ -530,7 +582,8 @@
         -29.993002284551
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738735671}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738735671}}",
+      "province": "LA RIOJA"
     },
     {
       "facility_id": "50460422155104",
@@ -540,7 +593,8 @@
         -29.28584
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739154044}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739154044}}",
+      "province": "LA RIOJA"
     },
     {
       "facility_id": "50460422155118",
@@ -550,7 +604,8 @@
         -29.5352295629484
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739039837}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739039837}}",
+      "province": "LA RIOJA"
     },
     {
       "facility_id": "50460702155125",
@@ -560,7 +615,8 @@
         -30.93283
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738875355}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738875355}}",
+      "province": "LA RIOJA"
     },
     {
       "facility_id": "50500562157378",
@@ -570,7 +626,8 @@
         -32.607424
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738897085}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738897085}}",
+      "province": "MENDOZA"
     },
     {
       "facility_id": "50500562158914",
@@ -580,7 +637,8 @@
         -32.583286
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739660486}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739660486}}",
+      "province": "MENDOZA"
     },
     {
       "facility_id": "50620212170194",
@@ -590,7 +648,8 @@
         -41.5085772974393
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739105126}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739105126}}",
+      "province": "RÍO NEGRO"
     },
     {
       "facility_id": "50660562173344",
@@ -600,7 +659,8 @@
         -22.9033240530374
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738732102}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738732102}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "50660702173256",
@@ -610,7 +670,8 @@
         -22.84323
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739025469}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739025469}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "50661612173293",
@@ -620,7 +681,8 @@
         -22.566253
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739355034}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739355034}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "50661612173316",
@@ -630,7 +692,8 @@
         -22.546459
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738659848}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791738659848}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "50740352180549",
@@ -640,7 +703,8 @@
         -33.806538025096
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739705578}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739705578}}",
+      "province": "SAN LUIS"
     },
     {
       "facility_id": "50860632192535",
@@ -650,7 +714,8 @@
         -28.24506
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739402138}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739402138}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50067492102334",
@@ -660,7 +725,8 @@
         -34.1833071779999
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740064350}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740064350}}",
+      "province": "BUENOS AIRES"
     },
     {
       "facility_id": "50260142129217",
@@ -670,7 +736,8 @@
         -43.0688877741696
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740109533}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740109533}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50260352129199",
@@ -680,7 +747,8 @@
         -43.0688877741696
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739981200}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739981200}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50260352129227",
@@ -690,7 +758,8 @@
         -42.8759641023825
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739972201}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739972201}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50260702129205",
@@ -700,7 +769,8 @@
         -43.2612061247997
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739995710}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739995710}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50260702129215",
@@ -710,7 +780,8 @@
         -43.3890819391174
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739961359}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791739961359}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50661402173231",
@@ -720,7 +791,8 @@
         -26.204604314057
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740100465}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740100465}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "51064342317767",
@@ -730,7 +802,8 @@
         -36.9416607679856
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740243358}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740243358}}",
+      "province": "BUENOS AIRES"
     },
     {
       "facility_id": "53060562318004",
@@ -740,7 +813,8 @@
         -35.8932476637931
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740471405}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791740471405}}",
+      "province": "BUENOS AIRES"
     },
     {
       "facility_id": "51380632350885",
@@ -750,7 +824,8 @@
         -23.3624285934088
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791847918727}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791847918727}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "53740562380645",
@@ -760,7 +835,8 @@
         -33.806538025096
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791848530366}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791848530366}}",
+      "province": "SAN LUIS"
     },
     {
       "facility_id": "50100142124093",
@@ -770,7 +846,8 @@
         -29.1473638312266
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954258208}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954258208}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100212124090",
@@ -780,7 +857,8 @@
         -27.4735520142697
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849696393}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849696393}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100282124421",
@@ -790,7 +868,8 @@
         -25.5151787443985
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954844169}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954844169}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100422124250",
@@ -800,7 +879,8 @@
         -28.4834788241378
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849718314}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849718314}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100702124097",
@@ -810,7 +890,8 @@
         -29.1569585113606
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954371336}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954371336}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100702124228",
@@ -820,7 +901,8 @@
         -29.0765754030453
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849617032}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849617032}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100702124234",
@@ -830,7 +912,8 @@
         -29.1209738408525
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954398594}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954398594}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100702124246",
@@ -840,7 +923,8 @@
         -29.0966770679111
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849515705}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849515705}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50100982124232",
@@ -850,7 +934,8 @@
         -28.0380464193699
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849754683}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849754683}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50101052124148",
@@ -860,7 +945,8 @@
         -28.20185999102
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849770518}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849770518}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50101052124150",
@@ -870,7 +956,8 @@
         -28.2511669052314
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954292644}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954292644}}",
+      "province": "CATAMARCA"
     },
     {
       "facility_id": "50220632126322",
@@ -880,7 +967,8 @@
         -24.8131
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954407773}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954407773}}",
+      "province": "CHACO"
     },
     {
       "facility_id": "50220632126414",
@@ -890,7 +978,8 @@
         -24.3833
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954467928}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954467928}}",
+      "province": "CHACO"
     },
     {
       "facility_id": "50220632126421",
@@ -900,7 +989,8 @@
         -25.190482
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954449684}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954449684}}",
+      "province": "CHACO"
     },
     {
       "facility_id": "50220632126455",
@@ -910,7 +1000,8 @@
         -25.021564
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954229228}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954229228}}",
+      "province": "CHACO"
     },
     {
       "facility_id": "50260352129231",
@@ -920,7 +1011,8 @@
         -42.8340338690599
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849569860}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849569860}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50260352129239",
@@ -930,7 +1022,8 @@
         -43.0608613713432
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954435040}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954435040}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50260842129241",
@@ -940,7 +1033,8 @@
         -45.1510532655633
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954538231}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954538231}}",
+      "province": "CHUBUT"
     },
     {
       "facility_id": "50380492150547",
@@ -950,7 +1044,8 @@
         -22.3227654165804
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955041699}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955041699}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "50380942150064",
@@ -960,7 +1055,8 @@
         -23.775
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849828565}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849828565}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "50380942150068",
@@ -970,7 +1066,8 @@
         -23.775
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954260015}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954260015}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "50380942150128",
@@ -980,7 +1077,8 @@
         -23.61313
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954263643}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954263643}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "50380942150230",
@@ -990,7 +1088,8 @@
         -23.840566
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954503910}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954503910}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "50380942150271",
@@ -1000,7 +1099,8 @@
         -23.43662
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849479725}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849479725}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "50380942150273",
@@ -1010,7 +1110,8 @@
         -23.73657
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954223804}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954223804}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "50381052150327",
@@ -1020,7 +1121,8 @@
         -23.6
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954614253}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954614253}}",
+      "province": "JUJUY"
     },
     {
       "facility_id": "50420492153059",
@@ -1030,7 +1132,8 @@
         -36.5272948145462
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849886206}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849886206}}",
+      "province": "LA PAMPA"
     },
     {
       "facility_id": "50460142155063",
@@ -1040,7 +1143,8 @@
         -29.4642
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954536420}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954536420}}",
+      "province": "LA RIOJA"
     },
     {
       "facility_id": "50461052155547",
@@ -1050,7 +1154,8 @@
         -30.0750361660437
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955141069}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955141069}}",
+      "province": "LA RIOJA"
     },
     {
       "facility_id": "50461122155116",
@@ -1060,7 +1165,8 @@
         -31.2259552295127
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954559920}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954559920}}",
+      "province": "LA RIOJA"
     },
     {
       "facility_id": "50580772167453",
@@ -1070,7 +1176,8 @@
         -36.9586711315303
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954967167}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954967167}}",
+      "province": "NEUQUÉN"
     },
     {
       "facility_id": "50581122167687",
@@ -1080,7 +1187,8 @@
         -38.8653748516116
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955027160}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955027160}}",
+      "province": "NEUQUÉN"
     },
     {
       "facility_id": "50581122167694",
@@ -1090,7 +1198,8 @@
         -38.8290101975196
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955066954}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955066954}}",
+      "province": "NEUQUÉN"
     },
     {
       "facility_id": "50581122167698",
@@ -1100,7 +1209,8 @@
         -38.7519413494708
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954998188}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954998188}}",
+      "province": "NEUQUÉN"
     },
     {
       "facility_id": "50581122167699",
@@ -1110,7 +1220,8 @@
         -39.123668254026
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954983609}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954983609}}",
+      "province": "NEUQUÉN"
     },
     {
       "facility_id": "50581122167701",
@@ -1120,7 +1231,8 @@
         -38.9594087924542
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955057868}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955057868}}",
+      "province": "NEUQUÉN"
     },
     {
       "facility_id": "50660072173365",
@@ -1130,7 +1242,8 @@
         -24.260038
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954590691}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954590691}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "50660702173373",
@@ -1140,7 +1253,8 @@
         -22.705696
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849506776}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849506776}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "50660702173453",
@@ -1150,7 +1264,8 @@
         -22.7008362256854
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849640718}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849640718}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "50660702173466",
@@ -1160,7 +1275,8 @@
         -22.725679
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849651214}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849651214}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "50660912174309",
@@ -1170,7 +1286,8 @@
         -24.6744569587141
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955202622}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955202622}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "50661332173287",
@@ -1180,7 +1297,8 @@
         -22.9659764630616
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849774184}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849774184}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "50661332174312",
@@ -1190,7 +1308,8 @@
         -23.9395899809503
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955166406}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955166406}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "50661402174658",
@@ -1200,7 +1319,8 @@
         -26.214843
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955209827}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955209827}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "50661612174357",
@@ -1210,7 +1330,8 @@
         -22.2535550162921
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955208008}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955208008}}",
+      "province": "SALTA"
     },
     {
       "facility_id": "50700352177463",
@@ -1220,7 +1341,8 @@
         -31.2315916720505
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954918382}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954918382}}",
+      "province": "SAN JUAN"
     },
     {
       "facility_id": "50701192177189",
@@ -1230,7 +1352,8 @@
         -30.914957
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954225614}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954225614}}",
+      "province": "SAN JUAN"
     },
     {
       "facility_id": "50740422180120",
@@ -1240,7 +1363,8 @@
         -35.78662688467
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849512112}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849512112}}",
+      "province": "SAN LUIS"
     },
     {
       "facility_id": "50740422180124",
@@ -1250,7 +1374,8 @@
         -35.6148836824543
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849411058}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849411058}}",
+      "province": "SAN LUIS"
     },
     {
       "facility_id": "50820982184616",
@@ -1260,7 +1385,8 @@
         -29.5352296
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849681560}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849681560}}",
+      "province": "SANTA FE"
     },
     {
       "facility_id": "50860142192760",
@@ -1270,7 +1396,8 @@
         -26.30889
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954807918}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954807918}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50860352192178",
@@ -1280,7 +1407,8 @@
         -27.5625
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849436405}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849436405}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50860492192845",
@@ -1290,7 +1418,8 @@
         -28.08605
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954896625}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954896625}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50860632192625",
@@ -1300,7 +1429,8 @@
         -28.6499616488318
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954664803}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954664803}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50860772192301",
@@ -1310,7 +1440,8 @@
         -28.33782
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954657589}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954657589}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50860772192793",
@@ -1320,7 +1451,8 @@
         -28.26074
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954945522}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954945522}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50860982192753",
@@ -1330,7 +1462,8 @@
         -27.2771
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954902085}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954902085}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50861192192725",
@@ -1340,7 +1473,8 @@
         -29.1999812401301
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954826060}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954826060}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50861192192802",
@@ -1350,7 +1484,8 @@
         -27.02
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954885813}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954885813}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50861192192831",
@@ -1360,7 +1495,8 @@
         -26.9740973803042
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954804358}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954804358}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50861262192135",
@@ -1370,7 +1506,8 @@
         -29.1229
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849608072}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849608072}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50861262192140",
@@ -1380,7 +1517,8 @@
         -29.2534
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849445443}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849445443}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50861332192206",
@@ -1390,7 +1528,8 @@
         -25.8662048690606
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954686526}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791954686526}}",
+      "province": "SANTIAGO DEL ESTERO"
     },
     {
       "facility_id": "50901052196484",
@@ -1400,7 +1539,8 @@
         -26.563109
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849767057}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849767057}}",
+      "province": "TUCUMÁN"
     },
     {
       "facility_id": "50901052196494",
@@ -1410,7 +1550,8 @@
         -26.6179126763232
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849844796}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849844796}}",
+      "province": "TUCUMÁN"
     },
     {
       "facility_id": "50901052196540",
@@ -1420,7 +1561,8 @@
         -26.691361
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849893523}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791849893523}}",
+      "province": "TUCUMÁN"
     },
     {
       "facility_id": "53064412317998",
@@ -1430,7 +1572,8 @@
         -35.8933994940796
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955498767}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791955498767}}",
+      "province": "BUENOS AIRES"
     },
     {
       "facility_id": "53700282177940",
@@ -1440,7 +1583,8 @@
         -30.9022247051714
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791957007503}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791957007503}}",
+      "province": "SAN JUAN"
     },
     {
       "facility_id": "53700282377953",
@@ -1450,7 +1594,8 @@
         -30.9022247051714
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791957009284}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791957009284}}",
+      "province": "SAN JUAN"
     },
     {
       "facility_id": "53700562377947",
@@ -1460,7 +1605,8 @@
         -30.9022247051714
       ],
       "ors_code": 3099,
-      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791957040985}}"
+      "message": "{\"error\":{\"code\":3099,\"message\":\"Unable to build an isochrone map.\"},\"info\":{\"engine\":{\"build_date\":\"2026-08-13T11:53:14Z\",\"graph_version\":\"5\",\"graph_date\":\"2026-09-21T10:31:27Z\",\"osm_date\":\"2026-09-13T23:59:59Z\",\"version\":\"9.10.0\"},\"timestamp\":1791957040985}}",
+      "province": "SAN JUAN"
     }
   ]
 }

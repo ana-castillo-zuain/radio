@@ -2,6 +2,7 @@ base_total.geojson/
 radios_censales2/
 .env
 .dev.vars
+.wrangler/
 node_modules/
 dist/
 healthsites_cache/

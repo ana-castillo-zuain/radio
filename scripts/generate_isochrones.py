@@ -29,6 +29,7 @@ COVERAGE_RANGES = {300: "5", 900: "15", 1800: "30", 3600: "60"}
 MAX_LOCATIONS = 5
 DEFAULT_CONCURRENCY = 12
 ENDPOINT = "https://api.heigit.org/openrouteservice/v2/isochrones/driving-car"
+FACILITY_PROVINCES: dict[str, str] = {}
 
 
 class DailyRequestLimit(RuntimeError):
@@ -131,6 +132,11 @@ def digest(value: object) -> str:
 
 def load_work():
     facilities = read_json(DATA / "facilities.geojson")["features"]
+    FACILITY_PROVINCES.clear()
+    FACILITY_PROVINCES.update({
+        str(feature["properties"].get("id")): str(feature["properties"].get("province", ""))
+        for feature in facilities
+    })
     settlements = read_json(DATA / "settlements.geojson")["features"]
     provinces = read_json(DATA / "provinces.geojson")["features"]
     categories = defaultdict(list)
@@ -242,6 +248,7 @@ def solve_job(job, api_key, pacer, reporter, allow_cached):
                 "facility_id": str(job["ids"][0]),
                 "category": job["category"],
                 "coordinates": job["locations"][0],
+                "province": FACILITY_PROVINCES.get(str(job["ids"][0]), ""),
                 "ors_code": error.code,
                 "message": error.details,
             })
@@ -538,7 +545,11 @@ def main():
             print(f"Checked {settlement_index:,}/{len(settlements):,} settlements", flush=True)
     coverage_dir = DATA / "access"
     (coverage_dir / "settlement-coverage.json").write_text(json.dumps(coverage, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    omitted_facilities = sorted(reporter.failures, key=lambda item: (str(item.get("category", "")).casefold(), str(item.get("facility_id", ""))))
+    omitted_facilities = sorted(
+        ({**item, "province": item.get("province") or FACILITY_PROVINCES.get(str(item.get("facility_id")), "")}
+         for item in reporter.failures),
+        key=lambda item: (str(item.get("category", "")).casefold(), str(item.get("facility_id", ""))),
+    )
     generation_report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "omitted_facility_count": len(omitted_facilities),

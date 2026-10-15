@@ -18,6 +18,7 @@ import pandas as pd
 from shapely.geometry import mapping
 
 ROOT = Path(__file__).resolve().parents[1]
+RAW = ROOT / "data" / "raw"
 OUT = ROOT / "public" / "data"
 ACTIVE_AGES = {"20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59", "60-64"}
 INDEC_PROVINCES = {
@@ -88,7 +89,15 @@ def key(value: object) -> str:
 
 
 def read_csv(name: str) -> pd.DataFrame:
-    return pd.read_csv(ROOT / name, encoding="utf-8-sig", encoding_errors="replace", low_memory=False)
+    path = RAW / name if (RAW / name).exists() else ROOT / name
+    return pd.read_csv(path, encoding="utf-8-sig", encoding_errors="replace", low_memory=False)
+
+
+def province_code(value: object) -> str:
+    normalized = key(value)
+    if normalized.startswith("TIERRA DEL FUEGO"):
+        return INDEC_PROVINCES["TIERRA DEL FUEGO"]
+    return INDEC_PROVINCES.get(normalized, "")
 
 
 def write_json(name: str, value: object) -> None:
@@ -181,6 +190,10 @@ def main() -> None:
             population_by_key[province_key] = int(digits)
 
     refes = read_csv("refes-2023-updated.csv")
+    refes_match = re.search(r"(20\d{2})", "refes-2023-updated.csv")
+    if not refes_match:
+        raise ValueError("Could not derive the REFES source year from the filename")
+    refes_year = int(refes_match.group(1))
     nurses = read_csv("enfermeria-2023.csv")
     doctors = read_csv("medicos-2023.csv")
     doctors_by_province = professional_totals(doctors)
@@ -285,7 +298,7 @@ def main() -> None:
     radios = radios[["jur", "geometry"]].dissolve(by="jur", as_index=False)
     radios["geometry"] = radios.geometry.simplify(0.005, preserve_topology=True)
     radios["province"] = radios["jur"].map(text)
-    radios["province_id"] = radios["jur"].map(lambda value: INDEC_PROVINCES.get(key(value), ""))
+    radios["province_id"] = radios["jur"].map(province_code)
     province_features = []
     for row in radios.itertuples(index=False):
         province_features.append({
@@ -295,12 +308,25 @@ def main() -> None:
         })
     write_json("provinces.geojson", {"type": "FeatureCollection", "features": province_features})
 
+    expected_provinces = set(INDEC_PROVINCES.values())
+    actual_provinces = {feature["properties"]["province_id"] for feature in province_features}
+    if "" in actual_provinces or actual_provinces != expected_provinces:
+        raise ValueError(f"Province polygons do not map to the 24 expected IDs: {sorted(actual_provinces)}")
+    facilities_by_province: dict[str, int] = {}
+    for facility in facilities:
+        province_id = facility["properties"]["province_id"]
+        if province_id not in expected_provinces:
+            raise ValueError(f"Mapped facility has unknown province_id {province_id!r}")
+        facilities_by_province[province_id] = facilities_by_province.get(province_id, 0) + 1
+    if sum(facilities_by_province.values()) != len(facilities):
+        raise ValueError("Province facility counts do not add up to the mapped facility total")
+
     # Isochrones are a separately generated, quota-consuming product. Never
     # overwrite them when rebuilding the source datasets.
     global_doctors = sum(row["doctors"]["activos"] for row in province_metrics.values())
     global_nurses = sum(row["nurses"]["activos"] for row in province_metrics.values())
     write_json("metrics.json", {
-        "source_years": {"refes": 2026, "professionals": 2023, "population": 2022},
+        "source_years": {"refes": refes_year, "professionals": 2023, "population": 2022},
         "definitions": {
             "active_professionals": "REFePS habilitados de 20 a 64 años inclusive, según grupos etarios publicados.",
             "nurse_doctor_ratio": "Enfermeros activos divididos por médicos activos.",
