@@ -73,7 +73,13 @@ export default function MapCanvas({ active = true, mode, provinceId, categories,
             attribution: import.meta.env.VITE_BASEMAP_ATTRIBUTION || '© OpenStreetMap contributors',
           },
         },
-        layers: [{ id: 'osm', type: 'raster', source: 'osm', paint: { 'raster-opacity': 0.53, 'raster-saturation': -0.72 } }],
+        layers: [{ id: 'osm', type: 'raster', source: 'osm', paint: {
+          'raster-opacity': 0.76,
+          'raster-saturation': -1,
+          'raster-contrast': 0.22,
+          'raster-brightness-min': 0.02,
+          'raster-brightness-max': 0.34,
+        } }],
       },
     });
     map.addControl(new NavigationControl({ showCompass: false }), 'top-right');

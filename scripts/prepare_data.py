@@ -150,6 +150,32 @@ def professional_totals(frame: pd.DataFrame) -> dict:
     return output
 
 
+def training_residence(frame: pd.DataFrame) -> dict:
+    """Count active professionals trained and resident in Argentine provinces."""
+    frame = frame.copy()
+    frame["total"] = pd.to_numeric(frame["total"], errors="coerce").fillna(0)
+    active = frame[frame["grupo_etareo"].isin(ACTIVE_AGES)].copy()
+    active_total = int(active["total"].sum())
+    valid_ids = {int(value) for value in INDEC_PROVINCES.values()}
+    active["residence_id"] = pd.to_numeric(active["id_provincia_residencia"], errors="coerce")
+    active["training_id"] = pd.to_numeric(active["id_provincia_formacion"], errors="coerce")
+    domestic = active[
+        active["residence_id"].isin(valid_ids) & active["training_id"].isin(valid_ids)
+    ]
+    matrix = {
+        residence: {training: 0 for training in sorted(INDEC_PROVINCES.values())}
+        for residence in sorted(INDEC_PROVINCES.values())
+    }
+    grouped = domestic.groupby(["residence_id", "training_id"])["total"].sum()
+    for (residence, training), count in grouped.items():
+        matrix[f"{int(residence):02d}"][f"{int(training):02d}"] = int(count)
+    return {
+        "active_total": active_total,
+        "domestic_pairs": int(domestic["total"].sum()),
+        "residence_by_training": matrix,
+    }
+
+
 def nurse_specialties(frame: pd.DataFrame) -> dict[str, dict[str, int]]:
     frame = frame.copy()
     frame["total"] = pd.to_numeric(frame["total"], errors="coerce").fillna(0)
@@ -199,6 +225,8 @@ def main() -> None:
     doctors_by_province = professional_totals(doctors)
     nurses_by_province = professional_totals(nurses)
     specialties_by_province = nurse_specialties(nurses)
+    doctor_training_residence = training_residence(doctors)
+    nurse_training_residence = training_residence(nurses)
 
     bahra_path = ROOT / "base_total.geojson" / "base_total.geojson"
     bahra = gpd.read_file(bahra_path)
@@ -340,6 +368,10 @@ def main() -> None:
             "doctors": doctors_by_province,
             "nurses": nurses_by_province,
             "nurse_specialties_active": specialties_by_province,
+            "training_residence": {
+                "doctors": doctor_training_residence,
+                "nurses": nurse_training_residence,
+            },
             "doctors_per_1000": round(global_doctors / sum(v["population_2022"] for v in province_metrics.values()) * 1000, 3),
             "nurses_per_1000": round(global_nurses / sum(v["population_2022"] for v in province_metrics.values()) * 1000, 3),
             "nurses_per_doctor": round(global_nurses / global_doctors, 3),

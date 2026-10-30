@@ -34,6 +34,13 @@ export type ProfessionalProvince = {
   origen_activos: OriginCounts;
 };
 
+export type TrainingResidence = {
+  active_total: number;
+  domestic_pairs: number;
+  /** Rows are current residence provinces; columns are provinces of formation. */
+  residence_by_training: Record<string, Record<string, number>>;
+};
+
 export type ProvinceMetrics = {
   province_id: string;
   name: string;
@@ -67,6 +74,7 @@ export type Metrics = {
     doctors: Record<string, ProfessionalProvince>;
     nurses: Record<string, ProfessionalProvince>;
     nurse_specialties_active: Record<string, Record<string, number>>;
+    training_residence: { doctors: TrainingResidence; nurses: TrainingResidence };
     doctors_per_1000: number;
     nurses_per_1000: number;
     nurses_per_doctor: number;

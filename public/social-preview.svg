@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Radiografía de nuestro sistema de salud</title>
-  <desc id="desc">Una mirada a las distancias, recursos y desigualdades detrás del mapa sanitario argentino.</desc>
+  <desc id="desc">Radiografía interactiva del acceso, los establecimientos y el personal de salud en Argentina.</desc>
   <rect width="1200" height="630" fill="#050708"/>
   <path d="M0 520h1200" stroke="#30383d"/>
   <circle cx="960" cy="300" r="190" fill="#0e2728" stroke="#91e7c1" stroke-opacity=".5"/>
@@ -8,8 +8,8 @@
   <circle cx="1010" cy="360" r="5" fill="#81d7ff"/>
   <circle cx="1040" cy="220" r="4" fill="#91e7c1"/>
   <text x="72" y="120" fill="#9bdcff" font-family="monospace" font-size="22" letter-spacing="4">RADIO SALUD</text>
-  <text x="72" y="255" fill="#edf2f4" font-family="monospace" font-size="54" font-weight="600">Radiografía de nuestro</text>
+  <text x="72" y="255" fill="#edf2f4" font-family="monospace" font-size="54" font-weight="600">RadiografÃ­a de nuestro</text>
   <text x="72" y="325" fill="#91e7c1" font-family="monospace" font-size="54" font-weight="600">sistema de salud</text>
-  <text x="72" y="405" fill="#a6b5bd" font-family="monospace" font-size="22">Distancias · recursos · acceso territorial</text>
-  <text x="72" y="570" fill="#6f8996" font-family="monospace" font-size="17">ARGENTINA · INFORME INTERACTIVO</text>
+  <text x="72" y="405" fill="#a6b5bd" font-family="monospace" font-size="22">Distancias Â· recursos Â· acceso territorial</text>
+  <text x="72" y="570" fill="#6f8996" font-family="monospace" font-size="17">ARGENTINA Â· INFORME INTERACTIVO</text>
 </svg>

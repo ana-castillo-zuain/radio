@@ -53,6 +53,22 @@ def main() -> int:
 
     if not coverage or len(coverage) != metrics["settlement_count"]:
         raise ValueError("Settlement coverage row count does not match metrics.settlement_count")
+
+    training_residence = metrics["professionals"]["training_residence"]
+    for profession in ("doctors", "nurses"):
+        dataset = training_residence[profession]
+        matrix = dataset["residence_by_training"]
+        if set(matrix) != EXPECTED_PROVINCE_IDS:
+            raise ValueError(f"{profession} training/residence matrix must contain all 24 residence provinces")
+        matrix_total = 0
+        for residence_id, row in matrix.items():
+            if set(row) != EXPECTED_PROVINCE_IDS:
+                raise ValueError(f"{profession} training/residence row {residence_id} must contain all 24 formation provinces")
+            matrix_total += sum(int(value) for value in row.values())
+        if matrix_total != int(dataset["domestic_pairs"]):
+            raise ValueError(f"{profession} matrix counts do not match domestic_pairs")
+        if matrix_total > int(dataset["active_total"]):
+            raise ValueError(f"{profession} domestic pairs exceed its active-professional total")
     print(f"Validated {len(province_ids)} province polygons, {len(facilities)} facilities, and {len(coverage)} settlements.")
     return 0
 
