@@ -358,7 +358,7 @@ def main() -> None:
         "definitions": {
             "active_professionals": "REFePS habilitados de 20 a 64 años inclusive, según grupos etarios publicados.",
             "nurse_doctor_ratio": "Enfermeros activos divididos por médicos activos.",
-            "accessibility": "Áreas de isócrona por red vial; aún no calculadas.",
+            "accessibility": "Áreas de isócrona por red vial sobre OpenStreetMap; cobertura de asentamientos BAHRA calculada para umbrales de 5, 15, 30 y 60 minutos.",
         },
         "facility_counts": {**status_counts, "total": len(refes), "mapped": len(facilities)},
         "facility_categories": categories,

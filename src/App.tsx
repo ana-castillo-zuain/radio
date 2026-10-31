@@ -198,25 +198,35 @@ function FormationResidenceMatrix({ metrics }: { metrics: Metrics }) {
   const [profession, setProfession] = useState<'doctors' | 'nurses'>('doctors');
   const rows = Object.values(metrics.provinces).sort((a, b) => a.province_id.localeCompare(b.province_id));
   const dataset = metrics.professionals.training_residence[profession];
-  const max = Math.max(1, ...rows.flatMap((formation) => rows.map((residence) => formation.province_id === '02' && residence.province_id === '02' ? 0 : dataset.residence_by_training[residence.province_id]?.[formation.province_id] ?? 0)));
+  const rowTotals = Object.fromEntries(rows.map((formation) => [
+    formation.province_id,
+    rows.reduce((total, residence) => total + (dataset.residence_by_training[residence.province_id]?.[formation.province_id] ?? 0), 0),
+  ]));
+  const maxShare = Math.max(0.01, ...rows.flatMap((formation) => rows.map((residence) => {
+    if (formation.province_id === '02' && residence.province_id === '02') return 0;
+    const count = dataset.residence_by_training[residence.province_id]?.[formation.province_id] ?? 0;
+    return count / Math.max(rowTotals[formation.province_id], 1);
+  })));
   const included = dataset.active_total ? dataset.domestic_pairs / dataset.active_total * 100 : 0;
   return <section className="clinical-chart matrix-chart" aria-labelledby="formation-matrix-title">
     <div className="clinical-chart-heading"><div><span className="eyebrow">REFEPS · RESIDENCIA Y FORMACIÓN</span><h3 id="formation-matrix-title">Dónde se formaron y dónde residen</h3></div>
       <div className="profession-toggle" role="group" aria-label="Profesiones de la matriz"><button className={profession === 'doctors' ? 'selected' : ''} onClick={() => setProfession('doctors')}>Medicina</button><button className={profession === 'nurses' ? 'selected' : ''} onClick={() => setProfession('nurses')}>Enfermería</button></div>
     </div>
-    <p className="matrix-directions">Filas: provincia de formación <span>→</span> columnas: provincia de residencia</p>
+    <p className="matrix-directions">Filas: provincia de formación <span>→</span> columnas: provincia de residencia · cada fila suma 100%</p>
+    <div className="matrix-legend" aria-label="Leyenda de la matriz"><span><i className="matrix-blue-key" /> participación de residentes en ese destino</span><span><i className="matrix-orange-key" /> CABA–CABA, destacado fuera de escala</span></div>
     <div className="matrix-scroll" tabIndex={0} role="region" aria-label="Matriz desplazable de provincia de formación por provincia de residencia">
       <table><caption>Profesionales activos por provincia de formación y residencia, {profession === 'doctors' ? 'medicina' : 'enfermería'}.</caption>
         <thead><tr><th scope="col">Formación / residencia</th>{rows.map((province) => <th scope="col" key={province.province_id} title={province.name}>{province.province_id === '02' ? 'CABA' : province.name}</th>)}</tr></thead>
         <tbody>{rows.map((formation) => <tr key={formation.province_id}><th scope="row" title={formation.name}>{formation.province_id === '02' ? 'CABA' : formation.name}</th>{rows.map((residence) => {
           const count = dataset.residence_by_training[residence.province_id]?.[formation.province_id] ?? 0;
+          const share = count / Math.max(rowTotals[formation.province_id], 1) * 100;
           const cabaSelf = formation.province_id === '02' && residence.province_id === '02';
-          const intensity = count && !cabaSelf ? 0.12 + Math.sqrt(count / max) * 0.78 : 0;
-          return <td className={cabaSelf ? 'matrix-caba-outlier' : ''} key={residence.province_id} title={`${fmt(count)} profesionales: formación en ${formation.province_id === '02' ? 'CABA' : formation.name}, residencia en ${residence.province_id === '02' ? 'CABA' : residence.name}${cabaSelf ? '; valor destacado fuera de la escala de color' : ''}`} style={{ backgroundColor: cabaSelf ? '#e9ad58' : count ? `rgba(129, 215, 255, ${intensity.toFixed(3)})` : undefined }}>{count ? fmt(count) : '·'}</td>;
+          const intensity = count && !cabaSelf ? 0.12 + Math.sqrt((share / 100) / maxShare) * 0.78 : 0;
+          return <td className={cabaSelf ? 'matrix-caba-outlier' : ''} key={residence.province_id} title={`${fmt(count)} profesionales (${share.toLocaleString('es-AR', { maximumFractionDigits: 1 })}% de quienes se formaron en ${formation.province_id === '02' ? 'CABA' : formation.name}): residencia en ${residence.province_id === '02' ? 'CABA' : residence.name}${cabaSelf ? '; valor destacado fuera de la escala de color' : ''}`} style={{ backgroundColor: cabaSelf ? '#e9ad58' : count ? `rgba(129, 215, 255, ${intensity.toFixed(3)})` : undefined }}>{count ? `${share.toLocaleString('es-AR', { maximumFractionDigits: 1 })}%` : '·'}</td>;
         })}</tr>)}</tbody>
       </table>
     </div>
-    <p className="matrix-note">Incluye {fmt(dataset.domestic_pairs)} de {fmt(dataset.active_total)} profesionales activos ({included.toLocaleString('es-AR', { maximumFractionDigits: 0 })}%) con provincia argentina identificada en ambos campos. Excluye formación en el exterior o desconocida. Residencia no indica dónde ejerce cada profesional. La celda CABA–CABA se destaca aparte y no define la escala de color del resto.</p>
+    <p className="matrix-note">Cada fila está normalizada: muestra qué porcentaje de quienes se formaron en una provincia reside en cada destino. Incluye {fmt(dataset.domestic_pairs)} de {fmt(dataset.active_total)} profesionales activos ({included.toLocaleString('es-AR', { maximumFractionDigits: 0 })}%) con provincia argentina identificada en ambos campos. Excluye formación en el exterior o desconocida. Residencia no indica dónde ejerce cada profesional. La celda CABA–CABA se destaca aparte y no define la escala de color del resto.</p>
   </section>;
 }
 
@@ -460,7 +470,7 @@ function App() {
             <MapCanvas active mode="access" provinceId={provinceId} categories={selectedCategories} threshold={threshold} route={route} onProvince={chooseProvince} />
             <ViewerHud />
             {!!generationReport?.omitted_facility_count && <div className="isochrone-warning" role="status">No se pudieron calcular isócronas para {fmt(generationReport.omitted_facility_count)} establecimientos. <a href="/data/access/generation-report.json" target="_blank" rel="noreferrer">Ver reporte</a></div>}
-            <div className="doppler-scale" aria-label="Escala de minutos de viaje inspirada en Doppler"><span>5 min</span><span>15 min</span><span>30 min</span><span>60 min</span><i /></div>
+            <div className="doppler-scale" aria-label="Escala de tiempo estimado de viaje: rojo 5 minutos, amarillo 15, verde 30, azul 60"><span>5 min</span><span>15 min</span><span>30 min</span><span>60 min</span><i /><b>tiempo estimado en auto</b></div>
             {partialAccess && <div className="isochrone-warning isochrone-partial" role="status">Vista parcial: {fmt(accessManifest?.completed_jobs)} de {fmt(accessManifest?.total_jobs)} lotes procesados. Las áreas y coberturas pueden aumentar cuando termine el cálculo.</div>}
             {!accessManifest && <div className="map-empty-state"><span className="empty-icon">⌁</span><strong>Datos de acceso no disponibles</strong><span>La capa de acceso todavía no está disponible. Probá más tarde.</span></div>}
             <div className="map-scale">Elegí una provincia en el mapa para enfocarla.</div>
@@ -498,6 +508,7 @@ function App() {
           <RateDumbbell provinces={Object.values(metrics.provinces)} />
           <FormationResidenceMatrix metrics={metrics} />
         </>}
+        <div className="methodology-note"><strong>Desfases temporales de las fuentes</strong><span>Profesionales REFEPS: 2023 · población INDEC: 2022 · REFES actualizado: enero de 2026 · BAHRA recuperada: octubre de 2026.</span></div>
         <div className="section-footnote"><span>Fuentes: REFES {metrics?.source_years.refes ?? '—'} · REFEPS {metrics?.source_years.professionals ?? '—'} · Censo INDEC {metrics?.source_years.population ?? '—'} · BAHRA</span></div>
       </section>}
 
