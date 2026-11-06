@@ -21,16 +21,4 @@ Los profesionales activos se estiman con los grupos de 20 a 64 años inclusive. 
 - [BAHRA — Base de Asentamientos Humanos de la República Argentina](http://www.bahra.gob.ar/)
 - [OpenStreetMap](https://www.openstreetmap.org/copyright) y [OpenRouteService](https://openrouteservice.org/)
 
-## Datos de entrada
-
-Colocá los insumos locales en estas rutas antes de ejecutar `npm run prepare-data`:
-
-- `data/raw/refes-2023-updated.csv`: REFES actualizado el 2026-01-14; el nombre conserva el año de referencia analítica 2023.
-- `data/raw/medicos-2023.csv` y `data/raw/enfermeria-2023.csv`: series REFEPS 2023.
-- `poblacion_provincias_2022.csv`: población provincial del Censo 2022.
-- `base_total.geojson/base_total.geojson`: BAHRA, recuperada el 2026-10-14.
-- `radios_censales2/`: radios censales del marco geoestadístico INDEC, recuperados el 2026-10-14.
-
-`npm run prepare-data` genera los datos estáticos en `public/data/`. Las isócronas se preparan por separado con `npm run generate-isochrones`; la opción `--assemble-only` utiliza la caché local existente y no consulta el servicio ORS. `npm run check-data` valida los artefactos publicados.
-
 El código del proyecto se distribuye bajo MIT (ver [LICENSE](LICENSE)). Los datos fuente mantienen las condiciones de reutilización de sus respectivos organismos. Los datos fuente grandes no se publican aquí, salvo los CSV/XLSX documentados en `data/raw/`. Las coordenadas recuperadas de Healthsites conservan una marca de procedencia y no se presentan como verificación independiente; deben contrastarse con OpenStreetMap antes de usarse para decisiones operativas. La cartografía de OpenStreetMap se distribuye bajo ODbL.
